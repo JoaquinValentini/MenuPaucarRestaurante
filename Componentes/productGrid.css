@@ -1,0 +1,11 @@
+/* Componentes/productGrid.css */
+.product-grid{
+  background: #e9e9ea; /* gris tenue */
+  padding: 0; /* Eliminado para aumentar área útil dentro del grid */
+  gap: 16px;
+  border-radius: 12px;
+  display:grid;
+  grid-template-columns:1fr;
+}
+@media(min-width:600px){.product-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.product-grid{grid-template-columns:repeat(3,1fr)}}

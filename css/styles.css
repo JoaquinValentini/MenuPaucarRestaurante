@@ -1,0 +1,16 @@
+/* styles.css: Estilos globales aclaro por si acaso */
+:root{--accent:#e53935;--muted:#666;--bg:#f5f5f5}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.35;margin:0;background:var(--bg);color:#111;padding:0}
+header h1{font-size:1.25rem;margin:0 0 16px}
+
+
+/* Category headings */
+.category h2{margin:18px 0 8px;font-size:1.1rem}
+
+/* Section separator */
+.section-separator{display:flex;align-items:center;justify-content:center;margin:18px 0}
+.separator-title{background:#e9e9ea;padding:8px 16px;border-radius:999px;font-weight:700;color:#333;margin:0;font-size:0.95rem}
+
+/* Small utility */
+.container{max-width:1080px;margin:0 auto;padding:0 16px}

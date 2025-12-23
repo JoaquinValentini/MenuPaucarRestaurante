@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Menú de Daina</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="Componentes/productGrid.css">
+    <link rel="stylesheet" href="Componentes/productCard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+      <header>
+        <h1>Hola, soy Daina</h1>
+        <p class="subtitle">Menú especial del día</p>
+      </header>
+
+      <main>
+        <h2>Entradas</h2> <!-- Separadores de texto daina remplazaar-->
+        <!-- Daina anotacio para cargar los json tenes que hacer un section que siga el mismo formato que los de abajo, y que en data tenga el origen de json mismo-->
+        <section id="entradas-slot" data-products="data/entradas.json"></section>
+
+        <h2>Bebidas</h2>
+        <section id="bebidas-slot" data-products="data/bebidas.json"></section>
+        <h2>Platos</h2>
+        <section id="platos-SLOT" aria-label="data/platos.json" data-products="data/platos.json"></section>
+    
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

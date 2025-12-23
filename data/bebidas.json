@@ -1,0 +1,26 @@
+[
+  {
+    "id": "coca",
+    "title": "Coca Cola",
+    "desc": "Lata 330ml",
+    "note": "Sin alcohol",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": "$3000 "
+  },
+  {
+    "id": "agua",
+    "title": "Agua mineral",
+    "desc": "500ml",
+    "note": "Sin gas disponible",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": "$4000 "
+  },
+  {
+    "id": "jugo-naranja",
+    "title": "Jugo de naranja",
+    "desc": "500ml",
+    "note": "Sin azúcar añadido",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": "$400 "
+  }
+]

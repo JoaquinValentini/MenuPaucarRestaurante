@@ -1,0 +1,21 @@
+<!-- Componentes/productCard.html -->
+<!-- Plantilla reutilizable: clona el template y rellena los campos (img, título, desc, nota, precio) -->
+<template id="product-card-template">
+  <div class="product-card">
+    <!-- Cambia la ruta de la imagen por ejemplo: imagenes/mi-foto.jpg -->
+    <img class="product-img" src="imagenes/placeholder.svg" alt="Producto" loading="lazy">
+    <div class="product-info">
+      <h3 class="product-title">Producto</h3>
+      <p class="product-desc">Descripción breve</p>
+      <small class="product-note">Nota</small>
+    </div>
+    <div class="product-price">€ 0,00</div>
+  </div>
+</template>
+
+<!-- Ejemplo: cómo usar desde JS
+const t = document.getElementById('product-card-template');
+const clone = t.content.cloneNode(true);
+clone.querySelector('.product-img').src = 'img/curry.jpg';
+clone.querySelector('.product-title').textContent = 'Curry de batata';
+... append clone to el -->

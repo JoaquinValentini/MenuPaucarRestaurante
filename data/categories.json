@@ -1,0 +1,6 @@
+[
+  { "title": "Entradas", "file": "data/entradas.json" },
+  { "title": "Bebidas", "file": "data/bebidas.json" },
+  { "title": "Vinos", "file": "data/vinos.json" },
+  { "title": "Platos", "file": "data/platos.json" }
+]
