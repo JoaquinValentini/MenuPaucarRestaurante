@@ -170,4 +170,25 @@ async function renderAll(){
   }
 }
 
-document.addEventListener('DOMContentLoaded', renderAll);
+// Inicializa la interacción de las pestañas nav: asegura que solo la pestaña clickeada tenga `active`
+function initNavTabs(){
+  const tabs = Array.from(document.querySelectorAll('.nav-tab'));
+  if(!tabs.length) return;
+
+  tabs.forEach(tab => {
+    // marcar estado inicial accesible
+    tab.setAttribute('aria-pressed', tab.classList.contains('active') ? 'true' : 'false');
+
+    tab.addEventListener('click', (e) => {
+      tabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-pressed', 'false');
+      });
+      const clicked = e.currentTarget;
+      clicked.classList.add('active');
+      clicked.setAttribute('aria-pressed', 'true');
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => { renderAll(); initNavTabs(); });

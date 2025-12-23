@@ -10,22 +10,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <div class="nav-tabs-container">
+        <div class="nav-tabs">
+            <button class="nav-tab active">Entradas</button>
+            <button class="nav-tab">Bebidas</button>
+            <button class="nav-tab">Desserts</button>
+            <button class="nav-tab">Cocktails</button>
+        </div>
+    </div>
     <div class="container">
       <header>
         <h1>Hola, soy Daina</h1>
         <p class="subtitle">Menú especial del día</p>
+        
+        <!-- Botones de categorías -->
+  
       </header>
 
       <main>
-        <h2>Entradas</h2> <!-- Separadores de texto daina remplazaar-->
-        <!-- Daina anotacio para cargar los json tenes que hacer un section que siga el mismo formato que los de abajo, y que en data tenga el origen de json mismo-->
-        <section id="entradas-slot" data-products="data/entradas.json"></section>
+        <section class="category-section" id="entradas-section">
+          <div class="section-separator">
+            <h2 class="separator-title">Entradas</h2>
+          </div>
+          <section id="entradas-slot" data-products="data/entradas.json"></section>
+        </section>
 
-        <h2>Bebidas</h2>
-        <section id="bebidas-slot" data-products="data/bebidas.json"></section>
-        <h2>Platos</h2>
-        <section id="platos-SLOT" aria-label="data/platos.json" data-products="data/platos.json"></section>
-    
+        <section class="category-section" id="bebidas-section">
+          <div class="section-separator">
+            <h2 class="separator-title">Bebidas</h2>
+          </div>
+          <section id="bebidas-slot" data-products="data/bebidas.json"></section>
+        </section>
+
+        <section class="category-section" id="platos-section">
+          <div class="section-separator">
+            <h2 class="separator-title">Platos</h2>
+          </div>
+          <section id="platos-slot" data-products="data/platos.json"></section>
+        </section>
+        
+        <!-- Si tienes postres, añade esta sección -->
+        <section class="category-section" id="postres-section" style="display: none;">
+          <div class="section-separator">
+            <h2 class="separator-title">Postres</h2>
+          </div>
+          <section id="postres-slot" data-products="data/postres.json"></section>
         </section>
       </main>
     </div>

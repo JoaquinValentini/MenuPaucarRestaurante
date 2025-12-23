@@ -14,3 +14,59 @@ header h1{font-size:1.25rem;margin:0 0 16px}
 
 /* Small utility */
 .container{max-width:1080px;margin:0 auto;padding:0 16px}
+
+/* Fondo gris: nav tabs; solo texto rojo al tocar (sin cambiar fondo) */
+.nav-tabs-container {
+    width: 100%;
+    background: #e9e9ea;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-tabs {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 10px 8px;
+}
+
+.nav-tab {
+    flex: 1;
+    padding: 12px 8px;
+    border: none;
+    background: transparent;
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+/* Solo texto rojo al interactuar (hover, active, focus); el fondo permanece transparente */
+.nav-tab:hover,
+.nav-tab:active,
+.nav-tab:focus,
+.nav-tab:focus-visible,
+.nav-tab.active {
+    color: var(--accent); /* Rojo */
+    background: transparent; /* asegurar fondo transparente */
+}
+
+.nav-tab.active {
+    font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav-tabs {
+        padding: 8px 6px;
+    }
+    
+    .nav-tab {
+        padding: 10px 4px;
+        font-size: 0.9rem;
+        white-space: normal;
+    }
+}
