@@ -70,3 +70,27 @@ header h1{font-size:1.25rem;margin:0 0 16px}
         white-space: normal;
     }
 }
+
+/* --- Banner responsive con recorte tipo “cover” --- */
+.site-header {
+  height: 60px;              /* ¡Fijo y bien chico! */
+  overflow: hidden;          /* recorta lo que sobra */
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.site-header .banner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* llena sin franjas */
+  object-position: center;   /* centra el recorte */
+}
+
+/* Ajuste fino para móviles chicos */
+@media (max-width: 480px) {
+  .site-header {
+    height: clamp(110px, 22vh, 180px);
+  }
+}
