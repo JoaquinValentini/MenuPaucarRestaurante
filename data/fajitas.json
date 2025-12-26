@@ -1,0 +1,26 @@
+[
+  {
+    "id": "fajita de lomo",
+    "title": "Fajita de lomo",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "fajita de langostinos",
+    "title": "Fajita de langostinos",
+    "desc": "140 grs de langostinos",
+    "note": "",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "fajita de pollo",
+    "title": "Fajita de pollo",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  }
+]

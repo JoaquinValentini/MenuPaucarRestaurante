@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ensalada de frutas",
+    "title": "Ensalada de frutas",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "flan",
+    "title": "Flan",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "arroz con leche",
+    "title": "Arroz con leche",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  }
+]

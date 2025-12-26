@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tarta bicolor",
+    "title": "Tarta bicolor",
+    "desc": "de verdura y calabaza",
+    "note": "",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "tortilla de papa",
+    "title": "Tortilla de papa",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "omelette de jamon y queso",
+    "title": "Omelette de jamon y queso",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  }
+]

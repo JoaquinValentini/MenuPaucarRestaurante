@@ -1,48 +1,48 @@
 [
   {
-    "id": "coca cola",
-    "title": "Coca Cola",
-    "desc": " 1.75L y 500ml",
-    "note": "Sin alcohol",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
-    "price": ""
-  },
-  {
-    "id": "agua",
-    "title": "Agua mineral",
-    "desc": "1.5L y 500ml",
+    "id": "salmon",
+    "title": "Salmón",
+    "desc": " 240grs",
     "note": "",
     "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
     "price": ""
   },
   {
-    "id": "coca zero",
-    "title": "Coca Cola",
-    "desc": "1.75L y 500ml",
-    "note": "Sin alcohol",
+    "id": "lomo",
+    "title": "Lomo",
+    "desc": "240grs",
+    "note": "",
     "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
     "price": ""
   },
   {
-    "id": "sprite",
-    "title": "Sprite",
-    "desc": "1.75L y 500ml",
-    "note": "Sin alcohol",
+    "id": "ojo de bife",
+    "title": "Ojo de bife",
+    "desc": "240grs",
+    "note": "",
     "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
     "price": ""
   },
   {
-    "id": "levite",
-    "title": "Levité",
-    "desc": "1.5L y 500ml",
-    "note": "Sin alcohol",
+    "id": "langostinos empanizados con panko",
+    "title": "Langostinos empanizados con panko",
+    "desc": "8 unidades",
+    "note": "",
     "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
     "price": ""
   },
   {
-    "id": "agua con gas",
-    "title": "Agua con gas",
-    "desc": "500ml",
+    "id": "pechuga al grill",
+    "title": "Pechuga al grill",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "pata y muslo",
+    "title": "Pata y muslo",
+    "desc": "",
     "note": "",
     "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
     "price": ""

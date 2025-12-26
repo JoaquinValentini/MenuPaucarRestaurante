@@ -44,7 +44,7 @@ header h1{font-size:1.25rem;margin:0 0 16px}
     transition: color 0.2s ease;
 }
 
-/* Solo texto rojo al interactuar (hover, active, focus); el fondo permanece transparente */
+/* Solo texto rojo salmon al interactuar (hover, active, focus); el fondo permanece transparente */
 .nav-tab:hover,
 .nav-tab:active,
 .nav-tab:focus,

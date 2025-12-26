@@ -1,95 +1,276 @@
+
+/* main.js – Menú Lo de Paucar (Daina)
+   - Procesa placeholders [data-products]
+   - Carga manifest data/categories.json con soporte de subcategorías
+   - Renderiza tarjetas usando <template id="product-card-template">
+   - Robustez: no-cache, placeholder de imagen, precios en ARS
+*/
+
 const GRID_PATH = 'Componentes/productGrid.html';
 const CARD_TEMPLATE_PATH = 'Componentes/productCard.html';
 const CATEGORIES_MANIFEST = 'data/categories.json';
-const PLACEHOLDER = 'imagenes/placeholder.svg';
+const PLACEHOLDER = 'Imagenes/placeholder.svg';
 
-async function ensureCardTemplate(){
-  if(document.getElementById('product-card-template')) return;
-  try{
-    const res = await fetch(CARD_TEMPLATE_PATH);
-    if(!res.ok) throw new Error('HTTP ' + res.status);
+// Activa/desactiva logs de depuración
+const DEBUG = true;
+
+/* ---------- Utils ---------- */
+
+function log(...args) { if (DEBUG) console.log(...args); }
+
+async function fetchJSON(url) {
+  const res = await fetch(url, { cache: 'no-cache' });
+  if (!res.ok) throw new Error(`HTTP ${res.status} – ${url}`);
+  return res.json();
+}
+
+function formatARS(value) {
+  // Si viene string con símbolo, intenta limpiarlo
+  if (typeof value === 'string') {
+    // quita todo excepto dígitos y separador decimal
+    const num = Number(
+      value.replace(/[^\d.,-]/g, '').replace(/\./g, '').replace(',', '.')
+    );
+    if (!Number.isNaN(num)) return `$ ${num.toLocaleString('es-AR')}`;
+    return value; // si no pudo, muestra tal cual
+  }
+  if (typeof value === 'number') {
+    return `$ ${Number(value).toLocaleString('es-AR')}`;
+  }
+  return '';
+}
+
+/* ---------- Plantilla de tarjeta ---------- */
+
+async function ensureCardTemplate() {
+  if (document.getElementById('product-card-template')) return;
+
+  try {
+    const res = await fetch(CARD_TEMPLATE_PATH, { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
     const html = await res.text();
     const tmp = document.createElement('div');
     tmp.innerHTML = html;
     const tpl = tmp.querySelector('template');
-    if(tpl) document.body.appendChild(tpl);
-  }catch(err){
-    console.warn('No se pudo cargar plantilla:', CARD_TEMPLATE_PATH, err);
+    if (tpl) {
+      document.body.appendChild(tpl);
+      log('[TPL] Cargada desde', CARD_TEMPLATE_PATH);
+      return;
+    }
+    throw new Error('No se encontró <template> en ' + CARD_TEMPLATE_PATH);
+  } catch (err) {
+    console.warn('No se pudo cargar plantilla, se usa fallback mínimo:', err);
+    // Fallback: plantilla mínima compatible con los selectores usados
+    const fallback = document.createElement('template');
+    fallback.id = 'product-card-template';
+    fallback.innerHTML = `
+      <article class="product-card">
+        <img class="product-img" alt="Producto" loading="lazy" />
+        <div class="product-body">
+          <h4 class="product-title"></h4>
+          <p class="product-desc"></p>
+          <p class="product-note"></p>
+          <p class="product-price"></p>
+        </div>
+      </article>
+    `;
+    document.body.appendChild(fallback);
   }
 }
 
-function renderError(container){
-  container.innerHTML = `
-    <div style="
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
-      border-radius: 15px;
-      margin: 40px 0;
-    ">
-      <div style="font-size: 72px; margin-bottom: 20px;">😞</div>
-      <h2 style="color: #2d3748; margin-bottom: 15px;">Lamentamos las molestias</h2>
-      <p style="color: #4a5568; font-size: 18px; line-height: 1.6; max-width: 500px; margin: 0 auto 30px;">
-        La página está temporalmente caída.<br>
-        Nuestro equipo técnico está trabajando para solucionarlo lo antes posible.
-      </p>
-      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-        <button onclick="location.reload()" style="
-          background: #4299e1;
-          color: white;
-          padding: 12px 30px;
-          border-radius: 25px;
-          border: none;
-          font-weight: bold;
-          cursor: pointer;
-          font-size: 16px;
-        ">
-          🔄 Reintentar
-        </button>
-        <button onclick="window.location.href='mailto:contacto@daina.com'" style="
-          background: #38a169;
-          color: white;
-          padding: 12px 30px;
-          border-radius: 25px;
-          border: none;
-          font-weight: bold;
-          cursor: pointer;
-          font-size: 16px;
-        ">
-          📧 Contactar
-        </button>
-      </div>
-      <p style="color: #a0aec0; margin-top: 30px; font-size: 14px;">
-        Error técnico: No se pudo cargar el menú
-      </p>
-    </div>
-  `;
-}
-function renderProductsIntoGrid(grid, products){
+/* ---------- Render de tarjetas ---------- */
+
+function renderProductsIntoGrid(grid, products) {
   const tpl = document.getElementById('product-card-template');
-  if(!tpl) return;
+  if (!tpl) return;
+
   products.forEach(prod => {
     const clone = tpl.content.cloneNode(true);
 
     const img = clone.querySelector('.product-img');
-    img.src = encodeURI(prod.img || PLACEHOLDER);
-    img.alt = prod.title || 'Producto';
-    img.loading = 'lazy';
-    img.addEventListener('error', ()=>{ img.src = PLACEHOLDER; });
+    const titleEl = clone.querySelector('.product-title');
+    const descEl = clone.querySelector('.product-desc');
+    const noteEl = clone.querySelector('.product-note');
+    const priceEl = clone.querySelector('.product-price');
 
-    const titleEl = clone.querySelector('.product-title'); if(titleEl) titleEl.textContent = prod.title || '';
-    const descEl = clone.querySelector('.product-desc'); if(descEl) descEl.textContent = prod.desc || '';
-    const noteEl = clone.querySelector('.product-note'); if(noteEl) noteEl.textContent = prod.note || '';
-    const priceEl = clone.querySelector('.product-price'); if(priceEl) priceEl.textContent = prod.price || '';
+    // Imagen con placeholder y encoding de espacios
+    const imgSrc = prod.img ? encodeURI(prod.img) : PLACEHOLDER;
+    if (img) {
+      img.src = imgSrc;
+      img.alt = prod.title || 'Producto';
+      img.addEventListener('error', () => { img.src = PLACEHOLDER; });
+    }
+
+    if (titleEl) titleEl.textContent = prod.title || '';
+    if (descEl)  descEl.textContent  = prod.desc  || '';
+    if (noteEl)  noteEl.textContent  = prod.note  || '';
+
+    if (priceEl) {
+      const hasPrice = prod.price !== undefined && prod.price !== null && prod.price !== '';
+      priceEl.textContent = hasPrice ? formatARS(prod.price) : '';
+    }
 
     grid.appendChild(clone);
   });
 }
-async function renderAll(){
-  // Crear `#grid-container` automáticamente si falta en el HTML
+
+/* ---------- Construcción de secciones ---------- */
+
+function createSectionWithSeparator(titleText) {
+  // Estructura que respeta tu CSS (section-separator + separator-title)
+  const section = document.createElement('section');
+  section.className = 'category-section';
+
+  const sep = document.createElement('div');
+  sep.className = 'section-separator';
+
+  const h = document.createElement('h2');
+  h.className = 'separator-title';
+  h.textContent = titleText || '';
+
+  sep.appendChild(h);
+  section.appendChild(sep);
+
+  const grid = document.createElement('div');
+  grid.className = 'product-grid';
+  section.appendChild(grid);
+
+  return { section, grid };
+}
+
+function renderError(container) {
+  container.innerHTML = `
+😞
+<h3>Lamentamos las molestias</h3>
+<p>La página está temporalmente caída.</p>
+<p>🔄 Reintentar &nbsp; ✉️ Contactar</p>
+<p class="muted">Error técnico: No se pudo cargar el menú.</p>
+`;
+}
+
+/* ---------- Carga desde el manifest (categorías + subcategorías) ---------- */
+
+async function loadFromManifest(container, renderedFiles) {
+  log('>>> Cargando manifest:', CATEGORIES_MANIFEST);
+
+  let manifest;
+  try {
+    manifest = await fetchJSON(CATEGORIES_MANIFEST);
+  } catch (err) {
+    console.warn('No se pudo leer el manifest', err);
+    renderError(container);
+    // Fallback legacy grid
+    try {
+      const r = await fetch(GRID_PATH, { cache: 'no-cache' });
+      if (r.ok) container.innerHTML = await r.text();
+    } catch (e) {
+      console.error('Fallback failed', e);
+    }
+    return;
+  }
+
+  const categories = manifest.categories || manifest || []; // por si accidentalmente guardaste un array
+  log('>>> categories:', categories.map(c => ({
+    title: c.title,
+    file: c.file,
+    subcount: Array.isArray(c.subcategories) ? c.subcategories.length : 0
+  })));
+
+  for (const cat of categories) {
+    // Si ya se renderizó ese JSON por placeholder, evitar duplicado
+    if (cat.file && renderedFiles.has(cat.file)) {
+      log('[SKIP CAT ya renderizada por placeholder]', cat.file);
+      continue;
+    }
+
+    // 1) Categoría simple (un solo file)
+    if (cat.file) {
+      const { section, grid } = createSectionWithSeparator(cat.title || 'Categoría');
+      try {
+        const items = await fetchJSON(cat.file);
+        renderProductsIntoGrid(grid, items);
+      } catch (err) {
+        console.warn('No se pudo cargar productos de', cat.file, err);
+        const warn = document.createElement('div');
+        warn.className = 'notice';
+        warn.textContent = 'No hay productos disponibles para esta categoría.';
+        section.appendChild(warn);
+      }
+      container.appendChild(section);
+      continue;
+    }
+
+    // 2) Categoría con subcategorías (caso "Platos")
+    if (Array.isArray(cat.subcategories) && cat.subcategories.length) {
+      // Sección padre con separador de categoría
+      const parent = document.createElement('section');
+      parent.className = 'category-section';
+      const sep = document.createElement('div');
+      sep.className = 'section-separator';
+      const hCat = document.createElement('h2');
+      hCat.className = 'separator-title';
+      hCat.textContent = cat.title || 'Categoría';
+      sep.appendChild(hCat);
+      parent.appendChild(sep);
+
+      for (const sub of cat.subcategories) {
+        // Evita duplicado si la subcat ya se pintó por placeholder
+        if (sub.file && renderedFiles.has(sub.file)) {
+          log('[SKIP SUB ya renderizada por placeholder]', sub.file);
+          continue;
+        }
+
+        // Título h3 por subcategoría
+        const hSub = document.createElement('h3');
+        hSub.textContent = sub.title || 'Subcategoría';
+        parent.appendChild(hSub);
+
+        // Grid por subcategoría
+        const subGrid = document.createElement('div');
+        subGrid.className = 'product-grid';
+        parent.appendChild(subGrid);
+
+        try {
+          const items = await fetchJSON(sub.file);
+          renderProductsIntoGrid(subGrid, items);
+        } catch (err) {
+          console.warn(`No se pudo cargar ${sub.file}`, err);
+          const warn = document.createElement('div');
+          warn.className = 'notice';
+          warn.textContent = `No hay productos disponibles para "${sub.title}".`;
+          parent.appendChild(warn);
+        }
+      }
+
+      container.appendChild(parent);
+      continue;
+    }
+
+    // 3) Categoría sin datos
+    const empty = document.createElement('section');
+    empty.className = 'category-section';
+    const sep2 = document.createElement('div');
+    sep2.className = 'section-separator';
+    const h2 = document.createElement('h2');
+    h2.className = 'separator-title';
+    h2.textContent = cat.title || 'Categoría';
+    sep2.appendChild(h2);
+    empty.appendChild(sep2);
+    const muted = document.createElement('div');
+    muted.className = 'notice';
+    muted.textContent = 'Sin contenido.';
+    empty.appendChild(muted);
+    container.appendChild(muted);
+  }
+}
+
+/* ---------- Render principal ---------- */
+
+async function renderAll() {
+  // 0) Contenedor donde pintaremos (si no existe, se crea)
   let container = document.getElementById('grid-container');
   const mainEl = document.querySelector('main') || document.body;
-  if(!container){
+  if (!container) {
     container = document.createElement('section');
     container.id = 'grid-container';
     container.setAttribute('aria-label', 'Lista de productos');
@@ -98,97 +279,51 @@ async function renderAll(){
 
   await ensureCardTemplate();
 
-  // 1) Procesar placeholders explícitos: cualquier elemento con `data-products`
+  // 1) Procesar placeholders explícitos (respetar orden del HTML)
   const placeholders = Array.from(document.querySelectorAll('[data-products]'));
   const renderedFiles = new Set();
-  for(const el of placeholders){
+
+  for (const el of placeholders) {
     const file = el.getAttribute('data-products');
     const title = el.getAttribute('data-title') || null;
-    if(!file) continue;
-    el.innerHTML = '';
-    if(title){ const h = document.createElement('h2'); h.textContent = title; el.appendChild(h); }
-    const grid = document.createElement('div'); grid.className = 'product-grid'; el.appendChild(grid);
+    if (!file) continue;
 
-    try{
-      const r = await fetch(file);
-      if(!r.ok) throw new Error('HTTP ' + r.status);
+    // Limpia el placeholder y agrega su separador si corresponde
+    el.innerHTML = '';
+    if (title) {
+      const sep = document.createElement('div');
+      sep.className = 'section-separator';
+      const h = document.createElement('h2');
+      h.className = 'separator-title';
+      h.textContent = title;
+      sep.appendChild(h);
+      el.appendChild(sep);
+    }
+
+    // Crea su grid local
+    const grid = document.createElement('div');
+    grid.className = 'product-grid';
+    el.appendChild(grid);
+
+    // Carga y render
+    try {
+      log('[PLACEHOLDER]', { title, file });
+      const r = await fetch(file, { cache: 'no-cache' });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
       const products = await r.json();
       renderProductsIntoGrid(grid, products);
       renderedFiles.add(file);
-    }catch(err){
+    } catch (err) {
       console.warn('No se pudo cargar', file, err);
-      const warn = document.createElement('div'); warn.className = 'notice'; warn.textContent = 'No hay productos disponibles para esta sección.'; el.appendChild(warn);
+      const warn = document.createElement('div');
+      warn.className = 'notice';
+      warn.textContent = 'No hay productos disponibles para esta sección.';
+      el.appendChild(warn);
     }
   }
 
-  // Si hay placeholders explícitos en la página, respetamos el orden y NO cargamos el manifiesto
-  // (así podés controlar exactamente qué se muestra y dónde). Si no hay placeholders, entonces
-  // continuamos y cargamos el manifiesto normalmente.
-  if(placeholders.length > 0) return;
-
-  // 2) Cargar manifiesto y renderizar las categorías restantes en #grid-container
-  try{
-    const res = await fetch(CATEGORIES_MANIFEST);
-    if(!res.ok) throw new Error('HTTP ' + res.status);
-    const categories = await res.json();
-
-    // Limpia el contenedor por defecto sólo si está vacío
-    if(container.innerHTML.trim() === '') container.innerHTML = '';
-
-    for(const cat of categories){
-      if(renderedFiles.has(cat.file)) continue; // ya renderizada manualmente
-      const { section, grid } = (function(){
-        const s = document.createElement('section'); s.className = 'category';
-        if(cat.title){ const h = document.createElement('h2'); h.id = `cat-${cat.title}`; h.textContent = cat.title; s.appendChild(h); }
-        const g = document.createElement('div'); g.className = 'product-grid'; s.appendChild(g);
-        return { section: s, grid: g };
-      })();
-
-      try{
-        const r = await fetch(cat.file);
-        if(!r.ok) throw new Error('HTTP ' + r.status);
-        const products = await r.json();
-        renderProductsIntoGrid(grid, products);
-      }catch(err){
-        console.warn('No se pudo cargar productos de', cat.file, err);
-        const warn = document.createElement('div'); warn.className = 'notice'; warn.textContent = 'No hay productos disponibles para esta categoría.'; section.appendChild(warn);
-      }
-
-      container.appendChild(section);
-    }
-  }catch(err){
-    console.warn('No se pudo cargar manifest', CATEGORIES_MANIFEST, err);
-    renderError(container);
-
-    // Intentar el viejo grid como último recurso
-    try{
-      const r = await fetch(GRID_PATH);
-      if(r.ok){ const html = await r.text(); container.innerHTML = html; }
-    }catch(e){
-      console.error('Fallback failed', e);
-    }
-  }
+  // 2) Además, cargar el manifest para el resto (incluye "Platos" con subcategorías)
+  await loadFromManifest(container, renderedFiles);
 }
 
-// Inicializa la interacción de las pestañas nav: asegura que solo la pestaña clickeada tenga `active`
-function initNavTabs(){
-  const tabs = Array.from(document.querySelectorAll('.nav-tab'));
-  if(!tabs.length) return;
-
-  tabs.forEach(tab => {
-    // marcar estado inicial accesible
-    tab.setAttribute('aria-pressed', tab.classList.contains('active') ? 'true' : 'false');
-
-    tab.addEventListener('click', (e) => {
-      tabs.forEach(t => {
-        t.classList.remove('active');
-        t.setAttribute('aria-pressed', 'false');
-      });
-      const clicked = e.currentTarget;
-      clicked.classList.add('active');
-      clicked.setAttribute('aria-pressed', 'true');
-    });
-  });
-}
-
-document.addEventListener('DOMContentLoaded', () => { renderAll(); initNavTabs(); });
+document.addEventListener('DOMContentLoaded', renderAll);

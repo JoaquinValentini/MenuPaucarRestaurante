@@ -1,18 +1,18 @@
 [
   {
-    "id": "curry-batata",
-    "title": "Curry de batata",
-    "desc": "Curry vegetariano con calabaza",
-    "note": "Adecuado para mujeres embarazadas",
+    "id": "Empanadas",
+    "title": "Empanadas",
+    "desc": "Carne, pollo, jamon y queso y cebolla y queso",
+    "note": "",
     "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
-    "price": "$12000 "
+    "price": ""
   },
   {
-    "id": "bruschetta",
-    "title": "Bruschetta",
-    "desc": "Pan tostado con tomate y albahaca",
-    "note": "Contiene gluten",
+    "id": "sopa",
+    "title": "Sopa",
+    "desc": "",
+    "note": "",
     "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
-    "price": "$14000 "
+    "price": ""
   }
 ]

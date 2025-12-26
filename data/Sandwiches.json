@@ -1,0 +1,58 @@
+[
+  {
+    "id": "sandwich de milanesa de carne COMPLETO",
+    "title": "Sandwich de milanesa de carne COMPLETO",
+    "desc": "",
+    "note": "INCLUYE GUARNICION",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "sandwich de milanesa de pollo COMPLETO",
+    "title": "Sandwich de milanesa de pollo COMPLETO",
+    "desc": "",
+    "note": "INCLUYE GUARNICION",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "sandwich de pechuga de pollo con rucula y queso crema",
+    "title": "Sandwich de pechuga de pollo con rucula y queso crema",
+    "desc": "",
+    "note": "INCLUYE GUARNICION",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "sandwich de salmon ahumado con palta rucula y queso crema",
+    "title": "Sandwich de salmon ahumado con palta rucula y queso crema",
+    "desc": "110 grs de salmon",
+    "note": "INCLUYE GUARNICION",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "sandwich de miga, jamon y queso o tomate",
+    "title": "Sandwich de miga, jamon y queso o tomate",
+    "desc": "4 triangulos",
+    "note": "INCLUYE GUARNICION",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "sandwich de ciabetta jamon y queso",
+    "title": "Sandwich de ciabetta jamon y queso",
+    "desc": "",
+    "note": "INCLUYE GUARNICION",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  },
+  {
+    "id": "sandwich de frances jamon y queso",
+    "title": "Sandwich de frances jamon y queso",
+    "desc": "",
+    "note": "INCLUYE GUARNICION",
+    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "price": ""
+  }
+]
