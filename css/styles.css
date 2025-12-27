@@ -8,8 +8,7 @@ header h1{font-size:1.25rem;margin:0 0 16px}
 /* Category headings */
 .category h2{margin:18px 0 8px;font-size:1.1rem}
 
-/* Section separator */
-.section-separator{display:flex;align-items:center;justify-content:center;margin:18px 0}
+
 .separator-title{background:#e9e9ea;padding:8px 16px;border-radius:999px;font-weight:700;color:#333;margin:0;font-size:0.95rem}
 
 /* Small utility */
@@ -84,7 +83,7 @@ header h1{font-size:1.25rem;margin:0 0 16px}
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;         /* llena sin franjas */
+  object-fit:cover;         /* llena sin franjas */
   object-position: center;   /* centra el recorte */
 }
 
@@ -94,3 +93,186 @@ header h1{font-size:1.25rem;margin:0 0 16px}
     height: clamp(110px, 22vh, 180px);
   }
 }
+
+/* ======== Tarjeta de categoría (layout y estética) ======== */
+.card-section {
+  margin: 24px 0;
+}
+
+.category-card {
+  border-radius: 18px;
+  background: #fff;
+  overflow: hidden;                    /* recorta esquinas redondeadas */
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  border: 1px solid #e9e9ea;
+}
+
+/* Imagen superior con esquinas redondeadas */
+.card-media {
+  margin: 0;
+  line-height: 0;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;                       /* ajustá a gusto */
+  object-fit: cover;                   /* llena sin deformar */
+  display: block;
+  filter: saturate(.9) contrast(.98) brightness(.98); /* tono suave */
+}
+
+/* Cuerpo (zona blanca) */
+.card-body {
+  padding: 16px 20px 20px;
+  text-align: center;
+}
+
+/* ======== Separador con flourishes ======== */
+/* Reutiliza .section-separator y .separator-title ya existentes como base */
+.section-separator.separator--flourish {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 6px;
+}
+
+/* “Alas” decorativas con ::before y ::after */
+.section-separator.separator--flourish::before,
+.section-separator.separator--flourish::after {
+  content: "";
+  height: 16px;                        /* alto del flourish */
+  background: center / contain no-repeat url('Imagenes/deco/flourish.svg');
+  opacity: .55;
+}
+
+/* Título con tipografía elegante y pill blanco*/
+.separator-title {
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #333;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+  font-size: 1.25rem;                  /* similar al ejemplo */
+  letter-spacing: .4px;
+}
+
+/* ======== Responsivo ======== */
+@media (min-width: 640px) {
+  .card-img { height: 220px; }
+}
+@media (min-width: 960px) {
+  .card-img { height: 260px; }
+}
+
+/* Opcional: tono rojizo leve para que combine con --accent */
+.category-card .card-img {
+  /* si querés un tinte suave: */
+  /* filter: sepia(.08) hue-rotate(-10deg) saturate(.95); */
+}
+
+/* ======== Tarjeta de categoría (layout y estética) ======== */
+.card-section {
+  margin: 24px 0;
+}
+
+.category-card {
+  border-radius: 18px;
+  background: #fff;
+  overflow: hidden;                    /* recorta esquinas redondeadas */
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  border: 1px solid #e9e9ea;
+}
+
+/* Imagen superior con esquinas redondeadas */
+.card-media {
+  margin: 0;
+  line-height: 0;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;                       /* ajustá a gusto */
+  object-fit: cover;                   /* llena sin deformar */
+  display: block;
+  filter: saturate(.9) contrast(.98) brightness(.98); /* tono suave */
+}
+
+/* Cuerpo (zona blanca) */
+.card-body {
+  padding: 16px 20px 20px;
+  text-align: center;
+}
+
+/* “Alas” decorativas con ::before y ::after */
+.section-separator.separator--flourish::before,
+.section-separator.separator--flourish::after {
+  content: "";
+  height: 16px;                        /* alto del flourish */
+  background: center / contain no-repeat url('Imagenes/deco/flourish.svg');
+  opacity: .55;
+}
+
+/* ======== Responsivo ======== */
+@media (min-width: 640px) {
+  .card-img { height: 220px; }
+}
+@media (min-width: 960px) {
+  .card-img { height: 260px; }
+}
+
+/* 1) Hacer TODAS las imágenes fluidas */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 2) Evitar scroll horizontal accidental en todo el documento */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 3) Ajustar el banner para que no “corte” en anchos medios */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .site-header {
+    height: clamp(110px, 22vh, 180px); /* igual que en móvil, más respiración */
+  }
+}
+
+/* Nav en UNA sola fila, sin wrap */
+.nav-tabs {
+  display: flex;
+  flex-wrap: nowrap;           /* <- siempre una sola fila */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 6px 8px;            /* menos padding para que entren */
+}
+
+.nav-tab {
+  flex: 1 1 0;                 /* se comprimen para entrar todos */
+  min-width: 0;                /* permite la compresión real */
+  white-space: nowrap;         /* no se corta el texto */
+  padding: 8px 4px;
+  font-size: 1.0rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 480px) {
+  .nav-tabs { padding: 4px 6px; }
+  .nav-tab  { padding: 6px 2px; font-size: 1.0rem; }
+}
+
+/* 5) (Opcional) Si preferís una sola fila con scroll horizontal
+   en vez de wrap, usa esto en lugar del bloque anterior: */
+/*
+.nav-tabs-container { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.nav-tabs { flex-wrap: nowrap; }
+.nav-tab { flex: 0 0 auto; }
+*/

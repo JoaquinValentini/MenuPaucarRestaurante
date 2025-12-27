@@ -20,7 +20,8 @@
             <button class="nav-tab active">Entradas</button><!--Botón para la categoría "Entradas" activo-->
             <button class="nav-tab">Bebidas</button>
             <button class="nav-tab">Postres</button>
-            <button class="nav-tab">Cocktails</button>
+            <button class="nav-tab">Vinos</button>
+            <button class="nav-tab">Platos</button>
         </div><!--Cierra el contenedor de los botones-->
     </div><!--Cierra el contenedor de la barra de navegación-->
     <div class="container"><!--Contenedor principal del contenido-->
@@ -32,27 +33,85 @@
       </header><!--Cierra el encabezado-->
 
       <main><!--Comienza el contenido principal-->
-        <section class="category-section" id="entradas-section"><!--Sección para la categoría "Entradas"-->
-          <div class="section-separator"><!--Contenedor para el título de la sección-->
-            <h2 class="separator-title">Entradas</h2><!--Título de la sección "Entradas"-->
-          </div><!--Cierra el contenedor del título-->
-          <section id="entradas-slot" data-products="data/entradas.json"></section><!--Espacio donde se cargarán los productos desde el archivo entradas.json-->
-        </section><!--Cierra la sección "Entradas"-->
+<!-- ENTRADAS -->
+<section class="category-section card-section" id="entradas-section">
+  <!-- Tarjeta de categoría -->
+  <article class="category-card">
+    <!-- Imagen superior -->
+    <figure class="card-media">
+      <img src="Imagenes/entradas.png" alt="Entradas - imagen representativa" class="card-img">
+    </figure>
 
-        <section class="category-section" id="bebidas-section"><!---->
-          <div class="section-separator"><!---->
-            <h2 class="separator-title">Bebidas</h2><!---->
-          </div>
-          <section id="bebidas-slot" data-products="data/bebidas.json"></section><!---->
-        </section>
-  
-        <!-- Si tienes postres, añade esta sección -->
-        <section class="category-section" id="postres-section" style="display: none;"><!---->
-          <div class="section-separator"><!---->
-            <h2 class="separator-title">Postres</h2><!---->
-          </div><!---->
-          <section id="postres-slot" data-products="data/postres.json"></section><!---->
-        </section><!---->
+    <!-- Cuerpo de la tarjeta -->
+    <div class="card-body">
+      <!-- Separador con título y flourishes -->
+      <div class="section-separator separator--flourish">
+        <h2 class="separator-title">Entradas</h2>
+      </div>
+  <!-- Slot de productos debajo de la tarjeta -->
+  <section id="entradas-slot" data-products="data/entradas.json"></section>
+</section>
+
+<!-- BEBIDAS -->
+<section class="category-section card-section" id="bebidas-section">
+  <!-- Tarjeta de categoría -->
+  <article class="category-card">
+    <!-- Imagen superior -->
+    <figure class="card-media">
+      <img src="Imagenes/bebidas.png" alt="Bebidas - imagen representativa" class="card-img">
+    </figure>
+
+    <!-- Cuerpo de la tarjeta -->
+    <div class="card-body">
+      <!-- Separador con título y flourishes -->
+      <div class="section-separator separator--flourish">
+        <h2 class="separator-title">Bebidas</h2>
+      </div>
+
+  <!-- Slot de productos debajo de la tarjeta -->
+  <section id="bebidas-slot" data-products="data/bebidas.json"></section>
+</section>
+
+<!-- VINOS -->
+<section class="category-section card-section" id="vinos-section">
+  <article class="category-card">
+    <figure class="card-media">
+      <img src="Imagenes/vinos.png" alt="Vinos - imagen representativa" class="card-img">
+    </figure>
+    <div class="card-body">
+      <div class="section-separator separator--flourish">
+        <h2 class="separator-title">Vinos</h2>
+      </div>
+  <section id="vinos-slot" data-products="data/vinos.json"></section>
+</section>
+
+<!-- POSTRES -->
+<section class="category-section card-section" id="postres-section">
+  <article class="category-card">
+    <figure class="card-media">
+      <img src="Imagenes/postres.png" alt="Postres - imagen representativa" class="card-img">
+    </figure>
+    <div class="card-body">
+      <div class="section-separator separator--flourish">
+        <h2 class="separator-title">Postres</h2>
+      </div>
+  <section id="postres-slot" data-products="data/postres.json"></section>
+</section>
+
+<!-- PLATOS -->
+<section class="category-section card-section" id="platos-section">
+  <article class="category-card">
+    <figure class="card-media">
+      <img src="Imagenes/platos.png" alt="Platos - imagen representativa" class="card-img">
+    </figure>
+    <div class="card-body">
+      <div class="section-separator separator--flourish">
+        <h2 class="separator-title">Platos</h2>
+  </article>
+
+  <!-- Slot donde el JS inyecta las subcategorías -->
+  <section id="platos-slot"></section>
+</section>
       </main><!---->
     </div>
     <script type="module" src="js/main.js"></script><!---->

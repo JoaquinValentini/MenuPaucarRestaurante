@@ -1,4 +1,3 @@
-
 /* main.js – Menú Lo de Paucar (Daina)
    - Procesa placeholders [data-products]
    - Carga manifest data/categories.json con soporte de subcategorías
@@ -204,14 +203,7 @@ async function loadFromManifest(container, renderedFiles) {
     if (Array.isArray(cat.subcategories) && cat.subcategories.length) {
       // Sección padre con separador de categoría
       const parent = document.createElement('section');
-      parent.className = 'category-section';
-      const sep = document.createElement('div');
-      sep.className = 'section-separator';
       const hCat = document.createElement('h2');
-      hCat.className = 'separator-title';
-      hCat.textContent = cat.title || 'Categoría';
-      sep.appendChild(hCat);
-      parent.appendChild(sep);
 
       for (const sub of cat.subcategories) {
         // Evita duplicado si la subcat ya se pintó por placeholder
