@@ -4,7 +4,7 @@
     "title": "Coca Cola",
     "desc": " 1.75L y 500ml",
     "note": "Sin alcohol",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/coca cola.png",
     "price": ""
   },
   {
@@ -17,10 +17,10 @@
   },
   {
     "id": "coca zero",
-    "title": "Coca Cola",
+    "title": "Coca Zero",
     "desc": "1.75L y 500ml",
     "note": "Sin alcohol",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "Imagenes/coca zero.png",
     "price": ""
   },
   {
@@ -36,7 +36,7 @@
     "title": "Levité",
     "desc": "1.5L y 500ml",
     "note": "Sin alcohol",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/levite.png",
     "price": ""
   },
   {
@@ -44,7 +44,7 @@
     "title": "Agua con gas",
     "desc": "500ml",
     "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/sprite.png",
     "price": ""
   }
 ]
