@@ -319,3 +319,35 @@ async function renderAll() {
 }
 
 document.addEventListener('DOMContentLoaded', renderAll);
+
+// js/main.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener todos los botones de navegación
+    const navTabs = document.querySelectorAll('.nav-tab');
+    
+    // Agregar evento click a cada botón
+    navTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            scrollToSection(targetId);
+        });
+    });
+    
+    // Función para desplazarse suavemente a la sección
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            // Calcular posición con offset para la barra de navegación
+            const headerOffset = 100; // Ajusta según la altura de tu header
+            const sectionPosition = section.getBoundingClientRect().top;
+            const offsetPosition = sectionPosition + window.pageYOffset - headerOffset;
+            
+            // Desplazamiento suave
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+});
+
