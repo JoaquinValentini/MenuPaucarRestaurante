@@ -3,31 +3,31 @@
     "id": "salmon",
     "title": "Salmón",
     "desc": " 240grs",
-    "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/salmon.png",
     "price": ""
   },
   {
     "id": "lomo",
     "title": "Lomo",
     "desc": "240grs",
-    "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/lomo.png",
     "price": ""
   },
   {
     "id": "ojo de bife",
     "title": "Ojo de bife",
     "desc": "240grs",
-    "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/ojo de bife.png",
     "price": ""
   },
   {
     "id": "langostinos empanizados con panko",
     "title": "Langostinos empanizados con panko",
     "desc": "8 unidades",
-    "note": "",
+    "note": "INCLUYE GUARNICIÓN",
     "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
     "price": ""
   },
@@ -35,16 +35,16 @@
     "id": "pechuga al grill",
     "title": "Pechuga al grill",
     "desc": "",
-    "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/pechuga al grill.png",
     "price": ""
   },
   {
     "id": "pata y muslo",
     "title": "Pata y muslo",
     "desc": "",
-    "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/pata y muslo.png",
     "price": ""
   }
 ]
