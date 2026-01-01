@@ -4,7 +4,7 @@
     "title": "Fajita de lomo",
     "desc": "lomo,muzzarella,zuquini, morron cebolla, berengena",
     "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/fajita de lomo.png",
     "price": ""
   },
   {
@@ -12,7 +12,7 @@
     "title": "Fajita de langostinos",
     "desc": "140 grs de langostinos",
     "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/fajita de langostinos.png",
     "price": ""
   },
   {
@@ -20,7 +20,7 @@
     "title": "Fajita de pollo",
     "desc": "",
     "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/fajita de pollo.png",
     "price": ""
   }
 ]

@@ -2,17 +2,17 @@
   {
     "id": "sandwich de milanesa de carne COMPLETO",
     "title": "Sandwich de milanesa de carne COMPLETO",
-    "desc": "",
+    "desc": "milanesa de carne, jamon, queso, lechuga y tomate",
     "note": "INCLUYE GUARNICION",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/sandwich milanesa de carne.png",
     "price": ""
   },
   {
     "id": "sandwich de milanesa de pollo COMPLETO",
     "title": "Sandwich de milanesa de pollo COMPLETO",
-    "desc": "",
+    "desc": "milanesa de pollo, jamon, queso, lechuga y tomate",
     "note": "INCLUYE GUARNICION",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/sandwich milanesa de pollo.png",
     "price": ""
   },
   {
@@ -20,15 +20,15 @@
     "title": "Sandwich de pechuga de pollo con rucula y queso crema",
     "desc": "",
     "note": "INCLUYE GUARNICION",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/sandwich de pechuga de pollo.png",
     "price": ""
   },
   {
     "id": "sandwich de salmon ahumado con palta rucula y queso crema",
-    "title": "Sandwich de salmon ahumado con palta rucula y queso crema",
-    "desc": "110 grs de salmon",
+    "title": "Sandwich de salmon(110grs) ahumado con palta rucula y queso crema",
+    "desc": "salmon ahumado en láminas",
     "note": "INCLUYE GUARNICION",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/sandwich de salmon ahumado con rucula.png",
     "price": ""
   },
   {
@@ -36,7 +36,7 @@
     "title": "Sandwich de miga, jamon y queso o tomate",
     "desc": "4 triangulos",
     "note": "INCLUYE GUARNICION",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/sandwich de miga triangulo.png",
     "price": ""
   },
   {
@@ -44,7 +44,7 @@
     "title": "Sandwich de ciabetta jamon y queso",
     "desc": "",
     "note": "INCLUYE GUARNICION",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/ciabatta jamon y queso.png",
     "price": ""
   },
   {
@@ -52,7 +52,7 @@
     "title": "Sandwich de frances jamon y queso",
     "desc": "",
     "note": "INCLUYE GUARNICION",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "img": "imagenes/frances jamon y queso.png",
     "price": ""
   }
 ]

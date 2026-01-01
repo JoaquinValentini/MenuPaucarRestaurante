@@ -3,32 +3,32 @@
     "id": "milanesa de peceto",
     "title": "Milanesa de peceto",
     "desc": "",
-    "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/milanesa de peceto.png",
     "price": ""
   },
   {
     "id": "milanesa de pollo",
     "title": "Milanesa de pollo",
     "desc": "",
-    "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/milanesa de pollo.png",
     "price": ""
   },
   {
     "id": "milanesa de carne a la napolitana",
     "title": "Milanesa de carne a la napolitana",
     "desc": "",
-    "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/milanesa de carne.png",
     "price": ""
   },
   {
     "id": "milanesa de pollo a la napolitana",
     "title": "Milanesa de pollo a la napolitana",
     "desc": "",
-    "note": "",
-    "img": "imagenes/WhatsApp Image 2025-12-22 at 9.30.02 PM.jpeg",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/milanesa de pollo a la napo.png",
     "price": ""
   }
 ]
