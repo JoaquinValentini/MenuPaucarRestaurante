@@ -1,7 +1,5 @@
 /* styles.css: Estilos globales aclaro por si acaso */
-*{box-sizing:border-box}
 body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.35;margin:0;background:var(--bg);color:#111;padding:0}
-header h1{font-size:1.25rem;margin:0 0 16px}
 
 /* Small utility */
 .container{max-width:1080px;margin:0 auto;padding:0 16px}
@@ -45,11 +43,12 @@ header h1{font-size:1.25rem;margin:0 0 16px}
 
 /* --- Banner responsive con recorte tipo “cover” --- */
 .site-header {
-  height: 60px;              /* ¡Fijo y bien chico! */
+  height: 150px;              /* ¡Fijo y bien chico! */
   overflow: hidden;          /* recorta lo que sobra */
   margin: 0;
   padding: 0;
   background: #fff;
+  object-position: center;
 }
 
 .site-header .banner {
@@ -57,20 +56,13 @@ header h1{font-size:1.25rem;margin:0 0 16px}
   width: 100%;
   height: 100%;
   object-fit:cover;         /* llena sin franjas */
-  object-position: center;   /* centra el recorte */
 }
 
-/* Ajuste fino para móviles chicos */
+/* Ajuste  de banner fino para móviles chicos */
 @media (max-width: 480px) {
   .site-header {
     height: clamp(110px, 22vh, 180px);
   }
-}
-
-/* Imagen superior con esquinas redondeadas */
-.card-media {
-  margin: 0;
-  line-height: 0;
 }
 
 /* ======== Separador con flourishes ======== */
@@ -81,15 +73,6 @@ header h1{font-size:1.25rem;margin:0 0 16px}
   align-items: center;
   gap: 10px;
   margin: 8px 0 6px;
-}
-
-/* “Alas” decorativas con ::before y ::after */
-.section-separator.separator--flourish::before,
-.section-separator.separator--flourish::after {
-  content: "";
-  height: 16px;                        /* alto del flourish */
-  background: center / contain no-repeat url('Imagenes/deco/flourish.svg');
-  opacity: .55;
 }
 
 /* Título con tipografía elegante y pill blanco*/
@@ -143,7 +126,6 @@ header h1{font-size:1.25rem;margin:0 0 16px}
 .section-separator.separator--flourish::after {
   content: "";
   height: 16px;                        /* alto del flourish */
-  background: center / contain no-repeat url('Imagenes/deco/flourish.svg');
   opacity: .55;
 }
 
@@ -268,24 +250,9 @@ html, body {
   padding: 12px 16px;
 }
 
-/* ===== Responsive ===== */
-@media (min-width: 576px) {
-  .footer-logo img { width: 120px; }   /* un poco más grande en tablets */
-  .site-footer .footer-col h4 { font-size: 15px; }
-  .site-footer .footer-col ul li { font-size: 14px; }
-}
-
-@media (min-width: 992px) {
-  .site-footer .footer-inner {
-    gap: 24px;
-  }
-  .footer-logo img { width: 180px; }   /* tamaño de escritorio */
-}
-
 /* Fallback: fixed cuando pasás el umbral (detectado por sentinel + IO) */
 .nav-tabs-container.fixed {
   position: fixed;
   top: 0; left: 0; right: 0;
   width: 100%;
 }
-

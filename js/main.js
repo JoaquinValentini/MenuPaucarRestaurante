@@ -5,7 +5,8 @@
    - Robustez: no-cache, placeholder de imagen, precios en ARS
 */
 
-const GRID_PATH = 'Componentes/productGrid.html';
+const GRID_PATH = 'Componentes/productGrid.html';/*Declaro una constante y la lleno
+                                                 con el texto 'Componentes/productGrid.html'*/
 const CARD_TEMPLATE_PATH = 'Componentes/productCard.html';
 const CATEGORIES_MANIFEST = 'data/categories.json';
 const PLACEHOLDER = 'Imagenes/placeholder.svg';
@@ -337,6 +338,14 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.parentNode.insertBefore(sentinel, nav);
   }
 
+/* --- Spacer: reserva de espacio justo después del nav --- */
+let spacer = document.getElementById('nav-spacer');
+if (!spacer) {
+  spacer = document.createElement('div');
+  spacer.id = 'nav-spacer';
+  // Lo insertamos inmediatamente después del nav
+  nav.parentNode.insertBefore(spacer, nav.nextSibling);
+}
   /* --- Medición robusta de altura del nav --- */
   const getNavHeight = () => Math.ceil(nav.offsetHeight || 0);
   const setNavHeightVar = () => {
@@ -353,29 +362,31 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Sticky visual + Fallback Fixed controlado por IO --- */
   let fixedActive = false;
 
-  const io = new IntersectionObserver((entries) => {
-    const e = entries[0];
+const io = new IntersectionObserver((entries) => {
+  const e = entries[0];
 
-    // Cuando el sentinel DEJA de intersectar, ya pasaste el origen del nav
-    const reached = !e.isIntersecting;
+  const reached = !e.isIntersecting;
 
-    // Marcar visualmente si está "pegado"
-    nav.classList.toggle('is-stuck', reached);
+  // Estado visual (sombra, etc.)
+  nav.classList.toggle('is-stuck', reached);
 
-    if (reached) {
-      // Fallback: activar 'fixed' y empujar contenido
-      nav.classList.add('fixed');
-      main.classList.add('with-fixed-nav');
-      fixedActive = true;
-    } else {
-      nav.classList.remove('fixed');
-      main.classList.remove('with-fixed-nav');
-      fixedActive = false;
-    }
+  if (reached) {
+    // Modo fixed (overlay) sin mover el contenido
+    nav.classList.add('fixed');
+    fixedActive = true;
 
-    // Mantener la altura sincronizada en ambos estados
-    setNavHeightVar();
-  }, { root: null, threshold: 0 });
+    // Reserva el espacio del nav para que el contenido NO suba
+    spacer.style.height = `${getNavHeight()}px`;
+  } else {
+    nav.classList.remove('fixed');
+    fixedActive = false;
+
+    // Quita la reserva: el nav vuelve a ocupar su lugar naturalmente
+    spacer.style.height = '0px';
+  }
+
+  setNavHeightVar();
+}, { root: null, threshold: 0 });
 
   io.observe(sentinel);
 
