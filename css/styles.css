@@ -1,15 +1,7 @@
 /* styles.css: Estilos globales aclaro por si acaso */
-:root{--accent:#e53935;--muted:#666;--bg:#f5f5f5}
 *{box-sizing:border-box}
 body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.35;margin:0;background:var(--bg);color:#111;padding:0}
 header h1{font-size:1.25rem;margin:0 0 16px}
-
-
-/* Category headings */
-.category h2{margin:18px 0 8px;font-size:1.1rem}
-
-
-.separator-title{background:#e9e9ea;padding:8px 16px;border-radius:999px;font-weight:700;color:#333;margin:0;font-size:0.95rem}
 
 /* Small utility */
 .container{max-width:1080px;margin:0 auto;padding:0 16px}
@@ -19,15 +11,11 @@ header h1{font-size:1.25rem;margin:0 0 16px}
     width: 100%;
     background: #e9e9ea;
     border-bottom: 1px solid #eee;
-    
-}
+    position: sticky;
+    top: 0;           /* se pega al borde superior del viewport */
+    z-index: 1000;    /* para que quede por encima del contenido */
+    outline: 2px solid ;
 
-.nav-tabs {
-    display: flex;
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 10px 8px;
 }
 
 .nav-tab {
@@ -52,23 +40,7 @@ header h1{font-size:1.25rem;margin:0 0 16px}
 .nav-tab.active {
     color: var(--accent); /* Rojo */
     background: transparent; /* asegurar fondo transparente */
-}
-
-.nav-tab.active {
     font-weight: 600;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .nav-tabs {
-        padding: 8px 6px;
-    }
-    
-    .nav-tab {
-        padding: 10px 4px;
-        font-size: 0.9rem;
-        white-space: normal;
-    }
 }
 
 /* --- Banner responsive con recorte tipo “cover” --- */
@@ -95,37 +67,10 @@ header h1{font-size:1.25rem;margin:0 0 16px}
   }
 }
 
-/* ======== Tarjeta de categoría (layout y estética) ======== */
-.card-section {
-  margin: 24px 0;
-}
-
-.category-card {
-  border-radius: 18px;
-  background: #fff;
-  overflow: hidden;                    /* recorta esquinas redondeadas */
-  box-shadow: 0 10px 24px rgba(0,0,0,.08);
-  border: 1px solid #e9e9ea;
-}
-
 /* Imagen superior con esquinas redondeadas */
 .card-media {
   margin: 0;
   line-height: 0;
-}
-
-.card-img {
-  width: 100%;
-  height: 180px;                       /* ajustá a gusto */
-  object-fit: cover;                   /* llena sin deformar */
-  display: block;
-  filter: saturate(.9) contrast(.98) brightness(.98); /* tono suave */
-}
-
-/* Cuerpo (zona blanca) */
-.card-body {
-  padding: 16px 20px 20px;
-  text-align: center;
 }
 
 /* ======== Separador con flourishes ======== */
@@ -160,20 +105,6 @@ header h1{font-size:1.25rem;margin:0 0 16px}
   letter-spacing: .4px;
 }
 
-/* ======== Responsivo ======== */
-@media (min-width: 640px) {
-  .card-img { height: 220px; }
-}
-@media (min-width: 960px) {
-  .card-img { height: 260px; }
-}
-
-/* Opcional: tono rojizo leve para que combine con --accent */
-.category-card .card-img {
-  /* si querés un tinte suave: */
-  /* filter: sepia(.08) hue-rotate(-10deg) saturate(.95); */
-}
-
 /* ======== Tarjeta de categoría (layout y estética) ======== */
 .card-section {
   margin: 24px 0;
@@ -216,14 +147,6 @@ header h1{font-size:1.25rem;margin:0 0 16px}
   opacity: .55;
 }
 
-/* ======== Responsivo ======== */
-@media (min-width: 640px) {
-  .card-img { height: 220px; }
-}
-@media (min-width: 960px) {
-  .card-img { height: 260px; }
-}
-
 /* 1) Hacer TODAS las imágenes fluidas */
 img, video {
   max-width: 100%;
@@ -237,13 +160,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* 3) Ajustar el banner para que no “corte” en anchos medios */
-@media (min-width: 481px) and (max-width: 1024px) {
-  .site-header {
-    height: clamp(110px, 22vh, 180px); /* igual que en móvil, más respiración */
-  }
-}
-
 /* Nav en UNA sola fila, sin wrap */
 .nav-tabs {
   display: flex;
@@ -254,6 +170,8 @@ html, body {
   max-width: 1080px;
   margin: 0 auto;
   padding: 6px 8px;            /* menos padding para que entren */
+  top: 0;
+  background: #e9e9ea;
 }
 
 .nav-tab {
@@ -264,19 +182,6 @@ html, body {
   font-size: 1.0rem;
   line-height: 1.2;
 }
-
-@media (max-width: 480px) {
-  .nav-tabs { padding: 4px 6px; }
-  .nav-tab  { padding: 6px 2px; font-size: 1.0rem; }
-}
-
-/* 5) (Opcional) Si preferís una sola fila con scroll horizontal
-   en vez de wrap, usa esto en lugar del bloque anterior: */
-/*
-.nav-tabs-container { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.nav-tabs { flex-wrap: nowrap; }
-.nav-tab { flex: 0 0 auto; }
-*/
 
 /* ===== Footer base ===== */
 :root {
@@ -375,5 +280,12 @@ html, body {
     gap: 24px;
   }
   .footer-logo img { width: 180px; }   /* tamaño de escritorio */
+}
+
+/* Fallback: fixed cuando pasás el umbral (detectado por sentinel + IO) */
+.nav-tabs-container.fixed {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  width: 100%;
 }
 

@@ -320,34 +320,114 @@ async function renderAll() {
 
 document.addEventListener('DOMContentLoaded', renderAll);
 
-// js/main.js
-document.addEventListener('DOMContentLoaded', function() {
-    // Obtener todos los botones de navegación
-    const navTabs = document.querySelectorAll('.nav-tab');
-    
-    // Agregar evento click a cada botón
-    navTabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-            const targetId = this.getAttribute('data-target');
-            scrollToSection(targetId);
-        });
-    });
-    
-    // Función para desplazarse suavemente a la sección
-    function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            // Calcular posición con offset para la barra de navegación
-            const headerOffset = 100; // Ajusta según la altura de tu header
-            const sectionPosition = section.getBoundingClientRect().top;
-            const offsetPosition = sectionPosition + window.pageYOffset - headerOffset;
-            
-            // Desplazamiento suave
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('.nav-tabs-container');
+  const tabs = document.querySelectorAll('.nav-tab');
+  const main = document.querySelector('main') || document.body;
+  if (!nav) return;
+
+  /* --- Sentinel: se inserta justo antes del nav --- */
+  let sentinel = document.getElementById('nav-sentinel');
+  if (!sentinel) {
+    sentinel = document.createElement('div');
+    sentinel.id = 'nav-sentinel';
+    sentinel.style.position = 'relative';
+    sentinel.style.width = '100%';
+    sentinel.style.height = '1px';
+    nav.parentNode.insertBefore(sentinel, nav);
+  }
+
+  /* --- Medición robusta de altura del nav --- */
+  const getNavHeight = () => Math.ceil(nav.offsetHeight || 0);
+  const setNavHeightVar = () => {
+    document.documentElement.style.setProperty('--nav-height', `${getNavHeight()}px`);
+  };
+
+  setNavHeightVar();
+
+  const ro = new ResizeObserver(setNavHeightVar);
+  ro.observe(nav);
+  window.addEventListener('resize', setNavHeightVar, { passive: true });
+  window.addEventListener('load', setNavHeightVar, { once: true });
+
+  /* --- Sticky visual + Fallback Fixed controlado por IO --- */
+  let fixedActive = false;
+
+  const io = new IntersectionObserver((entries) => {
+    const e = entries[0];
+
+    // Cuando el sentinel DEJA de intersectar, ya pasaste el origen del nav
+    const reached = !e.isIntersecting;
+
+    // Marcar visualmente si está "pegado"
+    nav.classList.toggle('is-stuck', reached);
+
+    if (reached) {
+      // Fallback: activar 'fixed' y empujar contenido
+      nav.classList.add('fixed');
+      main.classList.add('with-fixed-nav');
+      fixedActive = true;
+    } else {
+      nav.classList.remove('fixed');
+      main.classList.remove('with-fixed-nav');
+      fixedActive = false;
     }
+
+    // Mantener la altura sincronizada en ambos estados
+    setNavHeightVar();
+  }, { root: null, threshold: 0 });
+
+  io.observe(sentinel);
+
+  /* --- Scroll de tabs: no tapa contenido --- */
+  function scrollToId(id) {
+    const target = document.getElementById(id);
+    if (!target) return;
+
+    // Altura real del header en este instante
+    const h = getNavHeight();
+
+    // Refuerzo: compensación inline para el destino
+    target.style.scrollMarginTop = `${h}px`;
+
+    // Scroll manual con offset exacto (evita pisado incluso si sticky cambia durante el scroll)
+    const top = target.getBoundingClientRect().top + window.pageYOffset - h;
+
+    window.scrollTo({
+      top,
+      behavior: 'smooth'
+    });
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const id = tab.getAttribute('data-target');
+      if (!id) return;
+      scrollToId(id);
+    });
+  });
+
+  /* --- Navegación por hash (#entradas, etc.) --- */
+  function scrollToHashIfPresent() {
+    const id = decodeURIComponent(location.hash.replace('#', ''));
+    if (!id) return;
+    scrollToId(id);
+  }
+  window.addEventListener('hashchange', scrollToHashIfPresent);
+  // Si la página abre con un hash ya presente:
+  scrollToHashIfPresent();
+
+  /* --- (Opcional) Diagnóstico: detectar padres que rompan sticky --- */
+  (function warnStickyBreakers(el){
+    let p = el.parentElement;
+    while (p) {
+      const cs = getComputedStyle(p);
+      if (/(auto|scroll|hidden)/.test(cs.overflow) || cs.transform !== 'none') {
+        console.warn('[Sticky] Padre con overflow/transform detectado:', p);
+        break;
+      }
+      p = p.parentElement;
+    }
+  })(nav);
 });
 
