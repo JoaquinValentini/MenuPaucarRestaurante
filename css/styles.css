@@ -1,8 +1,19 @@
-/* styles.css: Estilos globales aclaro por si acaso */
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.35;margin:0;background:var(--bg);color:#111;padding:0}
 
-/* Small utility */
-.container{max-width:1080px;margin:0 auto;padding:0 16px}
+/* styles.css: Estilos globales aclaro por si acaso */
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  line-height:1.35;
+  margin:0;
+  background:var(--bg);
+}
+
+/* Small utility se queda */
+.container{
+  max-width:1080px;
+  margin:0 auto;
+  padding:0 16px
+  
+}
 
 /* Fondo gris: nav tabs; solo texto rojo al tocar (sin cambiar fondo) */
 .nav-tabs-container {
@@ -10,24 +21,15 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-he
     background: #e9e9ea;
     border-bottom: 1px solid #eee;
     position: sticky;
-    top: 0;           /* se pega al borde superior del viewport */
-    z-index: 1000;    /* para que quede por encima del contenido */
-    outline: 2px solid ;
-
+    top: 0;          
+    z-index: 1000;  
 }
 
+
 .nav-tab {
-    flex: 1;
-    padding: 12px 8px;
     border: none;
     background: transparent;
     color: #666;
-    font-size: 0.95rem;
-    font-weight: 500;
-    cursor: pointer;
-    text-align: center;
-    white-space: nowrap;
-    transition: color 0.2s ease;
 }
 
 /* Solo texto rojo salmon al interactuar (hover, active, focus); el fondo permanece transparente */
@@ -37,32 +39,17 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-he
 .nav-tab:focus-visible,
 .nav-tab.active {
     color: var(--accent); /* Rojo */
-    background: transparent; /* asegurar fondo transparente */
-    font-weight: 600;
+    font-weight: 600;/*este hace la letra mas gruesita cuando pones el cursor encima*/
 }
 
-/* --- Banner responsive con recorte tipo “cover” --- */
+/* --- Banner de pc responsive con recorte tipo “cover” --- */
 .site-header {
-  height: 150px;              /* ¡Fijo y bien chico! */
-  overflow: hidden;          /* recorta lo que sobra */
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  object-position: center;
+  height: 150px;           
 }
-
 .site-header .banner {
-  display: block;
   width: 100%;
   height: 100%;
-  object-fit:cover;         /* llena sin franjas */
-}
-
-/* Ajuste  de banner fino para móviles chicos */
-@media (max-width: 480px) {
-  .site-header {
-    height: clamp(110px, 22vh, 180px);
-  }
+  object-fit:cover;        
 }
 
 /* ======== Separador con flourishes ======== */
@@ -70,32 +57,25 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-he
 .section-separator.separator--flourish {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 10px;
-  margin: 8px 0 6px;
 }
 
 /* Título con tipografía elegante y pill blanco*/
+
 .separator-title {
-  background: #fff;
   padding: 8px 16px;
   border-radius: 999px;
   font-weight: 600;
-  color: #333;
   border: 1px solid #e7e7e7;
   box-shadow: 0 1px 2px rgba(0,0,0,.06);
-  font-size: 1.25rem;                  /* similar al ejemplo */
-  letter-spacing: .4px;
+  font-size: 1.25rem;               
 }
 
 /* ======== Tarjeta de categoría (layout y estética) ======== */
 .card-section {
   margin: 24px 0;
 }
-
 .category-card {
   border-radius: 18px;
-  background: #fff;
   overflow: hidden;                    /* recorta esquinas redondeadas */
   box-shadow: 0 10px 24px rgba(0,0,0,.08);
   border: 1px solid #e9e9ea;
@@ -104,28 +84,23 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-he
 /* Imagen superior con esquinas redondeadas */
 .card-media {
   margin: 0;
-  line-height: 0;
 }
 
 .card-img {
   width: 100%;
-  height: 180px;                       /* ajustá a gusto */
-  object-fit: cover;                   /* llena sin deformar */
-  display: block;
-  filter: saturate(.9) contrast(.98) brightness(.98); /* tono suave */
+  height: 180px;                       
+  object-fit: cover;               
 }
 
 /* Cuerpo (zona blanca) */
 .card-body {
   padding: 16px 20px 20px;
-  text-align: center;
 }
 
 /* “Alas” decorativas con ::before y ::after */
 .section-separator.separator--flourish::before,
 .section-separator.separator--flourish::after {
   content: "";
-  height: 16px;                        /* alto del flourish */
   opacity: .55;
 }
 
@@ -145,21 +120,21 @@ html, body {
 /* Nav en UNA sola fila, sin wrap */
 .nav-tabs {
   display: flex;
-  flex-wrap: nowrap;           /* <- siempre una sola fila */
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  /*flex-wrap: nowrap;*/         
+  /*justify-content: space-between;*/
+  /*align-items: center;*/
+  /*width: 100%;*/
   max-width: 1080px;
   margin: 0 auto;
   padding: 6px 8px;            /* menos padding para que entren */
-  top: 0;
-  background: #e9e9ea;
+  /*top: 0;*/
+  /*background: #e9e9ea;*/
 }
 
 .nav-tab {
   flex: 1 1 0;                 /* se comprimen para entrar todos */
-  min-width: 0;                /* permite la compresión real */
-  white-space: nowrap;         /* no se corta el texto */
+  /*min-width: 0; */               /* permite la compresión real */
+  white-space: nowrap;       /* no se corta el texto */
   padding: 8px 4px;
   font-size: 1.0rem;
   line-height: 1.2;
@@ -181,6 +156,7 @@ html, body {
 
 /* --- Footer base --- */
 .site-footer {
+  margin-top: 60px;
   background: linear-gradient(180deg, #121212 0%, #0e0e0e 100%);
   color: #d9d9d9;
   width: 100%;
@@ -255,4 +231,8 @@ html, body {
   position: fixed;
   top: 0; left: 0; right: 0;
   width: 100%;
+}
+
+.menu-title {
+  text-align: center;
 }
