@@ -250,6 +250,7 @@ html, body {
   font-weight: 600;
   font-size: 1.1rem;
   color: #333;
+  text-align: center;
 }
 
 /* Quitar “alas” en los separadores de subcategorías */
