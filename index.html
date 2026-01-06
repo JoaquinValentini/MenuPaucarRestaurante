@@ -99,19 +99,61 @@
   <section id="vinos-slot" data-products="data/vinos.json"></section>
 </section>
 
+
 <!-- PLATOS -->
 <section class="category-section card-section" id="platos-section">
   <article class="category-card">
     <figure class="card-media">
       <img src="Imagenes/platos.png" alt="Platos - imagen representativa" class="card-img">
     </figure>
+
     <div class="card-body">
+      <!-- Separador principal (solo este lleva pill + alas) -->
       <div class="section-separator separator--flourish">
         <h2 class="separator-title">Platos</h2>
-  </article>
+      </div>
 
-  <!-- Slot donde el JS inyecta las subcategorías -->
-  <section id="platos-slot"></section>
+      <!-- Placeholders: cada JSON con SU clase propia -->
+      <section id="platos-slot">
+        <section class="subcat subcat--milanesas"
+                 data-products="data/milanesas.json"
+                 data-title="Milanesas"></section>
+
+        <section class="subcat subcat--ensaladas"
+                 data-products="data/ensaladas.json"
+                 data-title="Ensaladas"></section>
+
+        <section class="subcat subcat--pastas"
+                 data-products="data/pastas.json"
+                 data-title="Pastas"></section>
+
+        <section class="subcat subcat--wok"
+                 data-products="data/wok.json"
+                 data-title="Woks"></section>
+
+        <section class="subcat subcat--carnes"
+                 data-products="data/carnes.json"
+                 data-title="Carnes"></section>
+
+        <section class="subcat subcat--fajitas"
+                 data-products="data/fajitas.json"
+                 data-title="Fajitas"></section>
+                
+        <section class="subcat subcat--sandwiches"
+                 data-products="data/sandwiches.json"
+                 data-title="Sandwiches"></section>
+
+        <section class="subcat subcat--guarnicion"
+                 data-products="data/guarnicion.json"
+                 data-title="Guarniciones"></section>
+
+        <section class="subcat subcat--otros"
+                 data-products="data/otros.json"
+                 data-title="Otros"></section>
+        <!-- Agregá todas las subcategorías que necesites -->
+      </section>
+    </div>
+  </article>
 </section>
       </main><!---->
     <script type="module" src="js/main.js"></script><!---->

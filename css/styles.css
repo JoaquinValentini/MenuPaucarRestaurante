@@ -236,3 +236,24 @@ html, body {
 .menu-title {
   text-align: center;
 }
+
+/* 1) Por defecto, los separadores de subcategoría se ven simples (sin pill) */
+.subcat > .section-separator .separator-title {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  display: block;
+  text-align: left;
+  padding: 0;
+  margin: 16px 0 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Quitar “alas” en los separadores de subcategorías */
+.subcat > .section-separator::before,
+.subcat > .section-separator::after {
+  content: none;
+}
