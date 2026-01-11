@@ -4,7 +4,7 @@
    - Renderiza tarjetas usando <template id="product-card-template">
    - Robustez: no-cache, placeholder de imagen, precios en ARS
 */
-
+const DATA_ROOT = '../';
 const GRID_PATH = 'Componentes/productGrid.html';/*Declaro una constante y la lleno
                                                  con el texto 'Componentes/productGrid.html'*/
 const CARD_TEMPLATE_PATH = 'Componentes/productCard.html';
@@ -17,6 +17,21 @@ const DEBUG = true;
 /* ---------- Utils ---------- */
 
 function log(...args) { if (DEBUG) console.log(...args); }
+
+// --- Idioma detectado ---
+function detectLang() {
+  const cand = (navigator.languages && navigator.languages[0]) || navigator.language || 'es';
+  return String(cand).toLowerCase().split('-')[0]; // 'pt-BR' -> 'pt'
+}
+
+
+// Redirige SOLO archivos bajo "data/" respetando DATA_ROOT
+function localizePath(path) {
+  if (!/^data\//.test(path)) return path;      // sólo localizamos JSON bajo data/
+  const lang = detectLang();
+  if (lang === 'es') return `${DATA_ROOT}${path}`;
+  return path.replace(/^data\//, `${DATA_ROOT}i18n/${lang}/data/`);
+}
 
 async function fetchJSON(url) {
   const res = await fetch(url, { cache: 'no-cache' });
@@ -155,7 +170,7 @@ async function loadFromManifest(container, renderedFiles) {
 
   let manifest;
   try {
-    manifest = await fetchJSON(CATEGORIES_MANIFEST);
+    manifest = await fetchJSON(localizePath(CATEGORIES_MANIFEST));
   } catch (err) {
     console.warn('No se pudo leer el manifest', err);
     renderError(container);
@@ -278,11 +293,14 @@ async function renderAll() {
 
   for (const el of placeholders) {
     const file = el.getAttribute('data-products');
-    const title = el.getAttribute('data-title') || null;
+    const title = el.getAttribute('data-title'); // <-- definir 'title' aquí
+    const localizedFile = localizePath(file);
+
     if (!file) continue;
 
     // Limpia el placeholder y agrega su separador si corresponde
     el.innerHTML = '';
+    if (title) {
     if (title) {
       const sep = document.createElement('div');
       sep.className = 'section-separator';
@@ -292,7 +310,7 @@ async function renderAll() {
       sep.appendChild(h);
       el.appendChild(sep);
     }
-
+  }
     // Crea su grid local
     const grid = document.createElement('div');
     grid.className = 'product-grid';
@@ -301,7 +319,7 @@ async function renderAll() {
     // Carga y render
     try {
       log('[PLACEHOLDER]', { title, file });
-      const r = await fetch(file, { cache: 'no-cache' });
+      const r = await fetch(localizedFile, { cache: 'no-cache' });
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const products = await r.json();
       renderProductsIntoGrid(grid, products);
