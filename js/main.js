@@ -55,6 +55,24 @@ function formatARS(value) {
   return '';
 }
 
+// --- UI I18N: aplica traducciones del index según idioma ---
+async function applyUITranslations() {
+  // 'data/ui.json' será redirigido a 'i18n/en|pt/data/ui.json' si el navegador está en EN/PT
+  const uiPath = localizePath('data/ui.json');
+  try {
+    const ui = await fetchJSON(uiPath);
+    // Reemplazar contenido de elementos marcados con data-i18n="clave"
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (key && ui[key]) el.textContent = ui[key];
+    });
+    // Reflejar idioma en <html lang="...">
+    document.documentElement.setAttribute('lang', detectLang());
+  } catch (err) {
+    console.warn('UI i18n no disponible; se mantiene español', err);
+  }
+}
+
 /* ---------- Plantilla de tarjeta ---------- */
 
 async function ensureCardTemplate() {
@@ -202,7 +220,7 @@ async function loadFromManifest(container, renderedFiles) {
     if (cat.file) {
       const { section, grid } = createSectionWithSeparator(cat.title || 'Categoría');
       try {
-        const items = await fetchJSON(cat.file);
+       const items = await fetchJSON(localizePath(cat.file));
         renderProductsIntoGrid(grid, items);
       } catch (err) {
         console.warn('No se pudo cargar productos de', cat.file, err);
@@ -239,7 +257,7 @@ async function loadFromManifest(container, renderedFiles) {
         parent.appendChild(subGrid);
 
         try {
-          const items = await fetchJSON(sub.file);
+          const items = await fetchJSON(localizePath(sub.file));
           renderProductsIntoGrid(subGrid, items);
         } catch (err) {
           console.warn(`No se pudo cargar ${sub.file}`, err);
@@ -286,7 +304,7 @@ async function renderAll() {
   }
 
   await ensureCardTemplate();
-
+  await applyUITranslations();
   // 1) Procesar placeholders explícitos (respetar orden del HTML)
   const placeholders = Array.from(document.querySelectorAll('[data-products]'));
   const renderedFiles = new Set();
