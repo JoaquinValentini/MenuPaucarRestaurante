@@ -1,0 +1,34 @@
+[
+  {
+    "id": "salada de presunto e queijo",
+    "title": "Salada de Presunto e Queijo",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de jamon y queso.png",
+    "price": ""
+  },
+  {
+    "id": "salada caesar",
+    "title": "Salada César",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada caesar.png",
+    "price": ""
+  },
+  {
+    "id": "salada de camarão",
+    "title": "Salada de Camarão",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de langostinos.png",
+    "price": ""
+  },
+  {
+    "id": "salada de salmão defumado",
+    "title": "Salada de Salmão Defumado",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de salmon ahumado.png",
+    "price": ""
+  }
+]

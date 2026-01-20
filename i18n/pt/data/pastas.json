@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ravioli de legumes",
+    "title": "Ravioli de Legumes",
+    "desc": "Molho bolonhesa, molho branco ou molho de tomate",
+    "note": "",
+    "img": "imagenes/ravioles de verdura.png",
+    "price": ""
+  },
+  {
+    "id": "sorrentinos de presunto e queijo",
+    "title": "Sorrentinos de Presunto e Queijo",
+    "desc": "Molho bolonhesa, molho branco ou molho de tomate",
+    "note": "",
+    "img": "imagenes/sorrentinosde jamon y queso.png",
+    "price": ""
+  },
+  {
+    "id": "spaghetti",
+    "title": "Spaghetti",
+    "desc": "Molho bolonhesa, molho branco ou molho de tomate",
+    "note": "",
+    "img": "imagenes/spaguetti.png",
+    "price": ""
+  }
+]

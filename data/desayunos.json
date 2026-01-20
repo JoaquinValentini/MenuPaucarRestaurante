@@ -1,0 +1,34 @@
+[
+  {
+    "id": "medialunas",
+    "title": "Medialunas",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/medialunas.png",
+    "price": ""
+  },
+  {
+    "id": "tostadas",
+    "title": "Tostadas",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tostadas.png",
+    "price": ""
+  },
+  {
+    "id": "sandwich de miga",
+    "title": "Sandwich de miga",
+    "desc": "de ciabatta o integral",
+    "note": "",
+    "img": "imagenes/sandwich de miga triangulo.png",
+    "price": ""
+  },
+  {
+    "id": "cafe",
+    "title": "Café",
+    "desc": "Cortado, lágrima, capuccino o Italiano",
+    "note": "",
+    "img": "imagenes/cafe.png",
+    "price": ""
+  }
+]

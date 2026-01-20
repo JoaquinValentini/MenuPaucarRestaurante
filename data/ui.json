@@ -1,0 +1,20 @@
+
+{
+  "menu.title": "Menú",
+  "tabs.breakfast": "Desayunos",
+  "tabs.entries": "Entradas",
+  "tabs.drinks": "Bebidas",
+  "tabs.desserts": "Postres",
+  "tabs.wines": "Vinos",
+  "tabs.dishes": "Platos",
+
+  "sections.entries": "Entradas",
+  "sections.drinks": "Bebidas",
+  "sections.desserts": "Postres",
+  "sections.wines": "Vinos",
+  "sections.dishes": "Platos",
+
+  "footer.locations": "Ubicaciones",
+  "footer.contact": "Contacto",
+  "footer.copy": "© 2014–2025 Lo de Paucar · Eventos y restaurante · Todos los derechos reservados"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "batatas fritas",
+    "title": "Batatas Fritas",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/papas fritas.png",
+    "price": ""
+  },
+  {
+    "id": "arroz branco",
+    "title": "Arroz Branco",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/arroz.png",
+    "price": ""
+  },
+  {
+    "id": "salada mista",
+    "title": "Salada Mista",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada mixta.png",
+    "price": ""
+  },
+  {
+    "id": "pure de batata",
+    "title": "Purê de Batata",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/pure de papa.png",
+    "price": ""
+  },
+  {
+    "id": "pure de abobora",
+    "title": "Purê de Abóbora",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/pure de calabaza.png",
+    "price": ""
+  },
+  {
+    "id": "legumes salteados",
+    "title": "Legumes Salteados",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/verduras salteadas.png",
+    "price": ""
+  }
+]

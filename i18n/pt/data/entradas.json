@@ -1,0 +1,42 @@
+[
+  {
+    "id": "Empanadas",
+    "title": "Empanadas",
+    "desc": "Carne, frango, presunto e queijo, cebola e queijo",
+    "note": "",
+    "img": "imagenes/empanadas.png",
+    "price": ""
+  },
+  {
+    "id": "(tortilla)omelete de batata",
+    "title": "Omelete de batata",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tortilla de papa.png",
+    "price": ""
+  },
+  {
+    "id": "(tortilla)omelete de legumes",
+    "title": "Omelete de legumes",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tortilla de verdura.png",
+    "price": ""
+  },
+  {
+    "id": "omelette de presunto e queijo",
+    "title": "Omelette de presunto e queijo",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/omelette de jamon y queso.png",
+    "price": ""
+  },
+  {
+    "id": "sopa",
+    "title": "Sopa",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/sopa.png",
+    "price": ""
+  }
+]

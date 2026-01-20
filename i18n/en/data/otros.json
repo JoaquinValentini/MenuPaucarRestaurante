@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bicolor pie",
+    "title": "Bicolor Vegetable Pie",
+    "desc": "Vegetables and pumpkin",
+    "note": "",
+    "img": "imagenes/tarta bicolor.png",
+    "price": ""
+  },
+  {
+    "id": "tortilla of potato",
+    "title": "Potato tortilla",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tortilla de papa.png",
+    "price": ""
+  },
+  {
+    "id": "ham and cheese omelette",
+    "title": "Ham and Cheese Omelette",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/omelette de jamon y queso.png",
+    "price": ""
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "fruit salad",
+    "title": "Fruit salad",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de frutas.png",
+    "price": ""
+  },
+  {
+    "id": "flan",
+    "title": "Flan",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/flan.png",
+    "price": ""
+  },
+  {
+    "id": "rice pudding",
+    "title": "Rice Pudding",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/arroz con leche.png",
+    "price": ""
+  }
+]

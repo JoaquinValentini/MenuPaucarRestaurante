@@ -1,0 +1,42 @@
+[
+  {
+    "id": "Empanadas",
+    "title": "Looped",
+    "desc": "carne(beef), pollo(chicken), jamon y queso(ham and cheese), cebolla y queso (onion and cheese)",
+    "note": "",
+    "img": "imagenes/empanadas.png",
+    "price": ""
+  },
+  {
+    "id": "potato tortilla",
+    "title": "Potato tortilla",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tortilla de papa.png",
+    "price": ""
+  },
+  {
+    "id": "vegetable tortilla",
+    "title": "Vegetable tortilla",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tortilla de verdura.png",
+    "price": ""
+  },
+  {
+    "id": "ham and cheese omelette",
+    "title": "Ham and cheese omelette",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/omelette de jamon y queso.png",
+    "price": ""
+  },
+  {
+    "id": "sopa",
+    "title": "Soup",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/sopa.png",
+    "price": ""
+  }
+]

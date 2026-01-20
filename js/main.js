@@ -4,7 +4,7 @@
    - Renderiza tarjetas usando <template id="product-card-template">
    - Robustez: no-cache, placeholder de imagen, precios en ARS
 */
-const DATA_ROOT = '../';
+const DATA_ROOT = '';
 const GRID_PATH = 'Componentes/productGrid.html';/*Declaro una constante y la lleno
                                                  con el texto 'Componentes/productGrid.html'*/
 const CARD_TEMPLATE_PATH = 'Componentes/productCard.html';

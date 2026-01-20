@@ -1,0 +1,26 @@
+[
+  {
+    "id": "beef stir fry wok with vegetables",
+    "title": "Beef Stir-Fry Wok with Vegetables",
+    "desc": "Beef, zucchini, bell pepper, onion, eggplant, soy sauce and seasonings",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/wok de lomo.png",
+    "price": ""
+  },
+  {
+    "id": "shrimp stir fry wok with vegetables",
+    "title": "Shrimp Stir-Fry Wok with Vegetables",
+    "desc": "Shrimp (140g), zucchini, bell pepper, onion, eggplant, soy sauce and seasonings",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/wok de langostinos.png",
+    "price": ""
+  },
+  {
+    "id": "chicken stir fry wok with vegetables",
+    "title": "Chicken Stir-Fry Wok with Vegetables",
+    "desc": "Chicken, zucchini, bell pepper, onion, eggplant, soy sauce and seasonings",
+    "note": "Includes Side Dish",
+    "img": "imagenes/wok de pollo.png",
+    "price": ""
+  }
+]

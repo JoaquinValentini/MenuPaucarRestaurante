@@ -1,0 +1,50 @@
+[
+  {
+    "id": "salmon",
+    "title": "Salmão",
+    "desc": "240grs",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/salmon.png",
+    "price": ""
+  },
+  {
+    "id": "file mignon",
+    "title": "Filé Mignon",
+    "desc": "240grs",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/lomo.png",
+    "price": ""
+  },
+  {
+    "id": "bife ancho",
+    "title": "Bife Ancho",
+    "desc": "240grs",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/ojo de bife.png",
+    "price": ""
+  },
+  {
+    "id": "camaroes empanados com panko",
+    "title": "Camarões Empanados com Panko",
+    "desc": "8 unidades",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/langostinos empanizados con panko.png",
+    "price": ""
+  },
+  {
+    "id": "peito de frango grelhado",
+    "title": "Peito de Frango Grelhado",
+    "desc": "",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/pechuga al grill.png",
+    "price": ""
+  },
+  {
+    "id": "coxa e sobrecoxa de frango",
+    "title": "Coxa e Sobrecoxa de Frango",
+    "desc": "",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/pata y muslo.png",
+    "price": ""
+  }
+]

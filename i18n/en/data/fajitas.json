@@ -1,0 +1,26 @@
+[
+  {
+    "id": "beef fajita",
+    "title": "Beef Fajita",
+    "desc": "Beef tenderloin, mozzarella, zucchini, bell pepper, onion, eggplant",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/fajita de lomo.png",
+    "price": ""
+  },
+  {
+    "id": "shrimp fajita",
+    "title": "Shrimp Fajita",
+    "desc": "140g shrimp",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/fajita de langostinos.png",
+    "price": ""
+  },
+  {
+    "id": "chicken fajita",
+    "title": "Chicken Fajita",
+    "desc": "",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/fajita de pollo.png",
+    "price": ""
+  }
+]

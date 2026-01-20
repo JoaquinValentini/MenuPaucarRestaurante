@@ -1,0 +1,26 @@
+[
+  {
+    "id": "salada de frutas",
+    "title": "Salada de Frutas",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de frutas.png",
+    "price": ""
+  },
+  {
+    "id": "flan",
+    "title": "Flan",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/flan.png",
+    "price": ""
+  },
+  {
+    "id": "arroz doce",
+    "title": "Arroz Doce",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/arroz con leche.png",
+    "price": ""
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "salmon",
+    "title": "Salmón",
+    "desc": " 240grs",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/salmon.png",
+    "price": ""
+  },
+  {
+    "id": "lomo",
+    "title": "Lomo",
+    "desc": "240grs",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/lomo.png",
+    "price": ""
+  },
+  {
+    "id": "ojo de bife",
+    "title": "Ojo de bife",
+    "desc": "240grs",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/ojo de bife.png",
+    "price": ""
+  },
+  {
+    "id": "langostinos empanizados con panko",
+    "title": "Langostinos empanizados con panko",
+    "desc": "8 unidades",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/langostinos empanizados con panko.png",
+    "price": ""
+  },
+  {
+    "id": "pechuga de pollo al grill",
+    "title": "Pechuga de polloal grill",
+    "desc": "",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/pechuga al grill.png",
+    "price": ""
+  },
+  {
+    "id": "pata y muslo de pollo",
+    "title": "Pata y muslo de pollo",
+    "desc": "",
+    "note": "INCLUYE GUARNICIÓN",
+    "img": "imagenes/pata y muslo.png",
+    "price": ""
+  }
+]

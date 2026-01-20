@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ham and cheese salad",
+    "title": "Ham and cheese salad",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de jamon y queso.png",
+    "price": ""
+  },
+  {
+    "id": "caesar salad",
+    "title": "Caesar salad",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada caesar.png",
+    "price": ""
+  },
+  {
+    "id": "shrimp salad",
+    "title": "Shrimp Salad",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de langostinos.png",
+    "price": ""
+  },
+  {
+    "id": "smoked salmon salad",
+    "title": "Smoked salmon salad",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de salmon ahumado.png",
+    "price": ""
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "Empanadas",
+    "title": "Empanadas",
+    "desc": "De carne, pollo, jamon y queso, cebolla y queso",
+    "note": "",
+    "img": "imagenes/empanadas.png",
+    "price": ""
+  },
+  {
+    "id": "tortilla de papa",
+    "title": "Tortilla de papa",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tortilla de papa.png",
+    "price": ""
+  },
+  {
+    "id": "tortilla de verdura",
+    "title": "Tortilla de verdura",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tortilla de verdura.png",
+    "price": ""
+  },
+  {
+    "id": "omelette de jamon y queso",
+    "title": "Omelette de jamon y queso",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/omelette de jamon y queso.png",
+    "price": ""
+  },
+  {
+    "id": "sopa",
+    "title": "Sopa",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/sopa.png",
+    "price": ""
+  }
+]

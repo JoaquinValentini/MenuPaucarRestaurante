@@ -1,0 +1,26 @@
+[
+  {
+    "id": "wok de carne com legumes",
+    "title": "Wok de Carne com Legumes",
+    "desc": "Carne bovina, abobrinha, pimentão, cebola, berinjela, molho shoyu e temperos",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/wok de lomo.png",
+    "price": ""
+  },
+  {
+    "id": "wok de camaroes com legumes",
+    "title": "Wok de Camarões com Legumes",
+    "desc": "Camarões (140g), abobrinha, pimentão, cebola, berinjela, molho shoyu e temperos",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/wok de langostinos.png",
+    "price": ""
+  },
+  {
+    "id": "wok de frango com legumes",
+    "title": "Wok de Frango com Legumes",
+    "desc": "Frango, abobrinha, pimentão, cebola, berinjela, molho shoyu e temperos",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/wok de pollo.png",
+    "price": ""
+  }
+]
