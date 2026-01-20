@@ -18,22 +18,41 @@
   <div class="nav-wrapper">
   <nav class="nav-tabs-container"><!--Contenedor para la barra de navegación-->
         <div class="nav-tabs"><!--Agrupa los botones de navegación-->
-            <button class="nav-tab" data-target="entradas-section">Entradas</button><!--Botón para la categoría "Entradas" activo-->
-            <button class="nav-tab" data-target="bebidas-section">Bebidas</button>
-            <button class="nav-tab" data-target="postres-section">Postres</button>
-            <button class="nav-tab" data-target="vinos-section">Vinos</button>
-            <button class="nav-tab" data-target="platos-section">Platos</button>
+            <button class="nav-tab" data-target="entradas-section" data-i18n="tabs.entries">Entradas</button><!--Botón para la categoría "Entradas" activo-->
+            <button class="nav-tab" data-target="bebidas-section"  data-i18n="tabs.drinks">Bebidas</button>
+            <button class="nav-tab" data-target="postres-section"  data-i18n="tabs.desserts">Postres</button>
+            <button class="nav-tab" data-target="vinos-section"    data-i18n="tabs.wines">Vinos</button>
+            <button class="nav-tab" data-target="platos-section"   data-i18n="tabs.dishes">Platos</button>
         </div><!--Cierra el contenedor de los botones-->
   </nav>
  </div>
   </div>
     <div class="container"><!--Contenedor principal del contenido-->
     <div header><!--Encabezado de la página-->
-      <h2 class="menu-title">Menú</h2>
+      <h2 class="menu-title" data-i18n="menu.title">Menú</h2>
         <!-- Botones de categorías -->
     </header><!--Cierra el encabezado-->
       </div>
       <main><!--Comienza el contenido principal-->
+        <!-- DESAYUNO -->
+<section class="category-section card-section" id="desayunos-section">
+  <!-- Tarjeta de categoría -->
+  <article class="category-card">
+    <!-- Imagen superior -->
+    <figure class="card-media">
+      <img src="imagenes/desayunos.png" alt="Desayunos - imagen representativa" class="card-img">
+    </figure>
+
+    <!-- Cuerpo de la tarjeta -->
+    <div class="card-body">
+      <!-- Separador con título y flourishes -->
+      <div class="section-separator separator--flourish">
+        <h2 class="separator-title" data-i18n="sections.breakfast">Desayunos</h2>
+      </div>
+  <!-- Slot de productos debajo de la tarjeta -->
+  <section id="desayunos-slot" data-products="data/desayunos.json"></section>
+</section>
+
 <!-- ENTRADAS -->
 <section class="category-section card-section" id="entradas-section">
   <!-- Tarjeta de categoría -->
@@ -47,7 +66,7 @@
     <div class="card-body">
       <!-- Separador con título y flourishes -->
       <div class="section-separator separator--flourish">
-        <h2 class="separator-title">Entradas</h2>
+        <h2 class="separator-title" data-i18n="sections.entries">Entradas</h2>
       </div>
   <!-- Slot de productos debajo de la tarjeta -->
   <section id="entradas-slot" data-products="data/entradas.json"></section>
@@ -66,7 +85,7 @@
     <div class="card-body">
       <!-- Separador con título y flourishes -->
       <div class="section-separator separator--flourish">
-        <h2 class="separator-title">Bebidas</h2>
+        <h2 class="separator-title" data-i18n="sections.drinks">Bebidas</h2>
       </div>
 
   <!-- Slot de productos debajo de la tarjeta -->
@@ -81,7 +100,7 @@
     </figure>
     <div class="card-body">
       <div class="section-separator separator--flourish">
-        <h2 class="separator-title">Postres</h2>
+        <h2 class="separator-title" data-i18n="sections.desserts">Postres</h2>
       </div>
   <section id="postres-slot" data-products="data/postres.json"></section>
 </section>
@@ -94,7 +113,7 @@
     </figure>
     <div class="card-body">
       <div class="section-separator separator--flourish">
-        <h2 class="separator-title">Vinos</h2>
+        <h2 class="separator-title" data-i18n="sections.wines">Vinos</h2>
       </div>
   <section id="vinos-slot" data-products="data/vinos.json"></section>
 </section>
@@ -110,7 +129,7 @@
     <div class="card-body">
       <!-- Separador principal (solo este lleva pill + alas) -->
       <div class="section-separator separator--flourish">
-        <h2 class="separator-title">Platos</h2>
+        <h2 class="separator-title" data-i18n="sections.dishes">Platos</h2>
       </div>
 
       <!-- Placeholders: cada JSON con SU clase propia -->
@@ -168,7 +187,7 @@
     </div>
     <!-- UBICACIONES (si preferís, podés poner “Sucursales” o “Dirección”) -->
     <div class="footer-col">
-      <h4>Ubicaciones</h4>
+      <h4 data-i18n="footer.locations">Ubicaciones</h4>
       <ul>
         <li>Henry Ford 3018</li>
         <li>Ricardo Rojas, Tigre Bs.As.</li>
@@ -178,7 +197,7 @@
 
     <!-- CONTACTO -->
     <div class="footer-col">
-      <h4>Contacto</h4>
+      <h4 data-i18n="footer.contact">Contacto</h4>
       <ul>
         <li><span class="icon phone"></span> +54 11 6584-3666</li>
         <li><a href="https://wa.me/c/5491165843666" target="_blank" rel="noopener">WhatsApp</a></li>
@@ -190,7 +209,7 @@
 
 
   <div class="footer-bottom">
-    <p>© 2014–2025 Lo de Paucar · Eventos y restaurante · Todos los derechos reservados</p>
+    <p data-i18n="footer.copy">© 2014–2025 Lo de Paucar · Eventos y restaurante · Todos los derechos reservados</p>
   </div>
 </footer>
 </body><!---->
