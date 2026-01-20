@@ -1,0 +1,26 @@
+[
+  {
+    "id": "torta bicolor",
+    "title": "Torta Bicolor",
+    "desc": "De legumes e abóbora",
+    "note": "",
+    "img": "imagenes/tarta bicolor.png",
+    "price": ""
+  },
+  {
+    "id": "tortilla de batata",
+    "title": "Tortilla de batata",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tortilla de papa.png",
+    "price": ""
+  },
+  {
+    "id": "omelete de presunto e queijo",
+    "title": "Omelete de Presunto e Queijo",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/omelette de jamon y queso.png",
+    "price": ""
+  }
+]

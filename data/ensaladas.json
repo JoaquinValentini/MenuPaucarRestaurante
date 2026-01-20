@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ensalada de jamon y queso",
+    "title": "Ensalada de jamón y queso",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de jamon y queso.png",
+    "price": ""
+  },
+  {
+    "id": "ensalada caesar",
+    "title": "Ensalada Caesar",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada caesar.png",
+    "price": ""
+  },
+  {
+    "id": "ensalada de langostinos",
+    "title": "Ensalada de langostinos",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de langostinos.png",
+    "price": ""
+  },
+  {
+    "id": "ensalada de salmon ahumado",
+    "title": "Ensalada de salmón ahumado",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada de salmon ahumado.png",
+    "price": ""
+  }
+]

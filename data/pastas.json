@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ravioles de verdura",
+    "title": "Ravioles de verdura",
+    "desc": "Salsa bolognesa, crema o filetto",
+    "note": "",
+    "img": "imagenes/ravioles de verdura.png",
+    "price": ""
+  },
+  {
+    "id": "sorrentinos de jamon y queso",
+    "title": "Sorrentinos de jamón y queso",
+    "desc": "Salsa bolognesa, crema o filetto",
+    "note": "",
+    "img": "imagenes/sorrentinosde jamon y queso.png",
+    "price": ""
+  },
+  {
+    "id": "spaguetti",
+    "title": "Spaguetti",
+    "desc": "Salsa bolognesa, crema o filetto",
+    "note": "",
+    "img": "imagenes/spaguetti.png",
+    "price": ""
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+
+    "id": "homemade burger full",
+    "title": "Homemade Burger (Full)",
+    "desc": "Ham, lettuce, tomato and egg",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/hamburguesa.png",
+    "price": ""
+  },
+  {
+    "id": "beef milanesa sandwich full",
+    "title": "Breaded Beef Cutlet Sandwich (Full)",
+    "desc": "Ham, lettuce, tomato and egg",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/sandwich milanesa de carne.png",
+    "price": ""
+  },
+  {
+    "id": "chicken milanesa sandwich full",
+    "title": "Breaded Chicken Cutlet Sandwich (Full)",
+    "desc": "Ham, lettuce, tomato and egg",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/sandwich milanesa de pollo.png",
+    "price": ""
+  },
+  {
+    "id": "grilled chicken sandwich with arugula and cream cheese",
+    "title": "Grilled Chicken Sandwich with Arugula and Cream Cheese",
+    "desc": "",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/sandwich de pechuga de pollo.png",
+    "price": ""
+  },
+  {
+    "id": "smoked salmon sandwich with avocado arugula and cream cheese",
+    "title": "Smoked Salmon Sandwich (110g) with Avocado, Arugula and Cream Cheese",
+    "desc": "Thin slices of smoked salmon",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/sandwich de salmon ahumado con rucula.png",
+    "price": ""
+  },
+  {
+    "id": "ciabatta ham and cheese sandwich",
+    "title": "Ham and Cheese Ciabatta Sandwich",
+    "desc": "",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/ciabatta jamon y queso.png",
+    "price": ""
+  },
+  {
+    "id": "french bread ham and cheese sandwich",
+    "title": "Ham and Cheese French Bread Sandwich",
+    "desc": "",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/frances jamon y queso.jpg",
+    "price": ""
+  }
+]

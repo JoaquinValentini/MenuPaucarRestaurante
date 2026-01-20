@@ -1,0 +1,58 @@
+[
+  {
+    "id": "hamburguer artesanal completo",
+    "title": "Hambúrguer Artesanal Completo",
+    "desc": "Presunto, alface, tomate e ovo",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/hamburguesa.png",
+    "price": ""
+  },
+  {
+    "id": "sanduiche de milanesa de carne completo",
+    "title": "Sanduíche de Milanesa de Carne Completo",
+    "desc": "Presunto, alface, tomate e ovo",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/sandwich milanesa de carne.png",
+    "price": ""
+  },
+  {
+    "id": "sanduiche de milanesa de frango completo",
+    "title": "Sanduíche de Milanesa de Frango Completo",
+    "desc": "Presunto, alface, tomate e ovo",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/sandwich milanesa de pollo.png",
+    "price": ""
+  },
+  {
+    "id": "sanduiche de peito de frango com rucula e cream cheese",
+    "title": "Sanduíche de Peito de Frango com Rúcula e Cream Cheese",
+    "desc": "",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/sandwich de pechuga de pollo.png",
+    "price": ""
+  },
+  {
+    "id": "sanduiche de salmao defumado com abacate rucula e cream cheese",
+    "title": "Sanduíche de Salmão Defumado (110g) com Abacate, Rúcula e Cream Cheese",
+    "desc": "Lâminas de salmão defumado",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/sandwich de salmon ahumado con rucula.png",
+    "price": ""
+  },
+  {
+    "id": "sanduiche de ciabatta presunto e queijo",
+    "title": "Sanduíche de Ciabatta com Presunto e Queijo",
+    "desc": "",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/ciabatta jamon y queso.png",
+    "price": ""
+  },
+  {
+    "id": "sanduiche de pao frances presunto e queijo",
+    "title": "Sanduíche de Pão Francês com Presunto e Queijo",
+    "desc": "",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/frances jamon y queso.jpg",
+    "price": ""
+  }
+]

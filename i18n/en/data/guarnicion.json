@@ -1,0 +1,50 @@
+[
+  {
+    "id": "french fries",
+    "title": "French Fries",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/papas fritas.png",
+    "price": ""
+  },
+  {
+    "id": "steamed rice",
+    "title": "Steamed Rice",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/arroz.png",
+    "price": ""
+  },
+  {
+    "id": "mixed salad",
+    "title": "Mixed Salad",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/ensalada mixta.png",
+    "price": ""
+  },
+  {
+    "id": "mashed potatoes",
+    "title": "Mashed Potatoes",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/pure de papa.png",
+    "price": ""
+  },
+  {
+    "id": "pumpkin puree",
+    "title": "Pumpkin Purée",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/pure de calabaza.png",
+    "price": ""
+  },
+  {
+    "id": "sauteed vegetables",
+    "title": "Sautéed Vegetables",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/verduras salteadas.png",
+    "price": ""
+  }
+]

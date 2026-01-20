@@ -1,0 +1,26 @@
+[
+  {
+    "id": "fajita de file mignon",
+    "title": "Fajita de Filé Mignon",
+    "desc": "Filé mignon, muçarela, abobrinha, pimentão, cebola, berinjela",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/fajita de lomo.png",
+    "price": ""
+  },
+  {
+    "id": "fajita de camaroes",
+    "title": "Fajita de Camarões",
+    "desc": "140g de camarões",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/fajita de langostinos.png",
+    "price": ""
+  },
+  {
+    "id": "fajita de frango",
+    "title": "Fajita de frango",
+    "desc": "",
+    "note": "INCLUI ACOMPANHAMENTO",
+    "img": "imagenes/fajita de pollo.png",
+    "price": ""
+  }
+]

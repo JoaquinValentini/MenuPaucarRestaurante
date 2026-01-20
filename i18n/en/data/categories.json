@@ -1,0 +1,65 @@
+{
+  "categories": [
+    {
+      "title": "Breakfast",
+      "file": "data/desayunos.json"
+    },
+    {
+      "title": "Inputs",
+      "file": "data/entradas.json"
+    },
+    {
+      "title": "Drinks",
+      "file": "data/bebidas.json"
+    },
+    {
+      "title": "Wines",
+      "file": "data/vinos.json"
+    },
+    {
+      "title": "Dates",
+      "subcategories": [
+        {
+          "title": "Salads",
+          "file": "data/ensaladas.json"
+        },
+        {
+          "title": "Wok",
+          "file": "data/wok.json"
+        },
+        {
+          "title": "Meat",
+          "file": "data/carnes.json"
+        },
+        {
+          "title": "Guarding",
+          "file": "data/guarnicion.json"
+        },
+        {
+          "title": "Milanesas",
+          "file": "data/milanesas.json"
+        },
+        {
+          "title": "Peas",
+          "file": "data/pastas.json"
+        },
+        {
+          "title": "Other",
+          "file": "data/otros.json"
+        },
+        {
+          "title": "Fajitas",
+          "file": "data/fajitas.json"
+        },
+        {
+          "title": "Sandwiches",
+          "file": "data/sandwiches.json"
+        }
+      ]
+    },
+    {
+      "title": "desserts",
+      "file": "data/postres.json"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "salmon",
+    "title": "Salmon",
+    "desc": "240g",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/salmon.png",
+    "price": ""
+  },
+  {
+    "id": "tenderloin",
+    "title": "Tenderloin",
+    "desc": "240g",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/lomo.png",
+    "price": ""
+  },
+  {
+    "id": "ribeye",
+    "title": "Ribeye",
+    "desc": "240g",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/ojo de bife.png",
+    "price": ""
+  },
+  {
+    "id": "panko breaded prawns",
+    "title": "Panko Breaded Prawns",
+    "desc": "8 pieces",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/langostinos empanizados con panko.png",
+    "price": ""
+  },
+  {
+    "id": "grilled chicken breast",
+    "title": "Grilled Chicken Breast",
+    "desc": "",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/pechuga al grill.png",
+    "price": ""
+  },
+  {
+    "id": "chicken leg and thigh",
+    "title": "Chicken Leg and Thigh",
+    "desc": "",
+    "note": "INCLUDES SIDE DISH",
+    "img": "imagenes/pata y muslo.png",
+    "price": ""
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "coca cola",
+    "title": "Coca Cola",
+    "desc": " 1.75L y 500ml",
+    "note": "Sin alcohol",
+    "img": "imagenes/coca cola.png",
+    "price": ""
+  },
+  {
+    "id": "agua",
+    "title": "Agua mineral",
+    "desc": "1.5L y 500ml",
+    "note": "",
+    "img": "imagenes/agua.png",
+    "price": ""
+  },
+  {
+    "id": "coca zero",
+    "title": "Coca Zero",
+    "desc": "1.75L y 500ml",
+    "note": "Sin alcohol",
+    "img": "imagenes/coca zero.png",
+    "price": ""
+  },
+  {
+    "id": "sprite",
+    "title": "Sprite",
+    "desc": "1.75L y 500ml",
+    "note": "Sin alcohol",
+    "img": "imagenes/sprite.png",
+    "price": ""
+  },
+  {
+    "id": "levite",
+    "title": "Levité",
+    "desc": "1.5L y 500ml",
+    "note": "Sin alcohol",
+    "img": "imagenes/levite.png",
+    "price": ""
+  },
+  {
+    "id": "agua con gas",
+    "title": "Agua con gas",
+    "desc": "500ml",
+    "note": "",
+    "img": "imagenes/agua con gas.png",
+    "price": ""
+  }
+]

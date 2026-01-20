@@ -1,0 +1,34 @@
+[
+  {
+    "id": "croissants",
+    "title": "Croissants",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/medialunas.png",
+    "price": ""
+  },
+  {
+    "id": "torradas",
+    "title": "Torradas",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tostadas.png",
+    "price": ""
+  },
+  {
+    "id": "sanduiches de Miga",
+    "title": "Sanduíches de Miga",
+    "desc": "Ciabatta ou pão integral",
+    "note": "",
+    "img": "imagenes/sandwich de miga triangulo.png",
+    "price": ""
+  },
+  {
+    "id": "cafe",
+    "title": "Café",
+    "desc": "Cortado(Café curto), lágrima(leite manchado), cappuccino ou italiano",
+    "note": "",
+    "img": "imagenes/cafe.png",
+    "price": ""
+  }
+]

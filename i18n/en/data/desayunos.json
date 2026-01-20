@@ -1,0 +1,34 @@
+[
+  {
+    "id": "croissants",
+    "title": "Croissants",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/medialunas.png",
+    "price": ""
+  },
+  {
+    "id": "toasts",
+    "title": "Toasts",
+    "desc": "",
+    "note": "",
+    "img": "imagenes/tostadas.png",
+    "price": ""
+  },
+  {
+    "id": "finger sandwiches",
+    "title": "Finger Sandwiches",
+    "desc": "de ciabatta ou integral",
+    "note": "",
+    "img": "imagenes/sandwich de miga triangulo.png",
+    "price": ""
+  },
+  {
+    "id": "coffee",
+    "title": "Coffee",
+    "desc": "Cortado(Espresso), lágrima(espresso with milk), cappuccino or Italian coffee",
+    "note": "",
+    "img": "imagenes/cafe.png",
+    "price": ""
+  }
+]

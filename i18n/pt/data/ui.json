@@ -1,0 +1,19 @@
+{
+  "menu.title": "Cardápio",
+  "tabs.breakfast": "Cafés da Manhã",
+  "tabs.entries": "Entradas",
+  "tabs.drinks": "Bebidas",
+  "tabs.desserts": "Sobremesas",
+  "tabs.wines": "Vinhos",
+  "tabs.dishes": "Pratos",
+
+  "sections.entries": "Entradas",
+  "sections.drinks": "Bebidas",
+  "sections.desserts": "Sobremesas",
+  "sections.wines": "Vinhos",
+  "sections.dishes": "Pratos",
+
+  "footer.locations": "Unidades",
+  "footer.contact": "Contato",
+  "footer.copy": "© 2014–2025 Lo de Paucar · Eventos e Restaurante · Todos os direitos reservados"
+}
