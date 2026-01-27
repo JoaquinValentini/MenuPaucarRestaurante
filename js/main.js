@@ -16,19 +16,25 @@ const DEBUG = true;
 
 /* ---------- Utils ---------- */
 
-function log(...args) { if (DEBUG) console.log(...args); }
-
-// --- Idioma detectado ---
-function detectLang() {
-  const cand = (navigator.languages && navigator.languages[0]) || navigator.language || 'es';
-  return String(cand).toLowerCase().split('-')[0]; // 'pt-BR' -> 'pt'
+function log(...args) { 
+  if (DEBUG) console.log(...args); 
 }
 
+function detectLenguaje() {
+  const nav = (typeof navigator !== 'undefined') ? navigator : {};
+  const cand = (nav.languages && nav.languages[0]) || nav.language || 'es';
+  const base = String(cand).toLowerCase().split('-')[0];
+
+  // Agregá 'pt' a la lista
+  const soportados = ['es', 'en', 'pt'];
+
+  return soportados.includes(base) ? base : 'en';
+}
 
 // Redirige SOLO archivos bajo "data/" respetando DATA_ROOT
 function localizePath(path) {
   if (!/^data\//.test(path)) return path;      // sólo localizamos JSON bajo data/
-  const lang = detectLang();
+  const lang = detectLenguaje();
   if (lang === 'es') return `${DATA_ROOT}${path}`;
   return path.replace(/^data\//, `${DATA_ROOT}i18n/${lang}/data/`);
 }
@@ -67,7 +73,7 @@ async function applyUITranslations() {
       if (key && ui[key]) el.textContent = ui[key];
     });
     // Reflejar idioma en <html lang="...">
-    document.documentElement.setAttribute('lang', detectLang());
+    document.documentElement.setAttribute('lang', detectLenguaje());
   } catch (err) {
     console.warn('UI i18n no disponible; se mantiene español', err);
   }
