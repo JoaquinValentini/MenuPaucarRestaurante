@@ -16,19 +16,31 @@ const DEBUG = true;
 
 /* ---------- Utils ---------- */
 
-function log(...args) { 
-  if (DEBUG) console.log(...args); 
+function log(...args) {
+  if (DEBUG) console.log(...args);
 }
 
 function detectLenguaje() {
-  const nav = (typeof navigator !== 'undefined') ? navigator : {};
+  let nav;
+  if (typeof navigator !== 'undefined') {
+    nav = navigator;
+  }
+  else {
+    nav = {};
+  }
   const cand = (nav.languages && nav.languages[0]) || nav.language || 'es';
   const base = String(cand).toLowerCase().split('-')[0];
 
   // Agregá 'pt' a la lista
   const soportados = ['es', 'en', 'pt'];
 
-  return soportados.includes(base) ? base : 'en';
+  if (soportados.includes(base)) {
+    return base;
+  }
+  else {
+    return 'en';
+  }
+
 }
 
 // Redirige SOLO archivos bajo "data/" respetando DATA_ROOT
@@ -141,8 +153,8 @@ function renderProductsIntoGrid(grid, products) {
     }
 
     if (titleEl) titleEl.textContent = prod.title || '';
-    if (descEl)  descEl.textContent  = prod.desc  || '';
-    if (noteEl)  noteEl.textContent  = prod.note  || '';
+    if (descEl) descEl.textContent = prod.desc || '';
+    if (noteEl) noteEl.textContent = prod.note || '';
 
     if (priceEl) {
       const hasPrice = prod.price !== undefined && prod.price !== null && prod.price !== '';
@@ -226,7 +238,7 @@ async function loadFromManifest(container, renderedFiles) {
     if (cat.file) {
       const { section, grid } = createSectionWithSeparator(cat.title || 'Categoría');
       try {
-       const items = await fetchJSON(localizePath(cat.file));
+        const items = await fetchJSON(localizePath(cat.file));
         renderProductsIntoGrid(grid, items);
       } catch (err) {
         console.warn('No se pudo cargar productos de', cat.file, err);
@@ -325,16 +337,16 @@ async function renderAll() {
     // Limpia el placeholder y agrega su separador si corresponde
     el.innerHTML = '';
     if (title) {
-    if (title) {
-      const sep = document.createElement('div');
-      sep.className = 'section-separator';
-      const h = document.createElement('h2');
-      h.className = 'separator-title';
-      h.textContent = title;
-      sep.appendChild(h);
-      el.appendChild(sep);
+      if (title) {
+        const sep = document.createElement('div');
+        sep.className = 'section-separator';
+        const h = document.createElement('h2');
+        h.className = 'separator-title';
+        h.textContent = title;
+        sep.appendChild(h);
+        el.appendChild(sep);
+      }
     }
-  }
     // Crea su grid local
     const grid = document.createElement('div');
     grid.className = 'product-grid';
@@ -380,14 +392,14 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.parentNode.insertBefore(sentinel, nav);
   }
 
-/* --- Spacer: reserva de espacio justo después del nav --- */
-let spacer = document.getElementById('nav-spacer');
-if (!spacer) {
-  spacer = document.createElement('div');
-  spacer.id = 'nav-spacer';
-  // Lo insertamos inmediatamente después del nav
-  nav.parentNode.insertBefore(spacer, nav.nextSibling);
-}
+  /* --- Spacer: reserva de espacio justo después del nav --- */
+  let spacer = document.getElementById('nav-spacer');
+  if (!spacer) {
+    spacer = document.createElement('div');
+    spacer.id = 'nav-spacer';
+    // Lo insertamos inmediatamente después del nav
+    nav.parentNode.insertBefore(spacer, nav.nextSibling);
+  }
   /* --- Medición robusta de altura del nav --- */
   const getNavHeight = () => Math.ceil(nav.offsetHeight || 0);
   const setNavHeightVar = () => {
@@ -404,31 +416,31 @@ if (!spacer) {
   /* --- Sticky visual + Fallback Fixed controlado por IO --- */
   let fixedActive = false;
 
-const io = new IntersectionObserver((entries) => {
-  const e = entries[0];
+  const io = new IntersectionObserver((entries) => {
+    const e = entries[0];
 
-  const reached = !e.isIntersecting;
+    const reached = !e.isIntersecting;
 
-  // Estado visual (sombra, etc.)
-  nav.classList.toggle('is-stuck', reached);
+    // Estado visual (sombra, etc.)
+    nav.classList.toggle('is-stuck', reached);
 
-  if (reached) {
-    // Modo fixed (overlay) sin mover el contenido
-    nav.classList.add('fixed');
-    fixedActive = true;
+    if (reached) {
+      // Modo fixed (overlay) sin mover el contenido
+      nav.classList.add('fixed');
+      fixedActive = true;
 
-    // Reserva el espacio del nav para que el contenido NO suba
-    spacer.style.height = `${getNavHeight()}px`;
-  } else {
-    nav.classList.remove('fixed');
-    fixedActive = false;
+      // Reserva el espacio del nav para que el contenido NO suba
+      spacer.style.height = `${getNavHeight()}px`;
+    } else {
+      nav.classList.remove('fixed');
+      fixedActive = false;
 
-    // Quita la reserva: el nav vuelve a ocupar su lugar naturalmente
-    spacer.style.height = '0px';
-  }
+      // Quita la reserva: el nav vuelve a ocupar su lugar naturalmente
+      spacer.style.height = '0px';
+    }
 
-  setNavHeightVar();
-}, { root: null, threshold: 0 });
+    setNavHeightVar();
+  }, { root: null, threshold: 0 });
 
   io.observe(sentinel);
 
@@ -471,7 +483,7 @@ const io = new IntersectionObserver((entries) => {
   scrollToHashIfPresent();
 
   /* --- (Opcional) Diagnóstico: detectar padres que rompan sticky --- */
-  (function warnStickyBreakers(el){
+  (function warnStickyBreakers(el) {
     let p = el.parentElement;
     while (p) {
       const cs = getComputedStyle(p);
