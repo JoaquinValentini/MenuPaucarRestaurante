@@ -40,7 +40,6 @@ function detectLenguaje() {
   else {
     return 'en';
   }
-
 }
 
 // Redirige SOLO archivos bajo "data/" respetando DATA_ROOT
