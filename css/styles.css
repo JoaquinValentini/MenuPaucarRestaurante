@@ -16,7 +16,7 @@ body{
 }
 
 /* Fondo gris: nav tabs; solo texto rojo al tocar (sin cambiar fondo) */
-.nav-tabs-container {
+nav{
     width: 100%;
     background: #e9e9ea;
     border-bottom: 1px solid #eee;
@@ -61,7 +61,7 @@ body{
 
 /* Título con tipografía elegante y pill blanco*/
 
-.separator-title {
+.titulo-de-tarjeta {
   padding: 8px 16px;
   border-radius: 999px;
   font-weight: 600;
@@ -256,7 +256,7 @@ width: 100%;
 }
 
 /* 1) Por defecto, los separadores de subcategoría se ven simples (sin pill) */
-.subcat > .section-separator .separator-title {
+.subcat > .section-separator .titulo-de-tarjeta {
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -280,10 +280,6 @@ width: 100%;
 
 .banner-wrapper {
   position: relative;
-}
-
-.banner {
-  width: 100%;
 }
 
 /* Texto encima del banner */
@@ -317,7 +313,7 @@ width: 100%;
 }
 
 .banner {
-  /*object-fit: cover;  */ /* CLAVE: recorte elegante */
+  object-fit: cover;
 }
 
 main {
