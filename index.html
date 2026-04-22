@@ -25,20 +25,28 @@
 
       <!-- TEXTO SOBRE EL BANNER -->
       <div class="banner-overlay">
-        <p class="numero-Direccion">
-          Dirección: Henry Ford 3018 · 📞
-          <a href="tel:+5491165843666">+54 9 11 6584-3666</a>
+        <p class="numero-Direccion"> Dirección: Henry Ford 3018 · 📞<a href="tel:+5491165843666">+54 9 11 6584-3666</a>
         </p>
       </div>
     </div>
     <nav class="nav-tabs-container">
       <ul class="nav-tabs">
-        <button class="nav-tab" data-target="entradas-section"
-          data-i18n="tabs.entries">Entradas</button><!--Botón para la categoría "Entradas" activo-->
-        <button class="nav-tab" data-target="bebidas-section" data-i18n="tabs.drinks">Bebidas</button>
-        <button class="nav-tab" data-target="postres-section" data-i18n="tabs.desserts">Postres</button>
-        <button class="nav-tab" data-target="vinos-section" data-i18n="tabs.wines">Vinos</button>
-        <button class="nav-tab" data-target="platos-section" data-i18n="tabs.dishes">Platos</button>
+        <li>
+          <button type="button" class="nav-tab" data-target="entradas-section"
+            data-i18n="tabs.entries">Entradas</button><!--Botón para la categoría "Entradas" activo-->
+        </li>
+        <li>
+          <button type="button" class="nav-tab" data-target="bebidas-section" data-i18n="tabs.drinks">Bebidas</button>
+        </li>
+        <li>
+          <button type="button" class="nav-tab" data-target="postres-section" data-i18n="tabs.desserts">Postres</button>
+        </li>
+        <li>
+          <button type="button" class="nav-tab" data-target="vinos-section" data-i18n="tabs.wines">Vinos</button>
+        </li>
+        <li>
+          <button type="button" class="nav-tab" data-target="platos-section" data-i18n="tabs.dishes">Platos</button>
+        </li>
       </ul>
     </nav>
   </header><!--Cierra el encabezado-->
@@ -63,6 +71,8 @@
             </div>
             <!-- Slot de productos debajo de la tarjeta -->
             <section id="desayunos-slot" data-products="data/desayunos.json"></section>
+          </div>
+        </article>
       </section>
 
       <!-- ENTRADAS -->
@@ -82,6 +92,8 @@
             </div>
             <!-- Slot de productos debajo de la tarjeta -->
             <section id="entradas-slot" data-products="data/entradas.json"></section>
+          </div>
+        </article>
       </section>
 
       <!-- BEBIDAS -->
@@ -102,6 +114,8 @@
 
             <!-- Slot de productos debajo de la tarjeta -->
             <section id="bebidas-slot" data-products="data/bebidas.json"></section>
+          </div>
+        </article>
       </section>
 
       <!-- POSTRES -->
@@ -115,6 +129,8 @@
               <h2 class="titulo-de-tarjeta" data-i18n="sections.desserts">Postres</h2>
             </div>
             <section id="postres-slot" data-products="data/postres.json"></section>
+          </div>
+        </article>
       </section>
 
       <!-- VINOS -->
@@ -128,6 +144,8 @@
               <h2 class="titulo-de-tarjeta" data-i18n="sections.wines">Vinos</h2>
             </div>
             <section id="vinos-slot" data-products="data/vinos.json"></section>
+          </div>
+        </article>
       </section>
 
 
@@ -141,7 +159,7 @@
           <div class="card-body">
             <!-- Separador principal (solo este lleva pill + alas) -->
             <div class="section-separator separator--flourish">
-              <h2 class="separator-title" data-i18n="sections.dishes">Platos</h2>
+              <h2 class="titulo-de-tarjeta" data-i18n="sections.dishes">Platos</h2>
             </div>
 
             <!-- Placeholders: cada JSON con SU clase propia -->
@@ -175,7 +193,6 @@
     </div>
   </main><!---->
   <script type="module" src="js/main.js"></script><!---->
-  </div><!---->
   <footer class="site-footer">
     <div class="footer-inner">
       <!-- COLUMNA IZQUIERDA: LOGO (sin título) -->
@@ -206,8 +223,6 @@
         </ul>
       </div>
     </div>
-
-
     <div class="footer-bottom">
       <p data-i18n="footer.copy">© 2014–2025 Lo de Paucar · Eventos y restaurante · Todos los derechos reservados</p>
     </div>

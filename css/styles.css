@@ -1,286 +1,10 @@
-
 /* styles.css: Estilos globales aclaro por si acaso */
-body{
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-  line-height:1.35;
-  margin:0;
-  background:var(--bg);
-}
-
-/* Small utility se queda */
-.container{
-  max-width:1080px;
-  margin:0 auto;
-  padding:0 16px
-  
-}
-
-/* Fondo gris: nav tabs; solo texto rojo al tocar (sin cambiar fondo) */
-nav{
-    width: 100%;
-    background: #e9e9ea;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;          
-    z-index: 1000;  
-}
-
-
-.nav-tab {
-    border: none;
-    background: transparent;
-    color: #666;
-}
-
-/* Solo texto rojo salmon al interactuar (hover, active, focus); el fondo permanece transparente */
-.nav-tab:hover,
-.nav-tab:active,
-.nav-tab:focus,
-.nav-tab:focus-visible,
-.nav-tab.active {
-    color: var(--accent); /* Rojo */
-    font-weight: 600;/*este hace la letra mas gruesita cuando pones el cursor encima*/
-}
-
-/* --- Banner de pc responsive con recorte tipo “cover” --- */
-.site-header {
-  height: 150px;           
-}
-.site-header .banner {
-  width: 100%;
-  height: 100%;
-  object-fit:cover;        
-}
-
-/* ======== Separador con flourishes ======== */
-/* Reutiliza .section-separator y .separator-title ya existentes como base */
-.section-separator.separator--flourish {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-}
-
-/* Título con tipografía elegante y pill blanco*/
-
-.titulo-de-tarjeta {
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-weight: 600;
-  border: 1px solid #e7e7e7;
-  box-shadow: 0 1px 2px rgba(0,0,0,.06);
-  font-size: 1.25rem;               
-}
-
-/* ======== Tarjeta de categoría (layout y estética) ======== */
-.card-section {
-  margin: 24px 0;
-}
-.category-card {
-  border-radius: 18px;
-  overflow: hidden;                    /* recorta esquinas redondeadas */
-  box-shadow: 0 10px 24px rgba(0,0,0,.08);
-  border: 1px solid #e9e9ea;
-}
-
-/* Imagen superior con esquinas redondeadas */
-.card-media {
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
   margin: 0;
 }
 
-.card-img {
-  width: 100%;
-  height: 180px;                       
-  object-fit: cover;               
-}
-
-/* Cuerpo (zona blanca) */
-.card-body {
-  padding: 16px 20px 20px;
-}
-
-/* “Alas” decorativas con ::before y ::after */
-.section-separator.separator--flourish::before,
-.section-separator.separator--flourish::after {
-  content: "";
-  opacity: .55;
-}
-
-/* 1) Hacer TODAS las imágenes fluidas */
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* 2) Evitar scroll horizontal accidental en todo el documento */
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-/* Nav en UNA sola fila, sin wrap */
-
-.nav-tabs {
-    
-display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: fit-content;     /* ✅ CLAVE */
-  max-width: 1080px;
-  margin: 0 auto;         /* ✅ centra como el título “Menú” */
-
-  padding: 6px 8px;
-  list-style: none;
-  flex-wrap: nowrap;
-width: 100%;
-}
-@media (max-width: 768px) {
-  .nav-tabs {
-     /* arranca desde la izquierda */
-    white-space: nowrap;           /* ✅ no salta de línea */
-    width: 100%;
-
-  }
-
-  .nav-tabs::-webkit-scrollbar {
-    display: none;                 /* ✅ oculta scrollbar */
-  }
-  .numero-Direccion{
-   display: block;
-}
-}
-
-.nav-tab {
-  flex: 1 1 0;                 /* se comprimen para entrar todos */
-  /*min-width: 0; */               /* permite la compresión real */
-  white-space: nowrap;       /* no se corta el texto */
-  padding: 8px 4px;
-  font-size: 1.0rem;
-  line-height: 1.2;
-}
-
-/* ===== Footer base ===== */
-:root {
-  --bg-dark-1: #0f0f0f;
-  --bg-dark-2: #1a1a1a;
-  --text-main: #ddd;
-  --text-dim: #bbb;
-  --text-muted: #aaa;
-  --border: #2a2a2a;
-  --accent: #ff7f32; /* naranja suave como el ejemplo */
-  --link: #ffd166;   /* dorado */
-  --logo-width: 120px; /* ajustá el tamaño del logo */
-}
-
-/* --- Footer base --- */
-.site-footer {
-  margin-top: 60px;
-  background: linear-gradient(180deg, #121212 0%, #0e0e0e 100%);
-  color: #d9d9d9;
-  width: 100%;
-}
-
-/* Contenedor de las 3 columnas: logo + ubicaciones + contacto */
-.site-footer .footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 12px 28px;
-  display: flex;                /* fila horizontal */
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;                    /* separaciones entre columnas */
-  flex-wrap: nowrap;            /* no permitir que bajen de línea en mobile */
-}
-
-/* Columna del logo: fijamos un ancho pequeño en mobile para que entren las 3 */
-.footer-logo {
-  flex: 0 0 auto;
-}
-.footer-logo img {
-  display: block;
-  width: 90px;                  /* reducimos para celular */
-  height: auto;
-}
-
-/* Columnas de texto (Ubicaciones y Contacto) */
-.site-footer .footer-col {
-  flex: 1 1 0;                  /* que usen el espacio disponible */
-  min-width: 0;                 /* permite que el contenido se comprima sin romper el layout */
-}
-
-.site-footer .footer-col h4 {
-  color: #ffffff;
-  font-weight: 700;
-  margin: 0 0 6px;
-  font-size: 14px;              /* más compacto en mobile */
-}
-
-.site-footer .footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.site-footer .footer-col ul li {
-  margin: 4px 0;
-  font-size: 13px;
-}
-
-/* Enlaces de redes */
-.site-footer .footer-col a {
-  color: #f4a742;
-  text-decoration: none;
-  font-weight: 600;
-}
-.site-footer .footer-col a:hover {
-  color: #ffffff;
-}
-
-/* Franja inferior: derechos reservados (queda siempre abajo, full width) */
-.site-footer .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  text-align: center;
-  color: #bfbfbf;
-  font-size: 13px;
-  padding: 12px 16px;
-}
-
-/* Fallback: fixed cuando pasás el umbral (detectado por sentinel + IO) */
-.nav-tabs-container.fixed {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  width: 100%;
-}
-
-.menu-title {
-  text-align: center;
-}
-
-/* 1) Por defecto, los separadores de subcategoría se ven simples (sin pill) */
-.subcat > .section-separator .titulo-de-tarjeta {
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  border-radius: 0;
-  display: block;
-  text-align: left;
-  padding: 0;
-  margin: 16px 0 8px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #333;
-  text-align: center;
-}
-
-/* Quitar “alas” en los separadores de subcategorías */
-.subcat > .section-separator::before,
-.subcat > .section-separator::after {
-  content: none;
-}
 /* ===== Banner con texto ===== */
-
-.banner-wrapper {
-  position: relative;
-}
 
 /* Texto encima del banner */
 .banner-overlay {
@@ -297,49 +21,332 @@ width: 100%;
   border-radius: 10px;
 }
 
-.banner-overlay h1 {
-  margin: 0;
-  font-size: 2rem;
+.banner-overlay .numero-Direccion {
+  white-space: nowrap;
+  display: block;
+  font-size: 21px;
+}
+
+/* 📱 SOLO CELULARES */
+@media (max-width: 768px) {
+  .banner-overlay .numero-Direccion {
+    font-size: 14px;
+  }
+}
+
+.banner-overlay .numero-Direccion a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner-overlay .numero-Direccion a:hover {
+  text-decoration: underline;
 }
 
 .banner-overlay p {
   margin: 4px 0 0;
   font-size: 1rem;
 }
+
 /* ===== BANNER RECORTADO EN PC ===== */
 .banner-wrapper {
-  height: 150px;        /* AJUSTÁ este valor a gusto */
-  overflow: hidden;    /* RECORTA la imagen */
+  height: 150px;
+  /* AJUSTÁ este valor a gusto */
+  overflow: hidden;
+  /* RECORTA la imagen */
+  position: relative;
 }
 
 .banner {
   object-fit: cover;
 }
 
-main {
-  padding-top: 56px; /*altura del nav */
+/* Small utility se queda */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px
+}
+
+/* Fondo gris: nav tabs; solo texto rojo al tocar (sin cambiar fondo) */
+nav {
+  width: 100%;
+  background: #e9e9ea;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 
-.numero-Direccion {
+.nav-tab {
+  border: none;
+  background: transparent;
+  color: #666;
+}
+
+/* Solo texto rojo salmon al interactuar (hover, active, focus); el fondo permanece transparente */
+.nav-tab:hover,
+.nav-tab:active,
+.nav-tab:focus,
+.nav-tab:focus-visible,
+.nav-tab.active {
+  color: var(--accent);
+  /* Rojo */
+  font-weight: 600;
+  /*este hace la letra mas gruesita cuando pones el cursor encima*/
+}
+
+/* --- Banner de pc responsive con recorte tipo “cover” --- */
+.site-header {
+  height: 150px;
+}
+
+.site-header .banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ======== Separador con flourishes ======== */
+/* Reutiliza .section-separator y .separator-title ya existentes como base */
+.section-separator.separator--flourish {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+/* Título con tipografía elegante y pill blanco*/
+
+.titulo-de-tarjeta {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .06);
+  font-size: 1.25rem;
+}
+
+/* ======== Tarjeta de categoría (layout y estética) ======== */
+.card-section {
+  margin: 24px 0;
+  /*espacio vacio entre categorias*/
+}
+
+.category-card {
+  border-radius: 18px;
+  /*redondea bordes*/
+  overflow: hidden;
+  /* recorta esquinas redondeadas */
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+  /*añade sombra*/
+  border: 1px solid #e9e9ea;
+  /*añade un borde*/
+}
+
+/* Imagen superior con esquinas redondeadas */
+.card-media {
+  margin: 0;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Cuerpo (zona blanca) */
+.card-body {
+  padding: 16px 20px 20px;
+}
+
+/* “Alas” decorativas con ::before y ::after */
+.section-separator.separator--flourish::before,
+.section-separator.separator--flourish::after {
+  content: "";
+  opacity: .55;
+}
+
+/* 1) Hacer TODAS las imágenes fluidas */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 2) Evitar scroll horizontal accidental en todo el documento */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Nav en UNA sola fila, sin wrap */
+
+.nav-tabs {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  /* ✅ centra como el título “Menú” */
+  width: 100%;
+  padding: 6px 16px;
+  list-style: none;
+  flex-wrap: nowrap;
+}
+
+.nav-tabs > li {
+  flex: 1 1 0;         /* ✅ todos iguales */
+  display: flex;
+}
+
+.nav-tab {
+  flex: 1 1 0;/* se comprimen para entrar todos */
+  /*min-width: 0; */ /* permite la compresión real */
   white-space: nowrap;
-  font-size: 21px !important;
+  /* no se corta el texto */
+  padding: 8px 4px;
+  font-size: 1.0rem;
+  line-height: 1.2;
 }
 
-/* 📱 SOLO CELULARES */
-@media (max-width: 768px) {
-  .numero-Direccion {
- font-size: 14px !important;
-  }
+/* ===== Footer base ===== */
+:root {
+  --bg-dark-1: #0f0f0f;
+  --bg-dark-2: #1a1a1a;
+  --text-main: #ddd;
+  --text-dim: #bbb;
+  --text-muted: #aaa;
+  --border: #2a2a2a;
+  --accent: #ff7f32;
+  /* naranja suave como el ejemplo */
+  --link: #ffd166;
+  /* dorado */
+  --logo-width: 120px;
+  /* ajustá el tamaño del logo */
 }
 
+/* --- Footer base --- */
+.site-footer {
+  margin-top: 60px;
+  background: linear-gradient(180deg, #121212 0%, #0e0e0e 100%);
+  color: #d9d9d9;
+  width: 100%;
+}
 
-.numero-Direccion a {
+/* Contenedor de las 3 columnas: logo + ubicaciones + contacto */
+.site-footer .footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 12px 28px;
+  display: flex;
+  /* fila horizontal */
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  /* separaciones entre columnas */
+  flex-wrap: nowrap;
+  /* no permitir que bajen de línea en mobile */
+}
+
+/* Columna del logo: fijamos un ancho pequeño en mobile para que entren las 3 */
+.footer-logo {
+  flex: 0 0 auto;
+}
+
+.footer-logo img {
+  display: block;
+  width: 90px;
+  /* reducimos para celular */
+  height: auto;
+}
+
+/* Columnas de texto (Ubicaciones y Contacto) */
+.site-footer .footer-col {
+  flex: 1 1 0;
+  /* que usen el espacio disponible */
+  min-width: 0;
+  /* permite que el contenido se comprima sin romper el layout */
+}
+
+.site-footer .footer-col h4 {
   color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
+  margin: 0 0 6px;
+  font-size: 14px;
+  /* más compacto en mobile */
 }
 
-.numero-Direccion a:hover {
-  text-decoration: underline;
+.site-footer .footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer .footer-col ul li {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+/* Enlaces de redes */
+.site-footer .footer-col a {
+  color: #f4a742;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-footer .footer-col a:hover {
+  color: #ffffff;
+}
+
+/* Franja inferior: derechos reservados (queda siempre abajo, full width) */
+.site-footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  color: #bfbfbf;
+  font-size: 13px;
+  padding: 12px 16px;
+}
+
+/* Fallback: fixed cuando pasás el umbral (detectado por sentinel + IO) */
+.nav-tabs-container.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.menu-title {
+  text-align: center;
+}
+
+/* 1) Por defecto, los separadores de subcategoría se ven simples (sin pill) */
+.subcat>.section-separator .titulo-de-tarjeta {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  display: block;
+  text-align: left;
+  padding: 0;
+  margin: 16px 0 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Quitar “alas” en los separadores de subcategorías */
+.subcat>.section-separator::before,
+.subcat>.section-separator::after {
+  content: none;
+}
+
+main {
+  padding-top: 56px;
+  /*altura del nav */
 }
