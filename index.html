@@ -1,215 +1,217 @@
-   <!doctype html><!-- indicador de que se trata de un archivo HTML5-->
+<!doctype html><!-- indicador de que se trata de un archivo HTML5-->
 <html lang="es"><!--Define el idioma osea español-->
+
 <head><!---->
-    <meta charset="UTF-8"><!--codificación de caracteres en UTF-8, para poner acentos y caracteres especiales-->
-    <meta name="viewport" content="width=device-width,initial-scale=1"><!--Hace que la página sea responsive, pa adaptarse a pantalla de celus y tablets-->
-    <title>Menú</title><!--Título de la pestaña del navegador-->
-    <link rel="stylesheet" href="css/styles.css"><!--Enlaza hojas de estilo CSS externas para dar diseño a la página-->
-    <link rel="stylesheet" href="Componentes/productGrid.css">
-    <link rel="stylesheet" href="Componentes/productCard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!--Importa iconos de Font Awesome, por ejemplo para usar íconos de redes
+  <meta charset="UTF-8"><!--codificación de caracteres en UTF-8, para poner acentos y caracteres especiales-->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--Hace que la página sea responsive, pa adaptarse a pantalla de celus y tablets-->
+  <title>Menú</title><!--Título de la pestaña del navegador-->
+  <link rel="stylesheet" href="css/styles.css"><!--Enlaza hojas de estilo CSS externas para dar diseño a la página-->
+  <link rel="stylesheet" href="Componentes/productGrid.css">
+  <link rel="stylesheet" href="Componentes/productCard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!--Importa iconos de Font Awesome, por ejemplo para usar íconos de redes
                                                                                                             sociales o decorativos.-->
 </head><!--Cierra la sección de encabezado-->
+
 <body><!--Comienza el contenido visible de la página-->
-<!-- HEADER DIRECTO -->
+  <!-- HEADER DIRECTO -->
+
   <header class="site-header">
-    <img src="./imagenes/banner_alta_calidad.png" alt="Lo de Paucar - Banner" class="banner" />
-  </header>
-   <div>
-  <nav class="nav-tabs-container">
-    <ul class="nav-tabs">
-             <button class="nav-tab" data-target="entradas-section" data-i18n="tabs.entries">Entradas</button><!--Botón para la categoría "Entradas" activo-->
-            <button class="nav-tab" data-target="bebidas-section"  data-i18n="tabs.drinks">Bebidas</button>
-            <button class="nav-tab" data-target="postres-section"  data-i18n="tabs.desserts">Postres</button>
-            <button class="nav-tab" data-target="vinos-section"    data-i18n="tabs.wines">Vinos</button>
-            <button class="nav-tab" data-target="platos-section"   data-i18n="tabs.dishes">Platos</button>
-    </ul>
-</nav>
-</div>
+
+    <!-- BANNER -->
+    <div class="banner-wrapper">
+      <img src="./imagenes/banner_alta_calidad.png" alt="Lo de Paucar" class="banner">
+
+      <!-- TEXTO SOBRE EL BANNER -->
+      <div class="banner-overlay">
+        <p class="numero-Direccion">
+          Dirección: Henry Ford 3018 · 📞
+          <a href="tel:+5491165843666">+54 9 11 6584-3666</a>
+        </p>
+      </div>
+    </div>
+    <nav class="nav-tabs-container">
+      <ul class="nav-tabs">
+        <button class="nav-tab" data-target="entradas-section"
+          data-i18n="tabs.entries">Entradas</button><!--Botón para la categoría "Entradas" activo-->
+        <button class="nav-tab" data-target="bebidas-section" data-i18n="tabs.drinks">Bebidas</button>
+        <button class="nav-tab" data-target="postres-section" data-i18n="tabs.desserts">Postres</button>
+        <button class="nav-tab" data-target="vinos-section" data-i18n="tabs.wines">Vinos</button>
+        <button class="nav-tab" data-target="platos-section" data-i18n="tabs.dishes">Platos</button>
+      </ul>
+    </nav>
+  </header><!--Cierra el encabezado-->
+  <main><!--Comienza el contenido principal-->
     <div class="container"><!--Contenedor principal del contenido-->
-    <div header><!--Encabezado de la página-->
-      <h2 class="menu-title" data-i18n="menu.title">Menú</h2>
-        <!-- Botones de categorías -->
-    </header><!--Cierra el encabezado-->
-      </div>
-      <main><!--Comienza el contenido principal-->
-        <!-- DESAYUNO -->
-<section class="category-section card-section" id="desayunos-section">
-  <!-- Tarjeta de categoría -->
-  <article class="category-card">
-    <!-- Imagen superior -->
-    <figure class="card-media">
-      <img src="imagenes/desayunos.png" alt="Desayunos - imagen representativa" class="card-img">
-    </figure>
+      <h1 class="menu-title" data-i18n="menu.title">Menú</h1>
+      <!-- Botones de categorías -->
+      <!-- DESAYUNO -->
+      <section class="category-section card-section" id="desayunos-section">
+        <!-- Tarjeta de categoría -->
+        <article class="category-card">
+          <!-- Imagen superior -->
+          <figure class="card-media">
+            <img src="imagenes/desayunos.png" alt="Desayunos - imagen representativa" class="card-img">
+          </figure>
 
-    <!-- Cuerpo de la tarjeta -->
-    <div class="card-body">
-      <!-- Separador con título y flourishes -->
-      <div class="section-separator separator--flourish">
-        <h2 class="separator-title" data-i18n="sections.breakfast">Desayunos</h2>
-      </div>
-  <!-- Slot de productos debajo de la tarjeta -->
-  <section id="desayunos-slot" data-products="data/desayunos.json"></section>
-</section>
+          <!-- Cuerpo de la tarjeta -->
+          <div class="card-body">
+            <!-- Separador con título y flourishes -->
+            <div class="section-separator separator--flourish">
+              <h2 class="separator-title" data-i18n="sections.breakfast">Desayunos</h2>
+            </div>
+            <!-- Slot de productos debajo de la tarjeta -->
+            <section id="desayunos-slot" data-products="data/desayunos.json"></section>
+      </section>
 
-<!-- ENTRADAS -->
-<section class="category-section card-section" id="entradas-section">
-  <!-- Tarjeta de categoría -->
-  <article class="category-card">
-    <!-- Imagen superior -->
-    <figure class="card-media">
-      <img src="imagenes/entradas.png" alt="Entradas - imagen representativa" class="card-img">
-    </figure>
+      <!-- ENTRADAS -->
+      <section class="category-section card-section" id="entradas-section">
+        <!-- Tarjeta de categoría -->
+        <article class="category-card">
+          <!-- Imagen superior -->
+          <figure class="card-media">
+            <img src="imagenes/entradas.png" alt="Entradas - imagen representativa" class="card-img">
+          </figure>
 
-    <!-- Cuerpo de la tarjeta -->
-    <div class="card-body">
-      <!-- Separador con título y flourishes -->
-      <div class="section-separator separator--flourish">
-        <h2 class="separator-title" data-i18n="sections.entries">Entradas</h2>
-      </div>
-  <!-- Slot de productos debajo de la tarjeta -->
-  <section id="entradas-slot" data-products="data/entradas.json"></section>
-</section>
+          <!-- Cuerpo de la tarjeta -->
+          <div class="card-body">
+            <!-- Separador con título y flourishes -->
+            <div class="section-separator separator--flourish">
+              <h2 class="separator-title" data-i18n="sections.entries">Entradas</h2>
+            </div>
+            <!-- Slot de productos debajo de la tarjeta -->
+            <section id="entradas-slot" data-products="data/entradas.json"></section>
+      </section>
 
-<!-- BEBIDAS -->
-<section class="category-section card-section" id="bebidas-section">
-  <!-- Tarjeta de categoría -->
-  <article class="category-card">
-    <!-- Imagen superior -->
-    <figure class="card-media">
-      <img src="imagenes/bebidas.png" alt="Bebidas - imagen representativa" class="card-img">
-    </figure>
+      <!-- BEBIDAS -->
+      <section class="category-section card-section" id="bebidas-section">
+        <!-- Tarjeta de categoría -->
+        <article class="category-card">
+          <!-- Imagen superior -->
+          <figure class="card-media">
+            <img src="imagenes/bebidas.png" alt="Bebidas - imagen representativa" class="card-img">
+          </figure>
 
-    <!-- Cuerpo de la tarjeta -->
-    <div class="card-body">
-      <!-- Separador con título y flourishes -->
-      <div class="section-separator separator--flourish">
-        <h2 class="separator-title" data-i18n="sections.drinks">Bebidas</h2>
-      </div>
+          <!-- Cuerpo de la tarjeta -->
+          <div class="card-body">
+            <!-- Separador con título y flourishes -->
+            <div class="section-separator separator--flourish">
+              <h2 class="separator-title" data-i18n="sections.drinks">Bebidas</h2>
+            </div>
 
-  <!-- Slot de productos debajo de la tarjeta -->
-  <section id="bebidas-slot" data-products="data/bebidas.json"></section>
-</section>
+            <!-- Slot de productos debajo de la tarjeta -->
+            <section id="bebidas-slot" data-products="data/bebidas.json"></section>
+      </section>
 
-<!-- POSTRES -->
-<section class="category-section card-section" id="postres-section">
-  <article class="category-card">
-    <figure class="card-media">
-      <img src="imagenes/postres.png" alt="Postres - imagen representativa" class="card-img">
-    </figure>
-    <div class="card-body">
-      <div class="section-separator separator--flourish">
-        <h2 class="separator-title" data-i18n="sections.desserts">Postres</h2>
-      </div>
-  <section id="postres-slot" data-products="data/postres.json"></section>
-</section>
+      <!-- POSTRES -->
+      <section class="category-section card-section" id="postres-section">
+        <article class="category-card">
+          <figure class="card-media">
+            <img src="imagenes/postres.png" alt="Postres - imagen representativa" class="card-img">
+          </figure>
+          <div class="card-body">
+            <div class="section-separator separator--flourish">
+              <h2 class="separator-title" data-i18n="sections.desserts">Postres</h2>
+            </div>
+            <section id="postres-slot" data-products="data/postres.json"></section>
+      </section>
 
-<!-- VINOS -->
-<section class="category-section card-section" id="vinos-section">
-  <article class="category-card">
-    <figure class="card-media">
-      <img src="imagenes/vinos.png" alt="Vinos - imagen representativa" class="card-img">
-    </figure>
-    <div class="card-body">
-      <div class="section-separator separator--flourish">
-        <h2 class="separator-title" data-i18n="sections.wines">Vinos</h2>
-      </div>
-  <section id="vinos-slot" data-products="data/vinos.json"></section>
-</section>
+      <!-- VINOS -->
+      <section class="category-section card-section" id="vinos-section">
+        <article class="category-card">
+          <figure class="card-media">
+            <img src="imagenes/vinos.png" alt="Vinos - imagen representativa" class="card-img">
+          </figure>
+          <div class="card-body">
+            <div class="section-separator separator--flourish">
+              <h2 class="separator-title" data-i18n="sections.wines">Vinos</h2>
+            </div>
+            <section id="vinos-slot" data-products="data/vinos.json"></section>
+      </section>
 
 
-<!-- PLATOS -->
-<section class="category-section card-section" id="platos-section">
-  <article class="category-card">
-    <figure class="card-media">
-      <img src="imagenes/platos.png" alt="Platos - imagen representativa" class="card-img">
-    </figure>
+      <!-- PLATOS -->
+      <section class="category-section card-section" id="platos-section">
+        <article class="category-card">
+          <figure class="card-media">
+            <img src="imagenes/platos.png" alt="Platos - imagen representativa" class="card-img">
+          </figure>
 
-    <div class="card-body">
-      <!-- Separador principal (solo este lleva pill + alas) -->
-      <div class="section-separator separator--flourish">
-        <h2 class="separator-title" data-i18n="sections.dishes">Platos</h2>
-      </div>
+          <div class="card-body">
+            <!-- Separador principal (solo este lleva pill + alas) -->
+            <div class="section-separator separator--flourish">
+              <h2 class="separator-title" data-i18n="sections.dishes">Platos</h2>
+            </div>
 
-      <!-- Placeholders: cada JSON con SU clase propia -->
-      <section id="platos-slot">
-        <section class="subcat subcat--milanesas"
-                 data-products="data/milanesas.json"
-                 data-title="Milanesas"></section>
+            <!-- Placeholders: cada JSON con SU clase propia -->
+            <section id="platos-slot">
+              <section class="subcat subcat--milanesas" data-products="data/milanesas.json" data-title="Milanesas">
+              </section>
 
-        <section class="subcat subcat--ensaladas"
-                 data-products="data/ensaladas.json"
-                 data-title="Ensaladas"></section>
+              <section class="subcat subcat--ensaladas" data-products="data/ensaladas.json" data-title="Ensaladas">
+              </section>
 
-        <section class="subcat subcat--pastas"
-                 data-products="data/pastas.json"
-                 data-title="Pastas"></section>
+              <section class="subcat subcat--pastas" data-products="data/pastas.json" data-title="Pastas"></section>
 
-        <section class="subcat subcat--wok"
-                 data-products="data/wok.json"
-                 data-title="Woks"></section>
+              <section class="subcat subcat--wok" data-products="data/wok.json" data-title="Woks"></section>
 
-        <section class="subcat subcat--carnes"
-                 data-products="data/carnes.json"
-                 data-title="Carnes"></section>
+              <section class="subcat subcat--carnes" data-products="data/carnes.json" data-title="Carnes"></section>
 
-        <section class="subcat subcat--fajitas"
-                 data-products="data/fajitas.json"
-                 data-title="Fajitas"></section>
-                
-        <section class="subcat subcat--sandwiches"
-                 data-products="data/sandwiches.json"
-                 data-title="Sandwiches"></section>
+              <section class="subcat subcat--fajitas" data-products="data/fajitas.json" data-title="Fajitas"></section>
 
-        <section class="subcat subcat--guarnicion"
-                 data-products="data/guarnicion.json"
-                 data-title="Guarniciones"></section>
+              <section class="subcat subcat--sandwiches" data-products="data/sandwiches.json" data-title="Sandwiches">
+              </section>
 
-        <section class="subcat subcat--otros"
-                 data-products="data/otros.json"
-                 data-title="Otros"></section>
-        <!-- Agregá todas las subcategorías que necesites -->
+              <section class="subcat subcat--guarnicion" data-products="data/guarnicion.json" data-title="Guarniciones">
+              </section>
+
+              <section class="subcat subcat--otros" data-products="data/otros.json" data-title="Otros"></section>
+              <!-- Agregá todas las subcategorías que necesites -->
+            </section>
+          </div>
+        </article>
       </section>
     </div>
-  </article>
-</section>
-      </main><!---->
-    <script type="module" src="js/main.js"></script><!---->
+  </main><!---->
+  <script type="module" src="js/main.js"></script><!---->
   </div><!---->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <!-- COLUMNA IZQUIERDA: LOGO (sin título) -->
-    <div class="footer-logo">
-      <a href="./" aria-label="Inicio">
-        <img src="imagenes/logo restaurante.png" alt="Lo de Paucar" loading="lazy">
-      </a>
-    </div>
-    <!-- UBICACIONES (si preferís, podés poner “Sucursales” o “Dirección”) -->
-    <div class="footer-col">
-      <h4 data-i18n="footer.locations">Ubicaciones</h4>
-      <ul>
-        <li>Henry Ford 3018</li>
-        <li>Ricardo Rojas, Tigre Bs.As.</li>
-        <li>Argentina</li>
-      </ul>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <!-- COLUMNA IZQUIERDA: LOGO (sin título) -->
+      <div class="footer-logo">
+        <a href="./" aria-label="Inicio">
+          <img src="imagenes/logo restaurante.png" alt="Lo de Paucar" loading="lazy">
+        </a>
+      </div>
+      <!-- UBICACIONES (si preferís, podés poner “Sucursales” o “Dirección”) -->
+      <div class="footer-col">
+        <h4 data-i18n="footer.locations">Ubicaciones</h4>
+        <ul>
+          <li>Henry Ford 3018</li>
+          <li>Ricardo Rojas, Tigre Bs.As.</li>
+          <li>Argentina</li>
+        </ul>
+      </div>
+
+      <!-- CONTACTO -->
+      <div class="footer-col">
+        <h4 data-i18n="footer.contact">Contacto</h4>
+        <ul>
+          <li><span class="icon phone"></span> +54 11 6584-3666</li>
+          <li><a href="https://wa.me/c/5491165843666" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/paucar_resto_bar/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/p/Resto-Bar-Lo-De-Paucar-100066347297692/" target="_blank"
+              rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
     </div>
 
-    <!-- CONTACTO -->
-    <div class="footer-col">
-      <h4 data-i18n="footer.contact">Contacto</h4>
-      <ul>
-        <li><span class="icon phone"></span> +54 11 6584-3666</li>
-        <li><a href="https://wa.me/c/5491165843666" target="_blank" rel="noopener">WhatsApp</a></li>
-        <li><a href="https://www.instagram.com/paucar_resto_bar/" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.facebook.com/p/Resto-Bar-Lo-De-Paucar-100066347297692/" target="_blank" rel="noopener">Facebook</a></li>
-      </ul>
+
+    <div class="footer-bottom">
+      <p data-i18n="footer.copy">© 2014–2025 Lo de Paucar · Eventos y restaurante · Todos los derechos reservados</p>
     </div>
-  </div>
-
-
-  <div class="footer-bottom">
-    <p data-i18n="footer.copy">© 2014–2025 Lo de Paucar · Eventos y restaurante · Todos los derechos reservados</p>
-  </div>
-</footer>
+  </footer>
 </body><!---->
+
 </html><!---->

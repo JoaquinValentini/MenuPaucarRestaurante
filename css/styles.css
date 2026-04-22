@@ -145,6 +145,9 @@ width: 100%;
   .nav-tabs::-webkit-scrollbar {
     display: none;                 /* ✅ oculta scrollbar */
   }
+  .numero-Direccion{
+   display: block;
+}
 }
 
 .nav-tab {
@@ -168,7 +171,6 @@ width: 100%;
   --link: #ffd166;   /* dorado */
   --logo-width: 120px; /* ajustá el tamaño del logo */
 }
-
 
 /* --- Footer base --- */
 .site-footer {
@@ -273,4 +275,75 @@ width: 100%;
 .subcat > .section-separator::before,
 .subcat > .section-separator::after {
   content: none;
+}
+/* ===== Banner con texto ===== */
+
+.banner-wrapper {
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+}
+
+/* Texto encima del banner */
+.banner-overlay {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  text-align: center;
+  color: white;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.banner-overlay h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.banner-overlay p {
+  margin: 4px 0 0;
+  font-size: 1rem;
+}
+/* ===== BANNER RECORTADO EN PC ===== */
+.banner-wrapper {
+  height: 150px;        /* AJUSTÁ este valor a gusto */
+  overflow: hidden;    /* RECORTA la imagen */
+}
+
+.banner {
+  /*object-fit: cover;  */ /* CLAVE: recorte elegante */
+}
+
+main {
+  padding-top: 56px; /*altura del nav */
+}
+
+
+.numero-Direccion {
+  white-space: nowrap;
+  font-size: 21px !important;
+}
+
+/* 📱 SOLO CELULARES */
+@media (max-width: 768px) {
+  .numero-Direccion {
+ font-size: 14px !important;
+  }
+}
+
+
+.numero-Direccion a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.numero-Direccion a:hover {
+  text-decoration: underline;
 }
