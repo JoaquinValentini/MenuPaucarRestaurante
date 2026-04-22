@@ -118,17 +118,33 @@ html, body {
 }
 
 /* Nav en UNA sola fila, sin wrap */
+
 .nav-tabs {
-  display: flex;
-  /*flex-wrap: nowrap;*/         
-  /*justify-content: space-between;*/
-  /*align-items: center;*/
-  /*width: 100%;*/
+    
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: fit-content;     /* ✅ CLAVE */
   max-width: 1080px;
-  margin: 0 auto;
-  padding: 6px 8px;            /* menos padding para que entren */
-  /*top: 0;*/
-  /*background: #e9e9ea;*/
+  margin: 0 auto;         /* ✅ centra como el título “Menú” */
+
+  padding: 6px 8px;
+  list-style: none;
+  flex-wrap: nowrap;
+width: 100%;
+}
+@media (max-width: 768px) {
+  .nav-tabs {
+     /* arranca desde la izquierda */
+    white-space: nowrap;           /* ✅ no salta de línea */
+    width: 100%;
+
+  }
+
+  .nav-tabs::-webkit-scrollbar {
+    display: none;                 /* ✅ oculta scrollbar */
+  }
 }
 
 .nav-tab {
