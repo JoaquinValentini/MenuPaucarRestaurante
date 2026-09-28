@@ -1,50 +1,118 @@
-[
-  {
-    "id": "salmon",
-    "title": "Salmón",
-    "desc": " 240grs",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/salmon.png",
-    "price": ""
-  },
-  {
-    "id": "lomo",
-    "title": "Lomo",
-    "desc": "240grs",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/lomo.png",
-    "price": ""
-  },
-  {
-    "id": "ojo de bife",
-    "title": "Ojo de bife",
-    "desc": "240grs",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/ojo de bife.png",
-    "price": ""
-  },
-  {
-    "id": "langostinos empanizados con panko",
-    "title": "Langostinos empanizados con panko",
-    "desc": "8 unidades",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/langostinos empanizados con panko.png",
-    "price": ""
-  },
-  {
-    "id": "pechuga de pollo al grill",
-    "title": "Pechuga de polloal grill",
-    "desc": "",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/pechuga al grill.png",
-    "price": ""
-  },
-  {
-    "id": "pata y muslo de pollo",
-    "title": "Pata y muslo de pollo",
-    "desc": "",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/pata y muslo.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "salmon",
+      "title": "Salmón",
+      "desc": " 240grs",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/salmon.png",
+      "price": "",
+      "en": {
+        "title": "Salmon",
+        "desc": "240g",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Salmão",
+        "desc": "240grs",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "lomo",
+      "title": "Lomo",
+      "desc": "240grs",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/lomo.png",
+      "price": "",
+      "en": {
+        "title": "Tenderloin",
+        "desc": "240g",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Filé Mignon",
+        "desc": "240grs",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "ojo de bife",
+      "title": "Ojo de bife",
+      "desc": "240grs",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/ojo de bife.png",
+      "price": "",
+      "en": {
+        "title": "Ribeye",
+        "desc": "240g",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Bife Ancho",
+        "desc": "240grs",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "langostinos empanizados con panko",
+      "title": "Langostinos empanizados con panko",
+      "desc": "8 unidades",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/langostinos empanizados con panko.png",
+      "price": "",
+      "en": {
+        "title": "Panko Breaded Prawns",
+        "desc": "8 pieces",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Camarões Empanados com Panko",
+        "desc": "8 unidades",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "pechuga de pollo al grill",
+      "title": "Pechuga de polloal grill",
+      "desc": "",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/pechuga al grill.png",
+      "price": "",
+      "en": {
+        "title": "Grilled Chicken Breast",
+        "desc": "",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Peito de Frango Grelhado",
+        "desc": "",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "pata y muslo de pollo",
+      "title": "Pata y muslo de pollo",
+      "desc": "",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/pata y muslo.png",
+      "price": "",
+      "en": {
+        "title": "Chicken Leg and Thigh",
+        "desc": "",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Coxa e Sobrecoxa de Frango",
+        "desc": "",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    }
+  ]
+}

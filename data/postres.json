@@ -1,26 +1,61 @@
-[
-  {
-    "id": "ensalada de frutas",
-    "title": "Ensalada de frutas",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/ensalada de frutas.png",
-    "price": ""
-  },
-  {
-    "id": "flan",
-    "title": "Flan",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/flan.png",
-    "price": ""
-  },
-  {
-    "id": "arroz con leche",
-    "title": "Arroz con leche",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/arroz con leche.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "ensalada de frutas",
+      "title": "Ensalada de frutas",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/ensalada de frutas.png",
+      "price": "",
+      "en": {
+        "title": "Fruit salad",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Salada de Frutas",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "flan",
+      "title": "Flan",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/flan.png",
+      "price": "",
+      "en": {
+        "title": "Flan",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Flan",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "arroz con leche",
+      "title": "Arroz con leche",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/arroz con leche.png",
+      "price": "",
+      "en": {
+        "title": "Rice Pudding",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Arroz Doce",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    }
+  ]
+}

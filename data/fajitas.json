@@ -1,26 +1,61 @@
-[
-  {
-    "id": "fajita de lomo",
-    "title": "Fajita de lomo",
-    "desc": "lomo, muzzarella, zuquini, morron, cebolla, berenjena",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/fajita de lomo.png",
-    "price": ""
-  },
-  {
-    "id": "fajita de langostinos",
-    "title": "Fajita de langostinos",
-    "desc": "140 grs de langostinos",
-    "note": "",
-    "img": "imagenes/fajita de langostinos.png",
-    "price": ""
-  },
-  {
-    "id": "fajita de pollo",
-    "title": "Fajita de pollo",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/fajita de pollo.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "fajita de lomo",
+      "title": "Fajita de lomo",
+      "desc": "lomo, muzzarella, zuquini, morron, cebolla, berenjena",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/fajita de lomo.png",
+      "price": "",
+      "en": {
+        "title": "Beef Fajita",
+        "desc": "Beef tenderloin, mozzarella, zucchini, bell pepper, onion, eggplant",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Fajita de Filé Mignon",
+        "desc": "Filé mignon, muçarela, abobrinha, pimentão, cebola, berinjela",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "fajita de langostinos",
+      "title": "Fajita de langostinos",
+      "desc": "140 grs de langostinos",
+      "note": "",
+      "img": "imagenes/fajita de langostinos.png",
+      "price": "",
+      "en": {
+        "title": "Shrimp Fajita",
+        "desc": "140g shrimp",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Fajita de Camarões",
+        "desc": "140g de camarões",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "fajita de pollo",
+      "title": "Fajita de pollo",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/fajita de pollo.png",
+      "price": "",
+      "en": {
+        "title": "Chicken Fajita",
+        "desc": "",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Fajita de frango",
+        "desc": "",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    }
+  ]
+}

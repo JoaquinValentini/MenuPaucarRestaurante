@@ -1,34 +1,80 @@
-[
-  {
-    "id": "ensalada de jamon y queso",
-    "title": "Ensalada de jamón y queso",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/ensalada de jamon y queso.png",
-    "price": ""
-  },
-  {
-    "id": "ensalada caesar",
-    "title": "Ensalada Caesar",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/ensalada caesar.png",
-    "price": ""
-  },
-  {
-    "id": "ensalada de langostinos",
-    "title": "Ensalada de langostinos",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/ensalada de langostinos.png",
-    "price": ""
-  },
-  {
-    "id": "ensalada de salmon ahumado",
-    "title": "Ensalada de salmón ahumado",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/ensalada de salmon ahumado.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "ensalada de jamon y queso",
+      "title": "Ensalada de jamón y queso",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/ensalada de jamon y queso.png",
+      "price": "",
+      "en": {
+        "title": "Ham and cheese salad",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Salada de Presunto e Queijo",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "ensalada caesar",
+      "title": "Ensalada Caesar",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/ensalada caesar.png",
+      "price": "",
+      "en": {
+        "title": "Caesar salad",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Salada César",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "ensalada de langostinos",
+      "title": "Ensalada de langostinos",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/ensalada de langostinos.png",
+      "price": "",
+      "en": {
+        "title": "Shrimp Salad",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Salada de Camarão",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "ensalada de salmon ahumado",
+      "title": "Ensalada de salmón ahumado",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/ensalada de salmon ahumado.png",
+      "price": "",
+      "en": {
+        "title": "Smoked salmon salad",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Salada de Salmão Defumado",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    }
+  ]
+}

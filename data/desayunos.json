@@ -1,34 +1,80 @@
-[
-  {
-    "id": "medialunas",
-    "title": "Medialunas",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/medialunas.png",
-    "price": ""
-  },
-  {
-    "id": "tostadas",
-    "title": "Tostadas",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/tostadas.png",
-    "price": ""
-  },
-  {
-    "id": "sandwich de miga",
-    "title": "Sandwich de miga",
-    "desc": "de ciabatta o integral",
-    "note": "",
-    "img": "imagenes/sandwich de miga triangulo.png",
-    "price": ""
-  },
-  {
-    "id": "cafe",
-    "title": "Café",
-    "desc": "Cortado, lágrima, capuccino o Italiano",
-    "note": "",
-    "img": "imagenes/cafe.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "medialunas",
+      "title": "Medialunas",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/medialunas.png",
+      "price": 5000,
+      "en": {
+        "title": "Croissants",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Croissants",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "tostadas",
+      "title": "Tostadas",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/tostadas.png",
+      "price": "",
+      "en": {
+        "title": "Toasts",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Torradas",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "sandwich de miga",
+      "title": "Sandwich de miga",
+      "desc": "de ciabatta o integral",
+      "note": "",
+      "img": "imagenes/sandwich de miga triangulo.png",
+      "price": "",
+      "en": {
+        "title": "Finger Sandwiches",
+        "desc": "de ciabatta ou integral",
+        "note": ""
+      },
+      "pt": {
+        "title": "Sanduíches de Miga",
+        "desc": "Ciabatta ou pão integral",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "cafe",
+      "title": "Café",
+      "desc": "Cortado, lágrima, capuccino o Italiano",
+      "note": "",
+      "img": "imagenes/cafe.png",
+      "price": "",
+      "en": {
+        "title": "Coffee",
+        "desc": "Cortado(Espresso), lágrima(espresso with milk), cappuccino or Italian coffee",
+        "note": ""
+      },
+      "pt": {
+        "title": "Café",
+        "desc": "Cortado(Café curto), lágrima(leite manchado), cappuccino ou italiano",
+        "note": ""
+      },
+      "available": true
+    }
+  ]
+}

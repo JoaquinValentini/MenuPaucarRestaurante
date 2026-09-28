@@ -1,26 +1,61 @@
-[
-  {
-    "id": "tarta bicolor",
-    "title": "Tarta bicolor",
-    "desc": "de verdura y calabaza",
-    "note": "",
-    "img": "imagenes/tarta bicolor.png",
-    "price": ""
-  },
-  {
-    "id": "tortilla de papa",
-    "title": "Tortilla de papa",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/tortilla de papa.png",
-    "price": ""
-  },
-  {
-    "id": "omelette de jamon y queso",
-    "title": "Omelette de jamon y queso",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/omelette de jamon y queso.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "tarta bicolor",
+      "title": "Tarta bicolor",
+      "desc": "de verdura y calabaza",
+      "note": "",
+      "img": "imagenes/tarta bicolor.png",
+      "price": "",
+      "en": {
+        "title": "Bicolor Vegetable Pie",
+        "desc": "Vegetables and pumpkin",
+        "note": ""
+      },
+      "pt": {
+        "title": "Torta Bicolor",
+        "desc": "De legumes e abóbora",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "tortilla de papa",
+      "title": "Tortilla de papa",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/tortilla de papa.png",
+      "price": "",
+      "en": {
+        "title": "Potato tortilla",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Tortilla de batata",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "omelette de jamon y queso",
+      "title": "Omelette de jamon y queso",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/omelette de jamon y queso.png",
+      "price": "",
+      "en": {
+        "title": "Ham and Cheese Omelette",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Omelete de Presunto e Queijo",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    }
+  ]
+}

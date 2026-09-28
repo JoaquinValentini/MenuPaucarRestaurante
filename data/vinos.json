@@ -1,10 +1,23 @@
-[
-  {
-    "id": "vino tinto malbec alma mora",
-    "title": "Vino tinto Malbec Alma mora",
-    "desc": "Botella 750ml",
-    "note": "",
-    "img": "imagenes/vino tinto.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "vino tinto malbec alma mora",
+      "title": "Vino tinto Malbec Alma mora",
+      "desc": "Botella 750ml",
+      "note": "",
+      "img": "imagenes/vino tinto.png",
+      "price": "",
+      "en": {
+        "title": "Alma Mora Malbec Red Wine",
+        "desc": "750ml bottle",
+        "note": ""
+      },
+      "pt": {
+        "title": "Vinho Tinto Malbec Alma Mora",
+        "desc": "Garrafa 750ml",
+        "note": ""
+      },
+      "available": true
+    }
+  ]
+}

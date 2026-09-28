@@ -1,34 +1,80 @@
-[
-  {
-    "id": "milanesa de peceto",
-    "title": "Milanesa de peceto",
-    "desc": "",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/milanesa de peceto.png",
-    "price": ""
-  },
-  {
-    "id": "milanesa de pollo",
-    "title": "Milanesa de pollo",
-    "desc": "",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/milanesa de pollo.png",
-    "price": ""
-  },
-  {
-    "id": "milanesa de carne a la napolitana",
-    "title": "Milanesa de carne a la napolitana",
-    "desc": "",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/milanesa de carne.png",
-    "price": ""
-  },
-  {
-    "id": "milanesa de pollo a la napolitana",
-    "title": "Milanesa de pollo a la napolitana",
-    "desc": "",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/milanesa de pollo a la napo.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "milanesa de peceto",
+      "title": "Milanesa de peceto",
+      "desc": "",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/milanesa de peceto.png",
+      "price": "",
+      "en": {
+        "title": "Breaded Beef Cutlet",
+        "desc": "",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Milanesa de Carne",
+        "desc": "",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "milanesa de pollo",
+      "title": "Milanesa de pollo",
+      "desc": "",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/milanesa de pollo.png",
+      "price": "",
+      "en": {
+        "title": "Breaded Chicken Cutlet",
+        "desc": "",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Milanesa de Frango",
+        "desc": "",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "milanesa de carne a la napolitana",
+      "title": "Milanesa de carne a la napolitana",
+      "desc": "",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/milanesa de carne.png",
+      "price": "",
+      "en": {
+        "title": "Breaded Beef Cutlet Napolitana Style",
+        "desc": "",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Milanesa de Carne à Napolitana",
+        "desc": "",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "milanesa de pollo a la napolitana",
+      "title": "Milanesa de pollo a la napolitana",
+      "desc": "",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/milanesa de pollo a la napo.png",
+      "price": "",
+      "en": {
+        "title": "Breaded Chicken Cutlet Napolitana Style",
+        "desc": "",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Milanesa de Frango à Napolitana",
+        "desc": "",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    }
+  ]
+}

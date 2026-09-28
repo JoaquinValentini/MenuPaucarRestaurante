@@ -1,50 +1,118 @@
-[
-  {
-    "id": "papas fritas",
-    "title": "Papas fritas",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/papas fritas.png",
-    "price": ""
-  },
-  {
-    "id": "arroz al vapor",
-    "title": "Arroz al vapor",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/arroz.png",
-    "price": ""
-  },
-  {
-    "id": "ensalada mixta",
-    "title": "Ensalada mixta",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/ensalada mixta.png",
-    "price": ""
-  },
-  {
-    "id": "pure de papa",
-    "title": "Puré de papa",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/pure de papa.png",
-    "price": ""
-  },
-  {
-    "id": "pure de calabaza",
-    "title": "Puré de calabaza",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/pure de calabaza.png",
-    "price": ""
-  },
-  {
-    "id": "verduras salteadas",
-    "title": "Verduras salteadas",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/verduras salteadas.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "papas fritas",
+      "title": "Papas fritas",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/papas fritas.png",
+      "price": "",
+      "en": {
+        "title": "French Fries",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Batatas Fritas",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "arroz al vapor",
+      "title": "Arroz al vapor",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/arroz.png",
+      "price": "",
+      "en": {
+        "title": "Steamed Rice",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Arroz Branco",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "ensalada mixta",
+      "title": "Ensalada mixta",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/ensalada mixta.png",
+      "price": "",
+      "en": {
+        "title": "Mixed Salad",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Salada Mista",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "pure de papa",
+      "title": "Puré de papa",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/pure de papa.png",
+      "price": "",
+      "en": {
+        "title": "Mashed Potatoes",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Purê de Batata",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "pure de calabaza",
+      "title": "Puré de calabaza",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/pure de calabaza.png",
+      "price": "",
+      "en": {
+        "title": "Pumpkin Purée",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Purê de Abóbora",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "verduras salteadas",
+      "title": "Verduras salteadas",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/verduras salteadas.png",
+      "price": "",
+      "en": {
+        "title": "Sautéed Vegetables",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Legumes Salteados",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    }
+  ]
+}

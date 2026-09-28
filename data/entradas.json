@@ -1,42 +1,99 @@
-[
-  {
-    "id": "Empanadas",
-    "title": "Empanadas",
-    "desc": "De carne, pollo, jamon y queso, cebolla y queso",
-    "note": "",
-    "img": "imagenes/empanadas.png",
-    "price": ""
-  },
-  {
-    "id": "tortilla de papa",
-    "title": "Tortilla de papa",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/tortilla de papa.png",
-    "price": ""
-  },
-  {
-    "id": "tortilla de verdura",
-    "title": "Tortilla de verdura",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/tortilla de verdura.png",
-    "price": ""
-  },
-  {
-    "id": "omelette de jamon y queso",
-    "title": "Omelette de jamon y queso",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/omelette de jamon y queso.png",
-    "price": ""
-  },
-  {
-    "id": "sopa",
-    "title": "Sopa",
-    "desc": "",
-    "note": "",
-    "img": "imagenes/sopa.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "Empanadas",
+      "title": "Empanadas",
+      "desc": "De carne, pollo, jamon y queso, cebolla y queso",
+      "note": "",
+      "img": "imagenes/empanadas.png",
+      "price": "",
+      "en": {
+        "title": "Empanadas",
+        "desc": "carne(beef), pollo(chicken), jamon y queso(ham and cheese), cebolla y queso (onion and cheese)",
+        "note": ""
+      },
+      "pt": {
+        "title": "Empanadas",
+        "desc": "Carne, frango, presunto e queijo, cebola e queijo",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "tortilla de papa",
+      "title": "Tortilla de papa",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/tortilla de papa.png",
+      "price": "",
+      "en": {
+        "title": "Potato tortilla",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Omelete de batata",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "tortilla de verdura",
+      "title": "Tortilla de verdura",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/tortilla de verdura.png",
+      "price": "",
+      "en": {
+        "title": "Vegetable tortilla",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Omelete de legumes",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "omelette de jamon y queso",
+      "title": "Omelette de jamon y queso",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/omelette de jamon y queso.png",
+      "price": "",
+      "en": {
+        "title": "Ham and cheese omelette",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Omelette de presunto e queijo",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    },
+    {
+      "id": "sopa",
+      "title": "Sopa",
+      "desc": "",
+      "note": "",
+      "img": "imagenes/sopa.png",
+      "price": "",
+      "en": {
+        "title": "Soup",
+        "desc": "",
+        "note": ""
+      },
+      "pt": {
+        "title": "Sopa",
+        "desc": "",
+        "note": ""
+      },
+      "available": true
+    }
+  ]
+}

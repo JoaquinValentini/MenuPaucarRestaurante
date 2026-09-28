@@ -1,26 +1,61 @@
-[
-  {
-    "id": "wok de lomo saltado con verduras",
-    "title": "Wok de lomo saltado con verduras",
-    "desc": "carne de res, zuquini, morron cebolla, berengena, salsa de soja y condimento",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/wok de lomo.png",
-    "price": ""
-  },
-  {
-    "id": "wok de langostinos con verduras",
-    "title": "Wok de langostinos con verduras",
-    "desc": "langostinos (140gr), zuquini, morron cebolla, berengena, salsa de soja y condimento",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/wok de langostinos.png",
-    "price": ""
-  },
-  {
-    "id": "wok de pollo salteado con verduras",
-    "title": "Wok de pollo salteado con verduras",
-    "desc": "pollo, zuquini, morron cebolla, berengena, salsa de soja y condimento",
-    "note": "INCLUYE GUARNICIÓN",
-    "img": "imagenes/wok de pollo.png",
-    "price": ""
-  }
-]
+{
+  "products": [
+    {
+      "id": "wok de lomo saltado con verduras",
+      "title": "Wok de lomo saltado con verduras",
+      "desc": "carne de res, zuquini, morron cebolla, berengena, salsa de soja y condimento",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/wok de lomo.png",
+      "price": "",
+      "en": {
+        "title": "Beef Stir-Fry Wok with Vegetables",
+        "desc": "Beef, zucchini, bell pepper, onion, eggplant, soy sauce and seasonings",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Wok de Carne com Legumes",
+        "desc": "Carne bovina, abobrinha, pimentão, cebola, berinjela, molho shoyu e temperos",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "wok de langostinos con verduras",
+      "title": "Wok de langostinos con verduras",
+      "desc": "langostinos (140gr), zuquini, morron cebolla, berengena, salsa de soja y condimento",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/wok de langostinos.png",
+      "price": "",
+      "en": {
+        "title": "Shrimp Stir-Fry Wok with Vegetables",
+        "desc": "Shrimp (140g), zucchini, bell pepper, onion, eggplant, soy sauce and seasonings",
+        "note": "INCLUDES SIDE DISH"
+      },
+      "pt": {
+        "title": "Wok de Camarões com Legumes",
+        "desc": "Camarões (140g), abobrinha, pimentão, cebola, berinjela, molho shoyu e temperos",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    },
+    {
+      "id": "wok de pollo salteado con verduras",
+      "title": "Wok de pollo salteado con verduras",
+      "desc": "pollo, zuquini, morron cebolla, berengena, salsa de soja y condimento",
+      "note": "INCLUYE GUARNICIÓN",
+      "img": "imagenes/wok de pollo.png",
+      "price": "",
+      "en": {
+        "title": "Chicken Stir-Fry Wok with Vegetables",
+        "desc": "Chicken, zucchini, bell pepper, onion, eggplant, soy sauce and seasonings",
+        "note": "Includes Side Dish"
+      },
+      "pt": {
+        "title": "Wok de Frango com Legumes",
+        "desc": "Frango, abobrinha, pimentão, cebola, berinjela, molho shoyu e temperos",
+        "note": "INCLUI ACOMPANHAMENTO"
+      },
+      "available": true
+    }
+  ]
+}
