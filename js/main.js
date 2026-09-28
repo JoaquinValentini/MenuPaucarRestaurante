@@ -9,7 +9,7 @@ const GRID_PATH = 'Componentes/productGrid.html';/*Declaro una constante y la ll
                                                  con el texto 'Componentes/productGrid.html'*/
 const CARD_TEMPLATE_PATH = 'Componentes/productCard.html';
 const CATEGORIES_MANIFEST = 'data/categories.json';
-const PLACEHOLDER = 'Imagenes/placeholder.svg';
+const PLACEHOLDER = 'imagenes/placeholder.svg';
 
 // Activa/desactiva logs de depuración
 const DEBUG = true;
@@ -28,7 +28,7 @@ function detectLenguaje() {
   else {
     nav = {};
   }
-  const cand = (nav.languages && nav.languages[0]) || nav.language || 'es';
+  const cand = new URLSearchParams(location.search).get('lang') || (nav.languages && nav.languages[0]) || nav.language || 'es';
   const base = String(cand).toLowerCase().split('-')[0];
 
   // Agregá 'pt' a la lista
@@ -45,6 +45,7 @@ function detectLenguaje() {
 // Redirige SOLO archivos bajo "data/" respetando DATA_ROOT
 function localizePath(path) {
   if (!/^data\//.test(path)) return path;      // sólo localizamos JSON bajo data/
+  if (!/data\/(ui|categories)\.json$/.test(path)) return `${DATA_ROOT}${path}`;
   const lang = detectLenguaje();
   if (lang === 'es') return `${DATA_ROOT}${path}`;
   return path.replace(/^data\//, `${DATA_ROOT}i18n/${lang}/data/`);
@@ -53,7 +54,8 @@ function localizePath(path) {
 async function fetchJSON(url) {
   const res = await fetch(url, { cache: 'no-cache' });
   if (!res.ok) throw new Error(`HTTP ${res.status} – ${url}`);
-  return res.json();
+  const data = await res.json();
+  return data.products ? data.products : data;
 }
 
 function formatARS(value) {
@@ -134,7 +136,12 @@ function renderProductsIntoGrid(grid, products) {
   const tpl = document.getElementById('product-card-template');
   if (!tpl) return;
 
-  products.forEach(prod => {
+  products.filter(prod => prod.available !== false).forEach(source => {
+    const text = source[detectLenguaje()] || {};
+    const prod = {...source};
+    for (const key of ['title', 'desc', 'note']) {
+      if (text[key]) prod[key] = text[key];
+    }
     const clone = tpl.content.cloneNode(true);
 
     const img = clone.querySelector('.product-img');
@@ -148,7 +155,7 @@ function renderProductsIntoGrid(grid, products) {
     if (img) {
       img.src = imgSrc;
       img.alt = prod.title || 'Producto';
-      img.addEventListener('error', () => { img.src = PLACEHOLDER; });
+      img.addEventListener('error', () => { img.src = PLACEHOLDER; }, {once:true});
     }
 
     if (titleEl) titleEl.textContent = prod.title || '';
@@ -356,7 +363,8 @@ async function renderAll() {
       log('[PLACEHOLDER]', { title, file });
       const r = await fetch(localizedFile, { cache: 'no-cache' });
       if (!r.ok) throw new Error('HTTP ' + r.status);
-      const products = await r.json();
+      const data = await r.json();
+      const products = data.products || data;
       renderProductsIntoGrid(grid, products);
       renderedFiles.add(file);
     } catch (err) {
