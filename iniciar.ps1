@@ -7,6 +7,7 @@ if ($occupied) {
   try {
     $state = Invoke-RestMethod 'http://localhost:8000/api/session' -TimeoutSec 5
     if ($null -eq $state.needsSetup) { throw 'Servidor incorrecto' }
+    if ($state.autoPublishVersion -ne 2) { Write-Host 'Sigue abierto un servidor anterior. Cerralo antes de iniciar esta versión con publicación automática.'; Read-Host 'Enter para cerrar'; exit 1 }
     $setup = Join-Path $project '.private\setup-url.txt'
     if ($state.needsSetup -and (Test-Path -LiteralPath $setup)) { Start-Process (Get-Content -LiteralPath $setup -Raw) } else { Start-Process 'http://localhost:8000/admin/' }
   } catch { Write-Host 'El puerto 8000 está ocupado por otro servidor. Cerralo antes de iniciar.' }

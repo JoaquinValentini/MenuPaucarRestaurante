@@ -1,4 +1,5 @@
 import os, json, secrets, hashlib, hmac, time, threading, mimetypes, re, io
+from publish_menu import publish
 from pathlib import Path
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlsplit, unquote
@@ -59,7 +60,7 @@ class Handler(BaseHTTPRequestHandler):
         path=urlsplit(self.path).path
         if path=='/api/session':
             _,s=self.session()
-            return self.reply(200,{'authenticated':bool(s),'csrf':s['csrf'] if s else None,'needsSetup':not ACCOUNT.exists()})
+            return self.reply(200,{'authenticated':bool(s),'csrf':s['csrf'] if s else None,'needsSetup':not ACCOUNT.exists(),'autoPublishVersion':2})
         if path=='/api/catalog':
             if not self.session()[1]: return self.reply(401,{'error':'Iniciá sesión.'})
             return self.reply(200,{'categories':[{'key':k,'title':c['title'],'products':json.loads((ROOT/c['file']).read_text(encoding='utf-8-sig'))['products']} for k,c in CATEGORIES.items()]})
@@ -137,7 +138,8 @@ class Handler(BaseHTTPRequestHandler):
                     f=ROOT/CATEGORIES[key]['file']; backup=PRIVATE/'backups'; backup.mkdir(exist_ok=True)
                     (backup/(key+'-'+str(time.time_ns())+'.json')).write_bytes(f.read_bytes())
                     atomic(f,{'products':items})
-                return self.reply(200,{'ok':True})
+                    publication=publish(ROOT,CATEGORIES[key]['file'],items)
+                return self.reply(200,{'ok':True,**publication})
             return self.reply(404,{'error':'No encontrado.'})
         except (ValueError,TypeError,KeyError): return self.reply(400,{'error':'Revisá los datos: nombre, precio, imagen y contraseña.'})
         except Exception: return self.reply(500,{'error':'No se pudo completar la operación. Los cambios no fueron confirmados.'})

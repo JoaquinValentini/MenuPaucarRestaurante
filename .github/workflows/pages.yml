@@ -1,0 +1,64 @@
+name: Publicar menú
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Preparar menú público
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar proyecto
+        uses: actions/checkout@v6
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+      - name: Verificar datos y preparar archivos públicos
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import shutil
+          from pathlib import Path
+
+          for folder in ('data', 'i18n'):
+              for source in Path(folder).rglob('*.json'):
+                  json.loads(source.read_text(encoding='utf-8-sig'))
+
+          output = Path('_site')
+          output.mkdir()
+          shutil.copy2('index.html', output / 'index.html')
+          for folder in ('css', 'js', 'Componentes', 'imagenes', 'data', 'i18n'):
+              source = Path(folder)
+              if any(p.is_symlink() for p in source.rglob('*')):
+                  raise SystemExit(f'No se permiten enlaces simbólicos en {folder}')
+              shutil.copytree(source, output / folder)
+          (output / '.nojekyll').touch()
+          PY
+      - name: Subir menú público
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    name: Publicar en GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Desplegar
+        id: deployment
+        uses: actions/deploy-pages@v4

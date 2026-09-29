@@ -3,10 +3,10 @@
     {
       "id": "ensalada de frutas",
       "title": "Ensalada de frutas",
-      "desc": "",
-      "note": "",
+      "desc": "anaa",
+      "note": "borren esto después",
       "img": "imagenes/ensalada de frutas.png",
-      "price": "",
+      "price": 3800,
       "en": {
         "title": "Fruit salad",
         "desc": "",
