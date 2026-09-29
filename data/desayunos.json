@@ -25,7 +25,7 @@
       "desc": "",
       "note": "",
       "img": "imagenes/tostadas.png",
-      "price": "",
+      "price": 1000000,
       "en": {
         "title": "Toasts",
         "desc": "",
