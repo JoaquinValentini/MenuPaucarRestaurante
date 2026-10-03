@@ -75,6 +75,17 @@
         "note": ""
       },
       "available": true
+    },
+    {
+      "id": "c8bd6877-edfd-41a7-9c7e-d14d6aae1ff9",
+      "title": "Lomo saltado",
+      "desc": "",
+      "note": "",
+      "price": 50000,
+      "img": "",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
