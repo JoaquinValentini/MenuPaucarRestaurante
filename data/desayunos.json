@@ -83,7 +83,7 @@
       "note": "",
       "price": 50000,
       "img": "",
-      "available": true,
+      "available": false,
       "en": {},
       "pt": {}
     }
