@@ -317,6 +317,20 @@ async function loadFromManifest(container, renderedFiles) {
 /* ---------- Render principal ---------- */
 
 async function renderAll() {
+  if (location.protocol === 'file:') {
+    const mainEl = document.querySelector('main') || document.body;
+    mainEl.innerHTML = `
+      <div style="max-width:720px;margin:48px auto;padding:24px;border:1px solid #e0c59c;background:#fff9f0;border-radius:16px;color:#3b2f24;font-family:Arial,sans-serif;line-height:1.5;">
+        <h2 style="margin-top:0;">Menú no disponible al abrir el archivo directamente</h2>
+        <p>Este proyecto carga los productos desde archivos JSON y necesita ejecutarse desde un servidor local.</p>
+        <p><strong>Solución:</strong> abrí <code>INICIAR.cmd</code> o ejecutá en la carpeta del proyecto:</p>
+        <pre style="background:#f4eee3;padding:12px;border-radius:10px;overflow:auto;">python server.py</pre>
+        <p>Luego entrá a <a href="http://localhost:8000/" style="color:#b06a00;">http://localhost:8000/</a>.</p>
+      </div>
+    `;
+    return;
+  }
+
   // 0) Contenedor donde pintaremos (si no existe, se crea)
   let container = document.getElementById('grid-container');
   const mainEl = document.querySelector('main') || document.body;
