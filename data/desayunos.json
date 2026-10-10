@@ -63,7 +63,7 @@
       "desc": "Cortado, lágrima, capuccino o Italiano",
       "note": "",
       "img": "imagenes/cafe.png",
-      "price": "",
+      "price": 5000,
       "en": {
         "title": "Coffee",
         "desc": "Cortado(Espresso), lágrima(espresso with milk), cappuccino or Italian coffee",
