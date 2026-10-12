@@ -86,7 +86,7 @@
       "note": "",
       "price": "",
       "img": "",
-      "available": true,
+      "available": false,
       "en": {},
       "pt": {}
     }
