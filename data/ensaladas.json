@@ -75,6 +75,17 @@
         "note": ""
       },
       "available": true
+    },
+    {
+      "id": "5467a0db-8ea7-4fff-99b4-c801b033b98a",
+      "title": "Ensalada de Pollo ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/76bbaf9a80457dea52b9acfe49ede390.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
