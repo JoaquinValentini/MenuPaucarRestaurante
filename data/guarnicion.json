@@ -113,6 +113,17 @@
         "note": ""
       },
       "available": true
+    },
+    {
+      "id": "298ee72e-053a-4a40-88ec-12e11279dbbb",
+      "title": "Puré de Batata",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/b44a423c57249bad4de03f57f5858055.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
