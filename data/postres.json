@@ -6,7 +6,7 @@
       "desc": "Mix de frutas",
       "note": "",
       "img": "imagenes/ensalada de frutas.png",
-      "price": 4,
+      "price": 4000,
       "en": {
         "title": "Fruit salad",
         "desc": "",
@@ -25,7 +25,7 @@
       "desc": "",
       "note": "",
       "img": "imagenes/flan.png",
-      "price": 4,
+      "price": 4000,
       "en": {
         "title": "Flan",
         "desc": "",
@@ -44,7 +44,7 @@
       "desc": "",
       "note": "",
       "img": "imagenes/arroz con leche.png",
-      "price": 4,
+      "price": 4000,
       "en": {
         "title": "Rice Pudding",
         "desc": "",
