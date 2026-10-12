@@ -2,9 +2,9 @@
   "products": [
     {
       "id": "hamburguesa casera COMPLETA",
-      "title": "Hamburguesa casera COMPLETA",
+      "title": "Hamburguesa casera Completa ",
       "desc": "jamon, lechuga, tomate y huevo",
-      "note": "INCLUYE GUARNICION",
+      "note": "Incluye Fritas ",
       "img": "imagenes/hamburguesa.png",
       "price": "",
       "en": {
@@ -21,9 +21,9 @@
     },
     {
       "id": "sandwich de milanesa de carne COMPLETO",
-      "title": "Sandwich de milanesa de carne COMPLETO",
-      "desc": "jamon, lechuga, tomate y huevo",
-      "note": "INCLUYE GUARNICION",
+      "title": "Sandwich de milanesa Completo",
+      "desc": "jamon, lechuga, tomate y huevo frito",
+      "note": "Incluye Fritas ",
       "img": "imagenes/sandwich milanesa de carne.png",
       "price": "",
       "en": {
@@ -42,7 +42,7 @@
       "id": "sandwich de milanesa de pollo COMPLETO",
       "title": "Sandwich de milanesa de pollo COMPLETO",
       "desc": "jamon, lechuga, tomate y huevo",
-      "note": "INCLUYE GUARNICIÓN",
+      "note": "Incluye Fritas",
       "img": "imagenes/sandwich milanesa de pollo.png",
       "price": "",
       "en": {
@@ -61,7 +61,7 @@
       "id": "sandwich de pechuga de pollo con rucula y queso crema",
       "title": "Sandwich de pechuga de pollo con rúcula y queso crema",
       "desc": "",
-      "note": "INCLUYE GUARNICIÓN",
+      "note": "Incluye Fritas ",
       "img": "imagenes/sandwich de pechuga de pollo.png",
       "price": "",
       "en": {
@@ -93,13 +93,13 @@
         "desc": "Lâminas de salmão defumado",
         "note": "INCLUI ACOMPANHAMENTO"
       },
-      "available": true
+      "available": false
     },
     {
       "id": "sandwich de ciabetta jamon y queso",
       "title": "Sandwich de ciabetta jamon y queso",
       "desc": "",
-      "note": "INCLUYE GUARNICIÓN",
+      "note": "Incluye Fritas ",
       "img": "imagenes/ciabatta jamon y queso.png",
       "price": "",
       "en": {
@@ -116,9 +116,9 @@
     },
     {
       "id": "sandwich de frances jamon y queso",
-      "title": "Sandwich de frances jamon y queso",
+      "title": "Sandwich  jamon y queso",
       "desc": "",
-      "note": "INCLUYE GUARNICIÓN",
+      "note": "",
       "img": "imagenes/frances jamon y queso.jpg",
       "price": "",
       "en": {
