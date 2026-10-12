@@ -3,7 +3,7 @@
     {
       "id": "papas fritas",
       "title": "Papas fritas",
-      "desc": "",
+      "desc": "porción chica",
       "note": "",
       "img": "imagenes/papas fritas.png",
       "price": "",
@@ -22,7 +22,7 @@
     {
       "id": "arroz al vapor",
       "title": "Arroz al vapor",
-      "desc": "",
+      "desc": "porción chica",
       "note": "",
       "img": "imagenes/arroz.png",
       "price": "",
@@ -41,7 +41,7 @@
     {
       "id": "ensalada mixta",
       "title": "Ensalada mixta",
-      "desc": "",
+      "desc": "porción chica ",
       "note": "",
       "img": "imagenes/ensalada mixta.png",
       "price": "",
@@ -79,7 +79,7 @@
     {
       "id": "pure de calabaza",
       "title": "Puré de calabaza",
-      "desc": "",
+      "desc": "porción chica ",
       "note": "",
       "img": "imagenes/pure de calabaza.png",
       "price": "",
@@ -98,7 +98,7 @@
     {
       "id": "verduras salteadas",
       "title": "Verduras salteadas",
-      "desc": "",
+      "desc": "porción chica ",
       "note": "",
       "img": "imagenes/verduras salteadas.png",
       "price": "",
