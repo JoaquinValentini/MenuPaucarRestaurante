@@ -4,7 +4,7 @@
       "id": "tarta bicolor",
       "title": "Tarta bicolor",
       "desc": "de verdura y calabaza",
-      "note": "",
+      "note": "Guarnicion: Ensalada o Arroz ",
       "img": "imagenes/tarta bicolor.png",
       "price": "",
       "en": {
@@ -23,7 +23,7 @@
       "id": "tortilla de papa",
       "title": "Tortilla de papa",
       "desc": "",
-      "note": "",
+      "note": "No incluye Guarnicion ",
       "img": "imagenes/tortilla de papa.png",
       "price": "",
       "en": {
@@ -72,7 +72,7 @@
       "id": "35fff2ca-2f37-4bfe-a9c9-ada9c1ad627f",
       "title": "Tarta de Calabaza ",
       "desc": "",
-      "note": "",
+      "note": "Guarnicion: Ensalada o Arroz",
       "price": "",
       "img": "imagenes/d00924d14dd5be1c93f4f547d17b21f3.jpg",
       "available": true,
