@@ -58,7 +58,7 @@
       "id": "coca zero"
     },
     {
-      "img": "imagenes/sprite.png",
+      "img": "imagenes/13d5c91533cc31786f36611974adf3f4.jpg",
       "pt": {
         "title": "Sprite",
         "desc": "1.75L e 500ml",
@@ -96,7 +96,7 @@
       "id": "levite"
     },
     {
-      "img": "imagenes/agua con gas.png",
+      "img": "imagenes/780829680ba94cc0cd24d86ac97fc85e.jpg",
       "pt": {
         "title": "Água com gás",
         "desc": "500ml",
@@ -109,10 +109,21 @@
       },
       "price": "",
       "available": false,
-      "desc": "500ml",
+      "desc": "-500ml\n-1.5 L",
       "note": "",
-      "title": "Agua con gas",
+      "title": "Paso de los Toros ",
       "id": "agua con gas"
+    },
+    {
+      "id": "f27c7762-b78e-4d40-9efe-58c3ac801718",
+      "title": "Fanta ",
+      "desc": "- 500 ml\n-1.75 L",
+      "note": "",
+      "price": "",
+      "img": "imagenes/db0e372d6964c000773d4eee040ae2c2.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
