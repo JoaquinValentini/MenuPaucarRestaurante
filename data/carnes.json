@@ -5,7 +5,7 @@
       "title": "Salmón",
       "desc": " 240grs",
       "note": "INCLUYE GUARNICIÓN",
-      "img": "imagenes/salmon.png",
+      "img": "imagenes/aa771f0edf39eea26fc167bcd38172b1.jpg",
       "price": "",
       "en": {
         "title": "Salmon",
@@ -40,9 +40,9 @@
     },
     {
       "id": "ojo de bife",
-      "title": "Ojo de bife",
+      "title": "Bife de Chorizo",
       "desc": "240grs",
-      "note": "INCLUYE GUARNICIÓN",
+      "note": "Incluye Guarnicion",
       "img": "imagenes/ojo de bife.png",
       "price": "",
       "en": {
@@ -59,9 +59,9 @@
     },
     {
       "id": "langostinos empanizados con panko",
-      "title": "Langostinos empanizados con panko",
-      "desc": "8 unidades",
-      "note": "INCLUYE GUARNICIÓN",
+      "title": "Langostinos empanizados",
+      "desc": "7 unidades",
+      "note": "",
       "img": "imagenes/langostinos empanizados con panko.png",
       "price": "",
       "en": {
@@ -78,7 +78,7 @@
     },
     {
       "id": "pechuga de pollo al grill",
-      "title": "Pechuga de polloal grill",
+      "title": "Pechuga Grill",
       "desc": "",
       "note": "INCLUYE GUARNICIÓN",
       "img": "imagenes/pechuga al grill.png",
@@ -97,10 +97,10 @@
     },
     {
       "id": "pata y muslo de pollo",
-      "title": "Pata y muslo de pollo",
+      "title": "Pata y muslo al Horno",
       "desc": "",
       "note": "INCLUYE GUARNICIÓN",
-      "img": "imagenes/pata y muslo.png",
+      "img": "imagenes/5a5fcf91c85f819d9628cc768265068f.jpg",
       "price": "",
       "en": {
         "title": "Chicken Leg and Thigh",
@@ -113,6 +113,17 @@
         "note": "INCLUI ACOMPANHAMENTO"
       },
       "available": true
+    },
+    {
+      "id": "9c6ba5ef-5d84-49f2-a5eb-b976fcfaa694",
+      "title": "Trucha Grill ",
+      "desc": "",
+      "note": "Incluye Guarnicion",
+      "price": "",
+      "img": "imagenes/5dc1233744481d61b14fe4d03451d13b.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
