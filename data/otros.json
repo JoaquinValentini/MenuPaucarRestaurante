@@ -5,7 +5,7 @@
       "title": "Tarta bicolor",
       "desc": "de verdura y calabaza",
       "note": "Guarnicion: Ensalada o Arroz ",
-      "img": "imagenes/tarta bicolor.png",
+      "img": "imagenes/5dffd236197a6e4b633fde7f32cd4892.jpg",
       "price": "",
       "en": {
         "title": "Bicolor Vegetable Pie",
@@ -75,6 +75,17 @@
       "note": "Guarnicion: Ensalada o Arroz",
       "price": "",
       "img": "imagenes/d00924d14dd5be1c93f4f547d17b21f3.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "a6a91b1a-02e8-44f6-83da-a1ddab89b9f5",
+      "title": "Tarta de Salmón ",
+      "desc": "",
+      "note": "Guarnición: Ensalada o Arroz ",
+      "price": "",
+      "img": "imagenes/3b60937b033f55eac03c3ae8a10ee06a.jpg",
       "available": true,
       "en": {},
       "pt": {}
