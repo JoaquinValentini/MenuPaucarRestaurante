@@ -14,9 +14,9 @@
       },
       "price": "",
       "available": true,
-      "desc": " 1.75L y 500ml",
+      "desc": "-600 ml \n-1.25 ml \n-1.75ml",
       "note": "Sin alcohol",
-      "title": "Coca Cola",
+      "title": "Coca Cola común/ zero ",
       "id": "coca cola"
     },
     {
@@ -33,9 +33,9 @@
       },
       "price": "",
       "available": true,
-      "desc": "1.5L y 500ml",
+      "desc": "-500 ml \n-1.5L ",
       "note": "",
-      "title": "Agua mineral",
+      "title": "Agua común / con gas ",
       "id": "agua"
     },
     {
@@ -51,7 +51,7 @@
         "note": "Non-alcoholic"
       },
       "price": "",
-      "available": true,
+      "available": false,
       "desc": "1.75L y 500ml",
       "note": "Sin alcohol",
       "title": "Coca Zero",
@@ -71,9 +71,9 @@
       },
       "price": "",
       "available": true,
-      "desc": "1.75L y 500ml",
+      "desc": "-500 ml \n-1.75L",
       "note": "Sin alcohol",
-      "title": "Sprite",
+      "title": "Sprite común / zero ",
       "id": "sprite"
     },
     {
@@ -90,9 +90,9 @@
       },
       "price": "",
       "available": true,
-      "desc": "1.5L y 500ml",
+      "desc": "-500 ml \n- 1.5L ",
       "note": "Sin alcohol",
-      "title": "Levité",
+      "title": "Agua Saborizada ",
       "id": "levite"
     },
     {
@@ -108,7 +108,7 @@
         "note": ""
       },
       "price": "",
-      "available": true,
+      "available": false,
       "desc": "500ml",
       "note": "",
       "title": "Agua con gas",
