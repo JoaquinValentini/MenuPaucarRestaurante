@@ -3,10 +3,10 @@
     {
       "id": "ensalada de frutas",
       "title": "Ensalada de frutas",
-      "desc": "anaa",
-      "note": "borren esto después",
+      "desc": "Mix de frutas",
+      "note": "",
       "img": "imagenes/ensalada de frutas.png",
-      "price": 3800,
+      "price": 4,
       "en": {
         "title": "Fruit salad",
         "desc": "",
@@ -21,11 +21,11 @@
     },
     {
       "id": "flan",
-      "title": "Flan",
+      "title": "Flan casero ",
       "desc": "",
       "note": "",
       "img": "imagenes/flan.png",
-      "price": "",
+      "price": 4,
       "en": {
         "title": "Flan",
         "desc": "",
@@ -44,7 +44,7 @@
       "desc": "",
       "note": "",
       "img": "imagenes/arroz con leche.png",
-      "price": "",
+      "price": 4,
       "en": {
         "title": "Rice Pudding",
         "desc": "",
