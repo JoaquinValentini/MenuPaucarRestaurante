@@ -3,7 +3,7 @@
     {
       "id": "ensalada de frutas",
       "title": "Ensalada de frutas",
-      "desc": "Mix de frutas",
+      "desc": "",
       "note": "",
       "img": "imagenes/ensalada de frutas.png",
       "price": 4000,
@@ -56,6 +56,17 @@
         "note": ""
       },
       "available": true
+    },
+    {
+      "id": "73b9d782-6aed-4c31-9977-5154454df49e",
+      "title": "Budin de pan ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/60cc7e555a763dc93fded1b1d7546a5b.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
