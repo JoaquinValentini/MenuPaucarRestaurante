@@ -41,7 +41,7 @@
     {
       "id": "spaguetti",
       "title": "Spaguetti",
-      "desc": " - Estofado ",
+      "desc": "c /Estofado ",
       "note": "",
       "img": "imagenes/spaguetti.png",
       "price": "",
@@ -60,7 +60,7 @@
     {
       "id": "efc00451-6759-46c1-8a65-65008e3aebb3",
       "title": "Panzottis",
-      "desc": "Salsa Blanca ",
+      "desc": "c /Salsa Blanca ",
       "note": "",
       "price": "",
       "img": "imagenes/4fb898cd36919f1244bc18f5ecf89bfa.jpg",
@@ -71,10 +71,21 @@
     {
       "id": "97da71f4-7fcc-42b7-a3d2-334f139aa6cb",
       "title": "Ñoquis ",
-      "desc": "Salsa Mixta ",
+      "desc": "c /Salsa Mixta ",
       "note": "\" 29 de Ñoquis \"",
       "price": "",
       "img": "imagenes/69392434539f46e7f26b3b5402047132.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "89e0a923-0721-442f-bebf-c60706745ef6",
+      "title": "Nuevo producto",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "",
       "available": true,
       "en": {},
       "pt": {}
