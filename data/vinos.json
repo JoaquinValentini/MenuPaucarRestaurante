@@ -2,7 +2,7 @@
   "products": [
     {
       "id": "vino tinto malbec alma mora",
-      "title": "Vino tinto Malbec Alma mora",
+      "title": "Tinto Malbec Alma mora",
       "desc": "Botella 750ml",
       "note": "",
       "img": "imagenes/vino tinto.png",
@@ -18,6 +18,17 @@
         "note": ""
       },
       "available": true
+    },
+    {
+      "id": "3d523745-b11a-47de-918f-2eda05056270",
+      "title": "La Celia ",
+      "desc": "Botella 750ml",
+      "note": "",
+      "price": "",
+      "img": "imagenes/99214a7894175fd86aadd83d8b62e574.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
