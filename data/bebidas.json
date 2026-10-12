@@ -124,6 +124,28 @@
       "available": true,
       "en": {},
       "pt": {}
+    },
+    {
+      "id": "0d8ab4f4-edd5-4d54-bab1-e13b0036c98a",
+      "title": "7up",
+      "desc": "600 ml",
+      "note": "",
+      "price": "",
+      "img": "imagenes/3a94906effb9a74a9cf74801239b7b1f.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "77c610d0-d1d0-41b2-a610-b4d4266cc456",
+      "title": "Heineken 1L",
+      "desc": "",
+      "note": "Bien Helada ",
+      "price": "",
+      "img": "imagenes/a79c8ffd34de87936a955af9ede26b27.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
