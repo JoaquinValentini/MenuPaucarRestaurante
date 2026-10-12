@@ -135,6 +135,17 @@
       "available": true,
       "en": {},
       "pt": {}
+    },
+    {
+      "id": "de75cd3f-7825-47d1-b90d-5fb855a469fd",
+      "title": "Parrilla ",
+      "desc": "Vacío-Bondi-pollo-chori",
+      "note": "Solo Viernes ",
+      "price": "",
+      "img": "imagenes/5f9b4c2cdc0691b49823590c72dd795d.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
