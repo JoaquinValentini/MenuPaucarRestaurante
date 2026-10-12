@@ -2,8 +2,8 @@
   "products": [
     {
       "id": "Empanadas",
-      "title": "Empanadas",
-      "desc": "De carne, pollo, jamon y queso, cebolla y queso",
+      "title": "Empanada de carne ",
+      "desc": "",
       "note": "",
       "img": "imagenes/empanadas.png",
       "price": "",
@@ -94,6 +94,39 @@
         "note": ""
       },
       "available": true
+    },
+    {
+      "id": "0ed7c4f0-887e-423c-95d5-869d2aeba548",
+      "title": "Empanada JyQ ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/3ca690677a9f1bb3b6c6400fa9054c56.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "20e220f2-dc26-4960-895b-da1f165103bc",
+      "title": "Empanada de Queso y Cebolla ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/221df5ed777c82e062af8d4c7af46793.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "7206ca75-a65c-4016-9e58-e72ece92814d",
+      "title": "Empanadas 4Quesos",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/c6dd3360e0f0fea8994acecdc07f7d20.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
