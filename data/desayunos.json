@@ -3,8 +3,8 @@
     {
       "id": "medialunas",
       "title": "Medialunas ",
-      "desc": "",
-      "note": "",
+      "desc": " ",
+      "note": "Unidad",
       "img": "imagenes/medialunas.png",
       "price": 1500,
       "en": {
@@ -21,10 +21,10 @@
     },
     {
       "id": "tostadas",
-      "title": "Tostadas",
+      "title": "Tostado JyQ ",
       "desc": "",
       "note": "",
-      "img": "imagenes/tostadas.png",
+      "img": "imagenes/8cbb0beb446dc75cff28b63135e8901f.jpg",
       "price": "",
       "en": {
         "title": "Toasts",
@@ -59,9 +59,9 @@
     },
     {
       "id": "cafe",
-      "title": "Café",
-      "desc": "Cortado, lágrima, capuccino o Italiano",
-      "note": "",
+      "title": "Café con Leche",
+      "desc": "",
+      "note": "Incluye Soda",
       "img": "imagenes/cafe.png",
       "price": 5000,
       "en": {
@@ -78,12 +78,34 @@
     },
     {
       "id": "c8bd6877-edfd-41a7-9c7e-d14d6aae1ff9",
-      "title": "Lomo saltado",
+      "title": "Expreso ",
       "desc": "",
       "note": "",
-      "price": 50000,
-      "img": "",
+      "price": 3000,
+      "img": "imagenes/e2980a271cf38edc4f7573fa36694713.jpg",
       "available": false,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "052349c6-080d-400f-9998-4c70468697b4",
+      "title": "Café cortado ",
+      "desc": "",
+      "note": "Jarrito",
+      "price": 3500,
+      "img": "imagenes/4bbacf9baf449e9f3d27a0fc483ae93a.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "8719a168-24dd-46ee-b4c7-c1c431a76f12",
+      "title": "Capuccino ",
+      "desc": "",
+      "note": "Incluye soda",
+      "price": 6000,
+      "img": "imagenes/ce922c5cb29171feb3ec2ce8497442b2.jpg",
+      "available": true,
       "en": {},
       "pt": {}
     }
