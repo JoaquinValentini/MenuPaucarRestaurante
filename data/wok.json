@@ -56,6 +56,17 @@
         "note": "INCLUI ACOMPANHAMENTO"
       },
       "available": true
+    },
+    {
+      "id": "944a3ff8-fbb1-49b3-bd7c-64e52b8c92e0",
+      "title": "Lomo Saltado Peruano ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/14e8c33a15fe6d5724e03328773eed4b.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
