@@ -2,10 +2,10 @@
   "products": [
     {
       "id": "wok de lomo saltado con verduras",
-      "title": "Wok de lomo saltado con verduras",
-      "desc": "carne de res, zuquini, morron cebolla, berengena, salsa de soja y condimento",
-      "note": "INCLUYE GUARNICIÓN",
-      "img": "imagenes/wok de lomo.png",
+      "title": "Wok de lomo",
+      "desc": "",
+      "note": "Incluye Arroz y Fritas",
+      "img": "imagenes/0099915b5f2cf0fbb7c9db165d104dbd.jpg",
       "price": "",
       "en": {
         "title": "Beef Stir-Fry Wok with Vegetables",
@@ -21,9 +21,9 @@
     },
     {
       "id": "wok de langostinos con verduras",
-      "title": "Wok de langostinos con verduras",
-      "desc": "langostinos (140gr), zuquini, morron cebolla, berengena, salsa de soja y condimento",
-      "note": "INCLUYE GUARNICIÓN",
+      "title": "Wok de langostinos",
+      "desc": "",
+      "note": "Incluye Guarnicion",
       "img": "imagenes/wok de langostinos.png",
       "price": "",
       "en": {
@@ -42,7 +42,7 @@
       "id": "wok de pollo salteado con verduras",
       "title": "Wok de pollo salteado con verduras",
       "desc": "pollo, zuquini, morron cebolla, berengena, salsa de soja y condimento",
-      "note": "INCLUYE GUARNICIÓN",
+      "note": "Incluye Guarnicion ",
       "img": "imagenes/wok de pollo.png",
       "price": "",
       "en": {
@@ -61,7 +61,7 @@
       "id": "944a3ff8-fbb1-49b3-bd7c-64e52b8c92e0",
       "title": "Lomo Saltado Peruano ",
       "desc": "",
-      "note": "",
+      "note": "Incluye arroz y Fritas ",
       "price": "",
       "img": "imagenes/14e8c33a15fe6d5724e03328773eed4b.jpg",
       "available": true,
