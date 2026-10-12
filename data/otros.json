@@ -56,6 +56,17 @@
         "note": ""
       },
       "available": true
+    },
+    {
+      "id": "b41d510a-b771-4443-b445-a80a7229de2a",
+      "title": "Chaufa de Pollo",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/04582a8fd1d7fb4d1da7f4677a8414ec.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
