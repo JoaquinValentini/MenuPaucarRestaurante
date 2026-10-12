@@ -25,7 +25,7 @@
       "desc": "",
       "note": "",
       "img": "imagenes/8cbb0beb446dc75cff28b63135e8901f.jpg",
-      "price": "",
+      "price": 7000,
       "en": {
         "title": "Toasts",
         "desc": "",
@@ -105,6 +105,28 @@
       "note": "Incluye soda",
       "price": 6000,
       "img": "imagenes/ce922c5cb29171feb3ec2ce8497442b2.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "90021217-7140-4543-bb8c-d5a65d8f43b1",
+      "title": "Licuados",
+      "desc": "-Frutilla\n-Banana",
+      "note": "",
+      "price": "",
+      "img": "imagenes/21a5b06502a5dd87ee17b4ed54fca311.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "1ed95e47-6453-4bff-8ef1-f40d50dd03f0",
+      "title": "Exprimido de Naranja ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/51878c31cbdd1a4b9d5b3f6a040809a0.jpg",
       "available": true,
       "en": {},
       "pt": {}
