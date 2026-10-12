@@ -2,11 +2,11 @@
   "products": [
     {
       "id": "medialunas",
-      "title": "Medialunas 2",
+      "title": "Medialunas ",
       "desc": "",
       "note": "",
       "img": "imagenes/medialunas.png",
-      "price": 5000.04,
+      "price": 1500,
       "en": {
         "title": "Croissants",
         "desc": "",
@@ -25,7 +25,7 @@
       "desc": "",
       "note": "",
       "img": "imagenes/tostadas.png",
-      "price": 1000000,
+      "price": "",
       "en": {
         "title": "Toasts",
         "desc": "",
@@ -41,10 +41,10 @@
     {
       "id": "sandwich de miga",
       "title": "Sandwich de miga",
-      "desc": "de ciabatta o integral",
+      "desc": "",
       "note": "",
       "img": "imagenes/sandwich de miga triangulo.png",
-      "price": "",
+      "price": 6000,
       "en": {
         "title": "Finger Sandwiches",
         "desc": "de ciabatta ou integral",
