@@ -2,7 +2,7 @@
   "products": [
     {
       "id": "vino tinto malbec alma mora",
-      "title": "Tinto Malbec Alma mora",
+      "title": "Alma mora",
       "desc": "Botella 750ml",
       "note": "",
       "img": "imagenes/vino tinto.png",
@@ -48,6 +48,17 @@
       "note": "",
       "price": "",
       "img": "imagenes/1d6932adb0302ed4844d601e5d890215.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "05333ada-b8fe-411d-9686-54f471c15d50",
+      "title": "Trapiche Alaris Chardonnay",
+      "desc": "Botella 705ml ",
+      "note": "Vino blanco ",
+      "price": "",
+      "img": "imagenes/f401a21e6d245fce892ab79246049f67.jpg",
       "available": true,
       "en": {},
       "pt": {}
