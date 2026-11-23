@@ -40,7 +40,7 @@
     },
     {
       "id": "ensalada mixta",
-      "title": "Ensalada mixta",
+      "title": "Ensalada",
       "desc": "porción chica ",
       "note": "",
       "img": "imagenes/ensalada mixta.png",
@@ -93,7 +93,7 @@
         "desc": "",
         "note": ""
       },
-      "available": false
+      "available": true
     },
     {
       "id": "verduras salteadas",
