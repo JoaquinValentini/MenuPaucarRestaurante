@@ -43,7 +43,7 @@
       "title": "Omelette de jamon y queso",
       "desc": "",
       "note": "",
-      "img": "imagenes/omelette de jamon y queso.png",
+      "img": "imagenes/22829bbf9a3efdb72e59092aa82a4d89.jpg",
       "price": "",
       "en": {
         "title": "Ham and Cheese Omelette",
@@ -86,6 +86,17 @@
       "note": "Guarnición: Ensalada o Arroz ",
       "price": "",
       "img": "imagenes/3b60937b033f55eac03c3ae8a10ee06a.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "7d83e6f8-b949-4e22-8dce-a1e1904c6a3f",
+      "title": "Tortilla de Verduras ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/d151125a7c4995aebfcc6ea3a0f1f4ef.jpg",
       "available": true,
       "en": {},
       "pt": {}
