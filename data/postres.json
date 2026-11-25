@@ -100,6 +100,17 @@
       "available": true,
       "en": {},
       "pt": {}
+    },
+    {
+      "id": "96893fd4-c122-40df-9118-34a59b09f1ca",
+      "title": "Helado de Bocha ",
+      "desc": "Frutilla\nCrema americana\nDulce de Leche",
+      "note": "",
+      "price": "",
+      "img": "imagenes/d2ba5a8ef8ef0ff462b4fda558924b56.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
