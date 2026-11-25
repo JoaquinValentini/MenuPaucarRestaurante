@@ -67,6 +67,17 @@
       "available": true,
       "en": {},
       "pt": {}
+    },
+    {
+      "id": "0e2f804f-7540-4a30-996a-315eae766986",
+      "title": "Helado Suizo ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/043a3232a847232cb0d7f4c0972c8f6d.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
