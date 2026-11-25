@@ -5,7 +5,7 @@
       "title": "Fajita de lomo",
       "desc": "",
       "note": "Incluye Guarnicion",
-      "img": "imagenes/fajita de lomo.png",
+      "img": "imagenes/d1efe3185745b6403607a9d1119a978d.jpg",
       "price": "",
       "en": {
         "title": "Beef Fajita",
@@ -56,6 +56,17 @@
         "note": "INCLUI ACOMPANHAMENTO"
       },
       "available": true
+    },
+    {
+      "id": "5e807c5a-7839-4559-b457-0324504b7fed",
+      "title": "Fajita de Verduras ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/00bb98f6dd983d0edf8627beea9d164d.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
