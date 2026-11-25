@@ -14,7 +14,7 @@
       },
       "price": "",
       "available": true,
-      "desc": "-600 ml \n-1.25 ml \n-1.75ml",
+      "desc": "600 ml \n1.25 ml \n1.75ml",
       "note": "Sin alcohol",
       "title": "Coca Cola común/ zero ",
       "id": "coca cola"
@@ -52,7 +52,7 @@
       },
       "price": "",
       "available": false,
-      "desc": "1.75L y 500ml",
+      "desc": "600ml\n1.25ml\n1.75 ml",
       "note": "Sin alcohol",
       "title": "Coca Zero",
       "id": "coca zero"
@@ -71,7 +71,7 @@
       },
       "price": "",
       "available": true,
-      "desc": "-500 ml \n-1.75L",
+      "desc": "500 ml \n1.75L",
       "note": "Sin alcohol",
       "title": "Sprite común / zero ",
       "id": "sprite"
@@ -90,7 +90,7 @@
       },
       "price": "",
       "available": true,
-      "desc": "-500 ml \n- 1.5L ",
+      "desc": "500 ml \n 1.5L ",
       "note": "Sin alcohol",
       "title": "Agua Saborizada ",
       "id": "levite"
@@ -109,7 +109,7 @@
       },
       "price": "",
       "available": true,
-      "desc": "-500ml\n-1.5 L",
+      "desc": "500ml\n1.5 L",
       "note": "",
       "title": "Paso de los Toros ",
       "id": "agua con gas"
@@ -117,7 +117,7 @@
     {
       "id": "f27c7762-b78e-4d40-9efe-58c3ac801718",
       "title": "Fanta ",
-      "desc": "- 500 ml\n-1.75 L",
+      "desc": "500 ml\n1.75 L",
       "note": "",
       "price": "",
       "img": "imagenes/db0e372d6964c000773d4eee040ae2c2.jpg",
@@ -143,6 +143,17 @@
       "note": "Bien Helada ",
       "price": "",
       "img": "imagenes/a79c8ffd34de87936a955af9ede26b27.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "f51836ca-cc5d-4fff-91e4-eff28db17bde",
+      "title": "Pepsi ",
+      "desc": "500ml ",
+      "note": "",
+      "price": "",
+      "img": "imagenes/9eec0c2e1454e3c9efb51a4952aa9dab.jpg",
       "available": true,
       "en": {},
       "pt": {}
