@@ -6,7 +6,7 @@
       "desc": "",
       "note": "",
       "img": "imagenes/2ee903a71c927363084d8423718bd85a.jpg",
-      "price": 4000,
+      "price": "",
       "en": {
         "title": "Fruit salad",
         "desc": "",
@@ -25,7 +25,7 @@
       "desc": "",
       "note": "",
       "img": "imagenes/9f5d3754d1bcf82e229162468ff5cf44.jpg",
-      "price": 4000,
+      "price": "",
       "en": {
         "title": "Flan",
         "desc": "",
@@ -44,7 +44,7 @@
       "desc": "",
       "note": "",
       "img": "imagenes/arroz con leche.png",
-      "price": 4000,
+      "price": "",
       "en": {
         "title": "Rice Pudding",
         "desc": "",
@@ -62,7 +62,7 @@
       "title": "Budin de pan ",
       "desc": "",
       "note": "",
-      "price": 4000,
+      "price": "",
       "img": "imagenes/60cc7e555a763dc93fded1b1d7546a5b.jpg",
       "available": true,
       "en": {},
