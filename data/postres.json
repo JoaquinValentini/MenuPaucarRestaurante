@@ -78,6 +78,28 @@
       "available": true,
       "en": {},
       "pt": {}
+    },
+    {
+      "id": "c95bd303-af3c-42aa-af5a-412f48e2ac62",
+      "title": "Helado Escocés ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/3d1296c04ebd05e7b62ef7a4ca781f05.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
+    },
+    {
+      "id": "eadc7c9b-4e6f-4edb-a0f6-b1fc0c53ddda",
+      "title": "Helado Crocante ",
+      "desc": "",
+      "note": "",
+      "price": "",
+      "img": "imagenes/43a41675740deed36ecd7f5caeecc657.jpg",
+      "available": true,
+      "en": {},
+      "pt": {}
     }
   ]
 }
